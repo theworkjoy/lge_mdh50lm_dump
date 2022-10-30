@@ -1,0 +1,38 @@
+on init
+    # Mount pstore file system on /mnt/pstore
+    mkdir /dev/pstore 660 system system
+    mount pstore /dev/pstore /dev/pstore
+
+on post-fs-data
+    mkdir /data/ramoops 0750 root log
+    mkdir /data/ramoops/pl_lk 0750 root log
+    mkdir /data/ramoops/last_pl_lk 0750 root log
+    mkdir /data/logger 0775 system system
+
+# ramoops bakcup
+    rm /data/ramoops/console-ramoops
+    copy /sys/fs/pstore/console-ramoops /data/ramoops/console-ramoops
+    chmod 0644 /data/ramoops/console-ramoops
+
+# bootloader_log bakcup
+    rm /data/logger/bootloader_log
+    copy /proc/pl_lk /data/logger/bootloader_log
+    chmod 0644 /data/logger/bootloader_log
+
+# LGE ramoops backup function service
+service ramoops_backup /system/bin/ramoops_backup.sh
+    class main
+    user root
+    disabled
+    oneshot
+
+# LGE time_in_stae function service
+service time_in_state /system/bin/init.time_in_state.sh
+    class main
+    user root
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+   start ramoops_backup
+   start time_in_state

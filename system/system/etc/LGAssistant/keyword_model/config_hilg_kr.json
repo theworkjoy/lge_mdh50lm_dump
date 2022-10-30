@@ -1,0 +1,7 @@
+{
+    "szAmFilePath"   : "./keyword_model/mh4_hilg_am_190123.dat",
+    "szNetFilePath"  : "./keyword_model/mh4_hilg_net_190123.dat",
+    "nSensitivity"   : 12,
+    "nCm"            : 0.01,
+    "nWeight"        : 0
+}

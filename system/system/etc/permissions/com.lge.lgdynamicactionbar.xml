@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.lge.lgdynamicactionbar"
+            file="/system/framework/com.lge.lgdynamicactionbar.jar"/>
+</permissions>

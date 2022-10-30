@@ -1,0 +1,7 @@
+{
+    "szAmFilePath"   : "./keyword_model/hilg_en_washer_am_171122.dat",
+    "szNetFilePath"  : "./keyword_model/hilg_en_washer_net_171122.dat",
+    "nSensitivity"   : 25,
+    "nCm"            : 0.01,
+    "nWeight"        : 0
+}

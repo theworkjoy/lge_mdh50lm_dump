@@ -1,0 +1,7 @@
+{
+    "szAmFilePath"   : "./keyword_model/airstar_1m_clean_snr10_degree_kr_en_jp_cn_LG_CNXT_anti_am.dat",
+    "szNetFilePath"  : "./keyword_model/airstar_1m_clean_snr10_degree_kr_en_jp_cn_LG_CNXT_anti_tree.dat",
+    "nSensitivity"   : 60,
+    "nCm"            : 0.01,
+    "nWeight"        : 0
+}

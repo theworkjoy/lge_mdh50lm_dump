@@ -1,0 +1,15 @@
+on post-fs-data
+    #CAPP_FONTS
+    mkdir /data/font 775 system system
+    chmod 775 /data/font
+    mkdir /data/font/config 775 system system
+    chmod 775 /data/font/config
+    mkdir /data/font/download 775 system system
+    chmod 775 /data/font/download
+
+    #LGMDM [lge-mdm-dev@lge.com]
+    mkdir /data/system/lgmdm 0700 system system
+
+    #bsm
+    mkdir /data/system/power 0775 system system
+    chmod 775 /data/system/power

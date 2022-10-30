@@ -1,0 +1,7 @@
+{
+    "szAmFilePath"   : "./keyword_model/home_cloi_all_anti_am.dat",
+    "szNetFilePath"  : "./keyword_model/home_cloi_all_anti_tree.dat",
+    "nSensitivity"   : 80,
+    "nCm"            : 0.01,
+    "nWeight"        : 30
+}

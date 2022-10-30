@@ -1,0 +1,58 @@
+########################################
+# CAPP_NFS
+########################################
+service nfsserversetup /system/bin/nfsserversetup
+    class late_start
+    user root
+    oneshot
+
+########################################
+# CAPP_MPROFILER
+########################################
+service lgprofd /system/bin/lgprofd
+    socket lgprofd stream 666
+
+########################################
+# CAPP_NFS
+########################################
+service nfskill /system/bin/nfskillprocess
+    disabled
+    oneshot
+    user root
+
+on property:vold.decrypt=trigger_shutdown_framework
+    start nfskill
+
+########################################
+# bugreport is triggered by holding down volume down, volume up and power
+########################################
+service bugreport /system/bin/dumpstate -d -p -B -z \
+        -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
+    class main
+    disabled
+    oneshot
+    keycodes 114 115 116
+
+########################################
+# LG RCT(Rooting Check Tool)
+########################################
+service rctd /product/bin/rctd
+    class late_start
+    user root
+    group root
+    seclabel u:r:rctd:s0
+
+########################################
+# dms-ua@lge.com fota
+########################################
+service uncrypt-fota /system/bin/uncrypt --fota
+    class main
+    socket uncrypt stream 600 system system
+    disabled
+    oneshot
+
+service uncrypt-lcdoff /system/bin/uncrypt --lcdoff
+    class main
+    socket uncrypt stream 600 system system
+    disabled
+    oneshot

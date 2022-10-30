@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+
+    <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
+    </privapp-permissions>
+
+    <library name="com.lge.systemui"
+            file="/system/framework/com.lge.systemui.jar"/>
+</permissions>
