@@ -1,0 +1,16 @@
+vendor_vzw_debug::2900:
+vendor_vzw_commands::2901:
+vendor_vzw_lte::2902:
+vendor_vzw_wifi::2903:
+vendor_vzw_ims::2904:
+vendor_vzw_umts::2905:
+vendor_vzw_gsm::2906:
+vendor_vzw_wcdma::2907:
+vendor_vzw_lte_mw::2908:
+vendor_vzw_hsupa::2909:
+vendor_vzw_hsdpa::2910:
+vendor_lgapps::5000:
+vendor_lgdrm::5001:
+vendor_lgdrm_acc::5002:
+vendor_eas::5005:
+vendor_imsvt::5014:

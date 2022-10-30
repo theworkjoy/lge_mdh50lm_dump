@@ -1,0 +1,148 @@
+on fs
+    setprop vendor.usb.feature 1
+on post-fs
+#
+# Connectivity related modules and character device nodes (Begin)
+#
+    #for 662x_launcher
+    chmod 0660 /dev/ttyMT2
+    chown system system /dev/ttyMT2
+
+    # LGP Service
+    symlink /dev/block/platform/bootdevice/by-name/misc2 /dev/misc2
+    chmod 0660 /dev/misc2
+    chown root system /dev/misc2
+
+    # STP, SDIO, WMT, GPS, FM and BT Driver
+#   insmod /system/lib/modules/mtk_hif_sdio.ko
+#   insmod /system/lib/modules/mtk_stp_wmt.ko
+#   insmod /system/lib/modules/mtk_stp_uart.ko
+#   insmod /system/lib/modules/mtk_stp_gps.ko
+#   insmod /system/lib/modules/mtk_stp_bt.ko
+#   insmod /system/lib/modules/mtk_fm_drv.ko
+#   insmod /system/lib/modules/mtk_fm_priv.ko
+#   insmod /system/lib/modules/mtk_wmt_wifi.ko
+
+    insmod /system/lib/modules/mtk_wmt_detect.ko
+
+    # Create char device file for WMT, GPS, BT, FM, WIFI
+    mknod /dev/stpwmt c 190 0;
+    mknod /dev/stpgps c 191 0;
+    mknod /dev/stpbt  c 192 0;
+    mknod /dev/fm     c 193 0;
+    chmod 0660 /dev/stpwmt
+    chown system system /dev/stpwmt
+    chmod 0660 /dev/wmtdetect
+ 		chown system system /dev/wmtdetect
+
+    # FM Radio device, FIXME: this is not a proper way to set permissions
+    chmod 0666 /dev/fm
+
+    mknod /dev/wmtWifi c 153 0
+    chmod 0666 /dev/wmtWifi
+    chmod 0660 /dev/stpgps
+    chmod 0660 /dev/stpbt
+    chown bluetooth radio /dev/stpbt
+
+    # Load WiFi Driver
+    #insmod /system/lib/modules/wlan.ko
+
+#
+# Connectivity related modules and character device nodes (Ends)
+#
+
+on boot
+
+
+#
+# Connectivity related services (Begin)
+#META+ADB, move this to kernel driver
+on property:sys.usb.ffs.ready=1 && property:ro.boot.usbconfig=0 && property:sys.usb.configfs=1 && \
+    property:vendor.usb.feature=1
+    write /proc/bootprof "INIT:on property:ro.boot.usbconfig 0"
+    write /config/usb_gadget/g1/UDC "none"
+    write /config/usb_gadget/g1/strings/0x409/serialnumber $ro.serialno
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "adb_acm"
+    write /config/usb_gadget/g1/idVendor 0x1004
+    write /config/usb_gadget/g1/idProduct 0x6375
+    write /config/usb_gadget/g1/bDeviceClass 0
+    write /config/usb_gadget/g1/bDeviceSubClass 0
+    write /config/usb_gadget/g1/bDeviceProtocol 0
+    write /sys/devices/platform/mt_usb/saving 1
+    symlink /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/acm.gs3 /config/usb_gadget/g1/configs/b.1/f2
+    symlink /config/usb_gadget/g1/functions/gser.gs0 /config/usb_gadget/g1/configs/b.1/f4
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f5
+    write /config/usb_gadget/g1/UDC "musb-hdrc"
+
+#META, move this to kernel driver
+on property:ro.boot.usbconfig=1 && property:sys.usb.configfs=1 && property:vendor.usb.feature=1
+    write /proc/bootprof "INIT:on property:ro.boot.usbconfig 1"
+    write /config/usb_gadget/g1/UDC "none"
+    write /config/usb_gadget/g1/strings/0x409/serialnumber $ro.serialno
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "acm_gser"
+    write /config/usb_gadget/g1/idVendor 0x1004
+    write /config/usb_gadget/g1/idProduct 0x6000
+    write /config/usb_gadget/g1/bDeviceClass 02
+    symlink /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/gser.gs0 /config/usb_gadget/g1/configs/b.1/f2
+    write /config/usb_gadget/g1/UDC "musb-hdrc"
+
+#META+ELT, move this to kernel driver
+on property:ro.boot.usbconfig=2 && property:sys.usb.configfs=1 && property:vendor.usb.feature=1
+    write /proc/bootprof "INIT:start adbd"
+    start adbd
+
+#META+ELT, move this to kernel driver
+on property:sys.usb.ffs.ready=1 && property:ro.boot.usbconfig=2 && property:sys.usb.configfs=1 && \
+    property:vendor.usb.feature=1
+    write /proc/bootprof "INIT:on property:ro.boot.usbconfig 2"
+    write /config/usb_gadget/g1/UDC "none"
+    write /config/usb_gadget/g1/strings/0x409/serialnumber $ro.serialno
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "meta_elt"
+    write /config/usb_gadget/g1/idVendor 0x1004
+    write /config/usb_gadget/g1/idProduct 0x6375
+    write /config/usb_gadget/g1/bDeviceClass 0
+    write /config/usb_gadget/g1/bDeviceSubClass 0
+    write /config/usb_gadget/g1/bDeviceProtocol 0
+    write /sys/devices/platform/mt_usb/saving 1
+    symlink /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/acm.gs3 /config/usb_gadget/g1/configs/b.1/f2
+    symlink /config/usb_gadget/g1/functions/gser.gs0 /config/usb_gadget/g1/configs/b.1/f4
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f5
+    write /config/usb_gadget/g1/UDC "musb-hdrc"
+    setprop vendor.usb.acm_idx 1,4
+
+#META+ELT+ADB, move this to kernel driver
+on property:sys.usb.ffs.ready=1 && property:ro.boot.usbconfig=3 && property:sys.usb.configfs=1 && \
+    property:vendor.usb.feature=1
+    write /proc/bootprof "INIT:on property:ro.boot.usbconfig 3"
+    write /config/usb_gadget/g1/UDC "none"
+    write /config/usb_gadget/g1/strings/0x409/serialnumber $ro.serialno
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "meta_elt_adb"
+    write /config/usb_gadget/g1/idVendor 0x1004
+    write /config/usb_gadget/g1/idProduct 0x6375
+    write /config/usb_gadget/g1/bDeviceClass 0
+    write /config/usb_gadget/g1/bDeviceSubClass 0
+    write /config/usb_gadget/g1/bDeviceProtocol 0
+    write /sys/devices/platform/mt_usb/saving 1
+    symlink /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/acm.gs3 /config/usb_gadget/g1/configs/b.1/f2
+    symlink /config/usb_gadget/g1/functions/gser.gs0 /config/usb_gadget/g1/configs/b.1/f4
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f5
+    write /config/usb_gadget/g1/UDC "musb-hdrc"
+    setprop vendor.usb.acm_idx 1,4
+#
+
+service wmtLoader /system/bin/wmt_loader
+    user root
+    group root
+    oneshot
+
+service conn_launcher /system/bin/6620_launcher -p /system/etc/firmware/
+    user system
+    group system
+
+#
+# Connectivity related services (End)
+#
