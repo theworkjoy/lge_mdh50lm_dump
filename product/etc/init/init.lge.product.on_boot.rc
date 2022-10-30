@@ -1,0 +1,18 @@
+on boot
+  # 2013-06-24, juhyup.kim@lge.com LGP_DATA_APN_BACKUP [START]
+  mkdir /mnt/product/persist-lg/lgdata 0775 radio radio
+  # 2013-06-24, juhyup.kim@lge.com LGP_DATA_APN_BACKUP [END]
+
+  # 2019-07-03 wonkwon.lee@lge.com LGP_DATA_UIAPP_HIDDENMENU_PKT_COUNTER_MTK [START]
+  mkdir /mnt/product/persist-lg/lifedata 0771 system radio
+  # 2016-03-31 wonkwon.lee@lge.com LGP_DATA_UIAPP_HIDDENMENU_PKT_COUNTER_MTK [END]
+
+# 2019-07-03 wonkwon.lee@lge.com LGP_DATA_UIAPP_HIDDENMENU_PKT_COUNTER_MTK [START]
+on property:product.lge.data.ld.rx=0
+  chown system radio /mnt/product/persist-lg/lifedata/rx
+  chmod 0771 /mnt/product/persist-lg/lifedata/rx
+
+on property:product.lge.data.ld.tx=0
+  chown system radio /mnt/product/persist-lg/lifedata/tx
+  chmod 0771 /mnt/product/persist-lg/lifedata/tx
+# 2019-07-03 wonkwon.lee@lge.com LGP_DATA_UIAPP_HIDDENMENU_PKT_COUNTER_MTK [END]

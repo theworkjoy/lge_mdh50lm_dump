@@ -1,0 +1,56 @@
+on post-fs-data
+    # RCT
+    mkdir /mnt/product/persist-lg/rct 0771 root root
+
+    # For Korean call-frw
+    mkdir /mnt/product/persist-lg/callfw 0770 radio radio
+
+    restorecon /mnt/product/els
+    restorecon_recursive /mnt/product/els
+    restorecon /mnt/product/persist-lg
+    restorecon_recursive /mnt/product/persist-lg
+    restorecon /mnt/product/mpt
+    restorecon_recursive /mnt/product/mpt
+    restorecon /mnt/product/srtc
+    restorecon_recursive /mnt/product/srtc
+    restorecon /mnt/product/carrier
+    restorecon_recursive /mnt/product/carrier
+    restorecon /mnt/product/quality
+    restorecon_recursive /mnt/product/quality
+    restorecon /mnt/product/eri
+    restorecon_recursive /mnt/product/eri
+    restorecon /mnt/product/fota
+    restorecon_recursive /mnt/product/fota
+
+    # dms-ua@lge.com fota
+    mkdir /data/fota 0770 system system
+    mkdir /cache/fota 0770 system system
+    chown system system /cache/fota
+    chmod 0775 /cache/fota
+    chown system system /cache/fota/usd.dat
+    chmod 0775 /cache/fota/usd.dat
+
+    #Create roaming dir for Sprint roaming setting
+    mkdir /mnt/product/persist-lg/roaming 0771 system radio
+
+    #/* 2013-06-24, juhyup.kim@lge.com LGP_DATA_APN_BACKUP [START] */
+    mkdir /mnt/product/persist-lg/lgdata 0775 radio radio
+    #/* 2013-06-24, juhyup.kim@lge.com LGP_DATA_APN_BACKUP [END] */
+
+    #Create callduration file
+    mkdir /mnt/product/persist-lg/callduration 0770 system radio
+    chown system /mnt/product/persist-lg/callduration
+    chmod 0770 /mnt/product/persist-lg/callduration
+
+    #Create wdctime folder
+    mkdir /mnt/product/persist-lg/wdctime 0770 system radio
+    chmod 0666 /mnt/product/persist-lg/wdctime/date
+
+    # For G-DEC SmartCA
+    mkdir /data/shared 0775
+    chown system system /data/shared
+    restorecon /data/shared
+
+#Create Findlostphone(flp) directory only SKT
+on post-fs-data && property:ro.vendor.lge.build.target_operator=SKT
+     mkdir /mnt/product/persist-lg/flp 0775 radio radio

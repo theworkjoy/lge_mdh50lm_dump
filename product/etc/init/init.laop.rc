@@ -1,0 +1,85 @@
+#LAOP
+on post-fs
+    mkdir /mnt/vendor/persist-lg/laop 0771 system radio
+    mkdir /mnt/vendor/persist-lg/laop/property 0771 system radio
+
+on post-fs-data
+    mkdir /data/laop
+    mkdir /data/laop/etc
+    chmod 0775 /data/laop
+    chmod 0775 /data/laop/etc
+    chown system system /data/laop
+    chown system system /data/laop/etc
+    restorecon_recursive /data/laop
+
+#Customize booting resources
+on property:vold.decrypt=trigger_load_persist_props
+    start runtime_boot_res
+    exec - media_rw media_rw -- /product/bin/runtime_boot_res.sh media
+    start ntcode_symlinks
+    copy /mnt/vendor/persist-lg/ntcode_list /data/local/ntcode_list
+    chmod 0644 /data/local/ntcode_list
+
+on property:ro.crypto.type=file && property:ro.persistent_properties.ready=true
+    start runtime_boot_res
+    start ntcode_symlinks
+    copy /mnt/vendor/persist-lg/ntcode_list /data/local/ntcode_list
+    chmod 0644 /data/local/ntcode_list
+
+#Customize booting resources
+service runtime_boot_res /product/bin/runtime_boot_res.sh
+    disabled
+    oneshot
+
+# LAOP Set 3rd party app property files by NT-Code base
+service ntcode_symlinks /product/bin/ntcode_etc_symlinks.sh
+    user system
+    group system
+    disabled
+    oneshot
+
+# LAOP Set 3rd party app property files by SIM-Auto-Profiling
+service sap_etc_symlinks /product/bin/sap_etc_symlinks.sh
+    user system
+    group system
+    disabled
+    oneshot
+
+on property:vendor.lge.start.sap_etc_symlink=1
+    start sap_etc_symlinks
+
+service smartca_undo /product/bin/smartca_undo.sh
+    user system
+    group system
+    disabled
+    oneshot
+
+service cota_update /product/bin/cota_update.sh
+    user system
+    group system
+    disabled
+    oneshot
+
+#Load laop props(perm.prop)
+on property:persist.vendor.lge.clientid-changed=fast
+    load_laop_props
+    setprop persist.vendor.lge.clientid-changed fast_done
+
+on property:persist.vendor.lge.clientid-changed=late
+    load_laop_props
+    setprop persist.vendor.lge.clientid-changed late_done
+
+on property:persist.vendor.lge.clientid-changed=ntcode
+    load_laop_props
+    setprop persist.vendor.lge.clientid-changed ntcode_done
+
+#SmartCA
+on property:persist.vendor.lge.smartca.changed=1
+    mkdir /mnt/product/carrier/_SMARTCA_RES 0775 system system
+    start cota_update
+
+on property:persist.vendor.lge.smartca.undo=1
+    start smartca_undo
+
+on property:persist.product.lge.msn_channel=ORG
+    setprop ro.product.brand1 orange

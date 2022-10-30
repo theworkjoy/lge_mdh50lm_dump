@@ -1,0 +1,126 @@
+﻿Política de Privacidade
+
+Última Actualização: [01 de Janeiro de 2020]
+
+Esta Política de Privacidade aplica-se ao Serviço de Atualização de Software controlado pela LG Electronics Inc. ("LGE") onde esta política de privacidade é afixada ou referenciada, à informação recolhida através dos serviços ao cliente pela LGE ou por uma empresa afiliada da LGE (colectivamente, o "Serviço"). Esta Política de Privacidade aplica-se apenas à informação recolhida através do Serviço e não se aplica à informação recolhida pela LGE através de qualquer outro meio, incluindo dados recolhidos directamente dos dispositivos da LG. Esta Política de Privacidade também não se aplica a outras informações que são recolhidas offline ou a informações que são afixadas ou processadas por terceiros.
+AO UTILIZAR O SERVIÇO, VOCÊ CONSENTE COM OS TERMOS DESTA POLÍTICA DE PRIVACIDADE E COM O NOSSO PROCESSAMENTO DE INFORMAÇÕES PESSOAIS PARA OS FINS INDICADOS ABAIXO. SE VOCÊ NÃO CONCORDAR, POR FAVOR NÃO UTILIZE O SERVIÇO.
+
+1.	Recolha de Informações Pessoais através do Serviço
+Nós coletamos ou recebemos certas informações pessoais de ou sobre você, a fim de lhe fornecer serviços e funcionalidades sobre o Serviço. Abaixo estão listadas as categorias de informações pessoais que recolhemos, com exemplos de cada uma delas:
+
+A.	Identificadores básicos. Podemos recolher informações básicas de identificação e identificadores online (incluindo registos do sistema com endereço IP) a partir do seu dispositivo móvel, tais como a sua identificação do dispositivo (IMEI), número de série, modelo do dispositivo, versões de software e/ou firmware, informações sobre o sistema operativo do telefone, código de país móvel (MCC), código de rede móvel (MNC), identificador de mensagens em nuvem, idioma seleccionado. Os identificadores básicos podem ser recolhidos directamente de si quando interage com o Serviço (por exemplo, quando regista um dispositivo, analisa um produto, contacta-nos). 
+B.	Informação Comercial e Registos. Podemos recolher informações sobre produtos que encomendou ou recebeu, compras que fez, serviços que encomendou ou recebeu, e o seu histórico geral de compras, tendências e preferências. Podemos recolher esta informação através do seguimento das suas compras, encomendas, ou outras interacções com a LGE. 
+C.	Dados de Geolocalização. Podemos recolher informações sobre a sua localização, incluindo nome da rua, cidade ou localidade, estado, país, e/ou coordenadas. Recolhemos informação de geolocalização se optar por nos fornecer essa informação.
+D.	Inferências sobre Tendências e Preferências. Ao longo das suas interacções com o Serviço, também podemos criar ou recolher inferências sobre si para efeitos de criação de um perfil. Podemos usar as informações que coletamos para extrair inferências sobre suas preferências básicas, predisposições, comportamento, atitudes, aptidões ou outras características.
+
+Observe que algumas das informações acima podem ser coletadas automaticamente usando cookies ou outras tecnologias de rastreamento. Os cookies são pequenos arquivos de dados que coletam e rastreiam informações sobre como você interage com serviços, anúncios ou outros sites ou plataformas on-line. Um cookie frequentemente inclui um identificador de dispositivo único, que é usado para associar certos comportamentos ou informações a você. 
+
+2.	Utilização das informações pessoais recolhidas através do serviço
+Utilizamos a informação que recolhemos no Serviço para lhe fornecer o Serviço e para facilitar e melhorar a sua experiência de utilizador. Especificamente, utilizamos a sua informação pessoal para os seguintes fins:
+
+A.	Para lhe fornecer o Serviço. Podemos utilizar os seus Identificadores Básicos, Dados de Geolocalização e Inferências sobre Tendências e Preferências para lhe fornecer determinados produtos e serviços. (por exemplo, se o seu dispositivo móvel foi activado correctamente) 
+B.	Proporcionando-lhe uma experiência de fácil utilização enquanto navega no Serviço. Podemos utilizar os seus Identificadores Básicos, Dados de Geolocalização e Inferências sobre Tendências e Preferências para garantir que o Serviço seja adaptado a si e que funcione sem problemas. 
+C.	Completar o seu registo de uma conta ou dispositivo. Podemos utilizar os seus Identificadores Básicos e Dados de Geolocalização para completar o seu registo de uma conta ou dispositivo connosco.
+D.	Assegurar que o Serviço é relevante e/ou adaptado às suas preferências e necessidades. Podemos usar os seus Identificadores Básicos, Dados de Geolocalização e Informações sobre Tendências e Preferências para adaptar o conteúdo do Serviço às suas preferências e necessidades.
+E.	Comunicação com você. Podemos usar os seus Identificadores Básicos e Dados de Geolocalização para nos comunicarmos com você.
+F.	Permitir-lhe o acesso a áreas de entrada limitada do Serviço. Podemos utilizar os seus Identificadores Básicos para permitir o acesso às áreas de entrada limitada do Serviço, tais como as que requerem uma conta para uso ou acesso.
+G.	Para compilar estatísticas. Podemos utilizar Identificadores Básicos, Informação Comercial e Registos, Dados de Geolocalização e Inferências sobre Tendências e Preferências para compilar estatísticas e outras análises sobre os utilizadores e/ou a função e utilização do Serviço.
+H.	Cumprir com as nossas obrigações legais. Podemos utilizar Identificadores Básicos, Informação e Registros Comerciais, Dados de Geolocalização, e Inferências sobre Tendências e Preferências para cumprir com quaisquer obrigações legais aplicáveis.
+I.	Proteger e garantir a segurança e proteção do Serviço, LGE, nossos usuários e outros, conforme aplicável. Podemos utilizar Identificadores Básicos, Informação Comercial e Registos, Dados de Geolocalização, e Inferências sobre Tendências e Preferências para proteger e assegurar a segurança e protecção e para fornecer actualizações de emergência em resposta a questões envolvendo a segurança e protecção do Serviço, LGE, os nossos utilizadores, e outros, conforme aplicável e necessário.
+J.	Criação e manutenção de registos internos. Podemos utilizar Identificadores Básicos, Informações Comerciais e Registros, Dados de Geolocalização e Inferências sobre Tendências e Preferências para criar e manter registros internos, tais como registros de interações de usuários, compras, nossas obrigações sob nossa Garantia Limitada de Produto e outros registros que considerarmos necessários ou de outra forma exigidos por lei.
+
+3.	Compartilhamento e Divulgação de Informações Pessoais Coletadas Através do Serviço
+
+A.	Partilha para os nossos objectivos de negócio
+Podemos partilhar informação que recolhemos com entidades externas para os nossos próprios fins comerciais. Partilhamos estas informações para fornecer ou de outra forma permitir a sua utilização de funcionalidades e funções no Serviço e para vários fins internos, tais como a prestação de serviço ao cliente, processamento de quaisquer encomendas, garantia da segurança do Serviço, LGE e seus utilizadores, e análise dos dados que recolhemos. Mais informações sobre os motivos que nos levam a partilhar informações podem ser encontradas abaixo.
+
+•	Para Fornecer Produtos ou Serviços. Podemos partilhar os seus Identificadores Básicos, Informação Comercial e Dados de Geolocalização com os nossos parceiros de serviço, que nos ajudam a fornecer-lhe produtos ou serviços solicitados no Serviço. Precisamos compartilhar informações com esses parceiros para processar seu pedido, atender seu pedido, fornecer suporte ao cliente ou fornecer outros serviços ou funções.  Também podemos compartilhar com nossa matriz, subsidiárias e afiliadas, a fim de melhor atendê-lo ou manter nossos negócios.
+•	Por razões legais. Podemos compartilhar todas as categorias de informação acima com parceiros de serviço ou outras entidades externas conforme necessário para cumprir com nossas obrigações legais, incluindo o cumprimento de qualquer lei aplicável, processo legal ou ordem judicial. Também podemos compartilhar informações a fim de proteger e defender os direitos da LGE, nossos usuários, ou qualquer outro indivíduo, para proteger contra atividades fraudulentas ou maliciosas, para fazer cumprir nossos Termos e Condições, ou para cooperar com as agências de aplicação da lei. 
+•	Por Outras Razões Internas. Podemos partilhar todas as categorias de informação acima com parceiros de serviço e outras entidades que forneçam à LGE determinados serviços ou assistam a funções internas, tais como analisar dados, manter a segurança dos nossos sistemas, ou assegurar a nossa conformidade com a lei. Por exemplo, podemos partilhar informações com firmas de auditoria externas a advogados para obter aconselhamento jurídico, ou com outros consultores profissionais. Outras entidades que podem receber informações para esses fins incluem fornecedores de segurança da informação, firmas de análise de dados, avaliadores de garantia de qualidade e tipos similares de entidades. Também podemos compartilhar com nossa matriz, subsidiárias e afiliadas a fim de melhor atendê-lo ou manter nossos negócios.
+•	Em conexão com uma Venda ou Fusão. Se passarmos direta ou indiretamente por uma transição comercial (incluindo as transações propostas), como uma fusão, aquisição por outra empresa ou venda de todos ou parte de nossos ativos, podemos compartilhar todas as categorias de informação acima para a organização sucessora ou sucessora potencial, bem como seus assessores profissionais durante a transição. 
+•	Quando você, de outra forma, consente com tal divulgação. Poderemos compartilhar certas informações com parceiros de serviço ou outras entidades quando você nos instruir a compartilhar ou de outra forma consentir em compartilharmos tais informações. 
+
+4.	Vendas de Informações Pessoais
+Não vendemos informações pessoais a ninguém e apenas as compartilhamos com terceiros que estão facilitando o uso de recursos e funções no Serviço, e para vários fins internos, conforme previsto nesta Política de Privacidade.
+
+5.	Gestão de Cookies e Outras Tecnologias de Rastreamento
+Quando você utiliza o Serviço, podemos utilizar cookies - pequenos arquivos de texto contendo uma seqüência de caracteres alfanuméricos - e outras tecnologias de rastreamento. Podemos utilizar tanto cookies de sessão como cookies persistentes. Um cookie de sessão desaparece depois que você fecha seus aplicativos. Um cookie persistente permanece depois que você fecha seus aplicativos e pode ser usado por seus aplicativos em visitas subsequentes ao Serviço. Observe que, se você excluir ou optar por não aceitar cookies, talvez não consiga utilizar determinadas características do Serviço em todo o seu potencial.
+
+6.	Gestão da Comunicação
+De vez em quando, comunicamos com os utilizadores do Serviço que subscrevem os nossos serviços via e-mail. Podemos utilizar o seu endereço de e-mail para confirmar o seu pedido, para lhe enviar avisos de pagamento, para lhe enviar informações sobre alterações aos nossos produtos e serviços, e para enviar avisos e outras divulgações, conforme exigido por lei. Geralmente, os usuários não podem optar por não receber essas comunicações, mas elas serão principalmente de natureza informativa e não promocional, e você consentiu em receber tais e-mails fornecendo seu endereço de e-mail. 
+Caso você não queira mais receber outros tipos de comunicação da nossa parte, você pode cancelar sua inscrição marcando ou desmarcando a caixa apropriada se essa caixa de seleção estiver disponível nos pontos onde a informação é coletada, ou entrando em contato conosco. Processaremos o seu cancelamento o mais rápido possível, mas esteja ciente de que em algumas circunstâncias poderá receber mais algumas mensagens até que o cancelamento seja processado. Você também pode optar por não receber esses e-mails clicando no link "unsubscribe" dentro do texto do e-mail.
+
+7.	Os seus direitos de privacidade na Califórnia
+Esta seção se aplica a você se você for um residente da Califórnia.
+
+A.	Direito de Acesso
+Como residente na Califórnia, você pode, sujeito a procedimentos de verificação, solicitar-nos detalhes sobre as informações que coletamos de e sobre você nos últimos 12 meses, inclusive:
+•	As categorias de informação pessoal que recolhemos sobre si, incluindo Identificadores Básicos, Informação Comercial e Registos, Dados de Geolocalização e Inferências sobre Tendências e Preferências, assim como qualquer outra informação que nos queira enviar;
+•	As categorias de fontes a partir das quais a informação pessoal foi recolhida;
+•	As finalidades comerciais ou comerciais para a nossa recolha de informação pessoal;
+•	As categorias de terceiros com os quais partilhamos as suas informações pessoais;
+•	As partes específicas de informações pessoais que recolhemos sobre si; e 
+•	As categorias de informações pessoais que divulgamos para um fim comercial. 
+
+Se desejar solicitar tal acesso às suas informações pessoais, por favor contacte-nos em [caprivacy@lge.com] ou [833-660-0245].
+
+B.	Direito de eliminar
+Como residente na Califórnia, você pode, sujeito a procedimentos de verificação, solicitar que excluamos quaisquer informações pessoais que tenhamos coletado sobre você, sujeito a uma série de exceções, incluindo, mas não limitado a, se as informações forem necessárias para nós ou para nosso provedor de serviços: 
+•	Complete a sua transacção;
+•	Fornecer-lhe um bem ou serviço;
+•	Executar um contrato entre nós e você;
+•	Proteja a sua segurança e processe os responsáveis por violá-la;
+•	Consertar o nosso sistema no caso de um bug;
+•	Proteger os direitos de liberdade de expressão dos seus ou de outros utilizadores;
+•	Cumprir a Lei de Privacidade das Comunicações Electrónicas da Califórnia (Cal. Código Penal § 1546 et seq.);
+•	Envolver-se em pesquisas científicas, históricas ou estatísticas de interesse público, públicas ou revisadas por pares, que atendam a todas as outras leis de ética e privacidade aplicáveis;
+•	Cumprir uma obrigação legal; ou
+•	Faça outros usos internos e legais das informações que sejam compatíveis com o contexto no qual você as forneceu.
+
+Se desejar solicitar a eliminação dos seus dados pessoais, por favor contacte-nos [caprivacy@lge.com] ou [833-660-0245]. 
+
+C.	Cronograma e formato da nossa resposta aos pedidos de acesso ou eliminação
+Procuramos responder a um pedido verificável de acesso ou eliminação no prazo de 45 dias após o seu recebimento. Se necessitarmos de mais tempo, informá-lo-emos do motivo e do período de prorrogação através de meios razoáveis.
+
+D.	Não vender minhas informações pessoais (Direito de "Opt-Out")
+Como um residente da Califórnia, você tem o direito de "opt-out", ou de fazer um pedido para parar de vender ou compartilhar suas informações pessoais com terceiros em troca de uma contrapartida monetária ou outra consideração valiosa. 
+Mais uma vez, nós não vendemos informações pessoais.
+
+E.	Procedimentos de Verificação
+Quando você enviar um pedido de acesso ou exclusão de suas informações, precisaremos verificar sua identidade antes de abordar e atender ao seu pedido. Nós o faremos de acordo com a lei aplicável.
+
+F.	Nomeação do Agente Autorizado
+Como residente na Califórnia, você pode nomear um agente autorizado para exercer seus direitos em seu nome. Para que possamos honrar um pedido feito pelo seu agente, você deve apresentar prova de sua autorização por escrito do agente.
+
+G.	Liberdade da Discriminação
+Você tem o direito de não receber tratamento discriminatório por parte da LGE por exercer os seus direitos de privacidade na Califórnia. 
+
+H.	Apagamento para utilizadores com menos de 18 anos
+Os residentes da Califórnia com menos de dezoito (18) anos de idade que se registraram para usar o Serviço e que postaram conteúdo ou informações sobre o Serviço podem solicitar a remoção de tais informações. Para solicitar a remoção de um envio, envie um e-mail com uma descrição detalhada do envio específico para caprivacy@lge.com. A LGE reserva-se o direito de solicitar que você forneça informações que nos permitam confirmar que a submissão que você deseja remover foi criada e postada por você.
+A LGE fará um esforço de boa fé para eliminar ou remover a sua submissão da vista pública assim que razoavelmente praticável. Note, no entanto, que o seu pedido de eliminação da sua submissão não garante a remoção completa ou abrangente da sua submissão. A sua submissão pode permanecer na mídia de backup, em cache ou retida pela LGE para fins administrativos ou legais, ou a sua submissão pode permanecer disponível ao público se você ou outra pessoa tiver encaminhado ou re-postado a sua submissão em outro website ou serviço antes da sua exclusão. A LGE pode ser obrigada por lei a não remover ou permitir a remoção da sua submissão.
+
+8.	Serviços de Terceiros
+A presente Política de Privacidade aplica-se unicamente às informações recolhidas através do Serviço. O Serviço pode conter links para outras plataformas online, serviços e websites que são operados por terceiros. Nós não controlamos essas outras plataformas, serviços ou websites online e não somos responsáveis pelas suas práticas de privacidade, conteúdo ou utilização das suas informações. 
+As informações que você fornece em plataformas públicas ou semi-públicas, incluindo informações que você compartilha em sites de redes sociais de terceiros (como Facebook ou Twitter) também podem ser visualizadas por outros usuários do Serviço e/ou usuários de sites de terceiros. Nossa inclusão de links para plataformas, serviços ou websites de terceiros não implica, por si só, qualquer endosso do conteúdo de tais plataformas ou de seus proprietários ou operadores. Renunciamos expressamente a toda e qualquer responsabilidade pelas acções de terceiros, incluindo mas não se limitando a acções relacionadas com a utilização e divulgação de informações pessoais por terceiros. 
+Qualquer informação revelada a terceiros deve ser regida pela política de privacidade do terceiro em questão.
+
+9.	Transferências para o estrangeiro
+Como uma organização global, nós, nossas afiliadas, subsidiárias e fornecedores podemos precisar transferir suas informações para fora dos Estados Unidos (por exemplo, podemos precisar transferir informações para nossa sede na Coréia do Sul). Podemos transferir suas informações desta forma para lhe fornecer o Serviço, e para quaisquer outros fins descritos nesta Política de Privacidade, de acordo com esta Política de Privacidade e quaisquer leis aplicáveis. Você também deve ter em mente que as leis de proteção de dados em muitos desses países podem não oferecer o mesmo nível de proteção que as leis do seu país de origem. No entanto, antes da transferência, tomaremos medidas para assegurar que sejam implementadas salvaguardas destinadas a garantir o mesmo nível de protecção exigido pelas leis de protecção de dados aplicáveis no país em que se encontra. Ao concordar com esta Política de Privacidade, você consente expressamente que nós e nossos associados comerciais e fornecedores processem seus dados em qualquer jurisdição, incluindo, sem limitação, os Estados Unidos da América e a Coréia do Sul, de acordo com esta Política de Privacidade. Para mais informações sobre como lidamos e protegemos suas informações pessoais, entre em contato conosco em [mc.customer-service@lge.com] ou [833-660-0245].
+
+10.	Privacidade das crianças
+O Serviço não é projetado para uso por menores de 16 anos. A LGE não recolhe nem solicita intencionalmente informações de pessoas com menos de 16 anos ou conscientemente permite que tais pessoas utilizem o Serviço. Se você for menor de 16 anos não tente se registrar no Serviço ou nos enviar qualquer informação.
+
+11.	Segurança
+Fazemos esforços razoáveis para garantir a segurança nos nossos sistemas; no entanto, nenhuma transmissão de informação através da Internet é 100% segura. Consequentemente, não podemos assegurar ou garantir a segurança de qualquer informação que nos transmita e você compreende que qualquer informação que transfira para a LGE é feita por sua conta e risco.
+Se tomarmos conhecimento de uma violação dos sistemas de segurança, podemos tentar notificá-lo eletronicamente para que você possa tomar as medidas de proteção apropriadas. Ao utilizar o Serviço ou ao fornecer-nos informações, você concorda que podemos comunicar com você eletronicamente em relação à segurança, privacidade e questões administrativas relacionadas com o seu uso do Serviço. Poderemos colocar um aviso no nosso Serviço se ocorrer uma quebra de segurança. Podemos também enviar-lhe um e-mail para o endereço de e-mail que nos tenha fornecido nestas circunstâncias. Dependendo de onde você mora, você pode ter o direito legal de receber uma notificação por escrito de uma violação de segurança.
+
+12.	Alterações a esta Política de Privacidade
+Reservamo-nos o direito de alterar esta Política de Privacidade de tempos a tempos, a nosso exclusivo critério. Quando o fizermos, também iremos rever a data da "última actualização" incluída nesta Política de Privacidade. Se forem feitas alterações materiais à Política de Privacidade, iremos notificá-lo colocando um aviso em destaque no Serviço, através de e-mail no endereço de e-mail que temos em arquivo para você, ou por outros meios, de acordo com a lei aplicável. Encorajamo-lo a rever periodicamente esta Política de Privacidade para se manter actualizado sobre a forma como estamos a tratar as suas informações. 
+Se você não aceitar e concordar com esta Política de Privacidade, incluindo quaisquer alterações, então você não deve acessar ou usar o Serviço.
+
+13.	Contato
+Se você tiver alguma dúvida sobre esta Política de Privacidade ou sobre nossas práticas de privacidade, por favor entre em contato conosco em [mc.customer-service@lge.com] ou 
+LG Electronics USA, Inc.
+1000 Avenida Sylvan
+Falésias de Englewood, NJ 07632
+ Todas as informações que você fornecer em qualquer comunicação escrita serão tratadas de acordo com esta Política de Privacidade.

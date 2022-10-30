@@ -1,0 +1,125 @@
+﻿Chính sách bảo mật
+
+Cập nhật lần cuối: [01 tháng 1, 2020]
+
+Chính sách bảo mật này áp dụng đối với Dịch vụ Cập nhật Phần mềm do LG Electronics Inc. ("LGE") kiểm soát, trong đó chính sách bảo mật này được LGE hoặc một công ty chi nhánh của LGE đăng tải hoặc tham chiếu đến thông tin thu được qua các dịch vụ khách hàng (gọi chung là “Dịch vụ”).  Chính sách bảo mật này chỉ áp dụng đối với thông tin thu được qua Dịch vụ và không áp dụng đối với thông tin do LGE thu được qua bất kỳ phương thức nào khác, bao gồm dữ liệu thu được trực tiếp từ các thiết bị LG. Ngoài ra, Chính sách bảo mật này cũng không áp dụng đối với những thông tin khác thu được theo hình thức ngoại tuyến hoặc thông tin được các bên thứ ba đăng tải hay xử lý.
+KHI SỬ DỤNG DỊCH VỤ, TỨC LÀ BẠN ĐỒNG Ý VỚI CÁC ĐIỀU KHOẢN TRONG CHÍNH SÁCH BẢO MẬT NÀY VÀ ĐỒNG Ý ĐỂ CHÚNG TÔI XỬ LÝ THÔNG TIN CÁ NHÂN CỦA BẠN VÌ CÁC MỤC ĐÍCH DƯỚI ĐÂY. NẾU BẠN KHÔNG ĐỒNG Ý, VUI LÒNG KHÔNG SỬ DỤNG DỊCH VỤ.
+
+1.	Thu thập thông tin cá nhân qua Dịch vụ
+Chúng tôi thu thập hoặc tiếp nhận một số thông tin cá nhân từ bạn hoặc về bạn nhằm cung cấp cho bạn các dịch vụ và tính năng của Dịch vụ. Dưới đây là các loại thông tin cá nhân mà chúng tôi thu thập, cùng ví dụ của từng loại thông tin đó:
+
+A.	Thông tin nhận dạng cơ bản. Chúng tôi có thể thu thập thông tin nhận dạng cơ bản và thông tin nhận dạng trực tuyến (bao gồm nhật ký hệ thống cùng địa chỉ IP) từ thiết bị di động của bạn, chẳng hạn như id thiết bị (IMEI), số sê-ri, model thiết bị, phiên bản phần mềm và/hoặc phần sụn, thông tin về hệ điều hành của điện thoại, mã quốc gia qui định cho nhà cung cấp dịch vụ di động (MCC), mã mạng di động (MNC), mã Nhắn tin qua đám mây, ngôn ngữ đã chọn. Chúng tôi có thể thu thập thông tin nhận dạng cơ bản trực tiếp từ bạn, khi bạn tương tác với Dịch vụ (ví dụ: khi bạn đăng ký thiết bị, xem một sản phẩm nào đó, liên lạc với chúng tôi). 
+B.	Hồ sơ và thông tin thương mại. Chúng tôi có thể thu thập thông tin về các sản phẩm mà bạn đã đặt hàng hoặc nhận được, những giao dịch mua sắm mà bạn đã thực hiện, những dịch vụ mà bạn đã đặt hàng hoặc nhận được, cũng như lịch sử mua sắm chung chung, xu hướng và sở thích của bạn. Chúng tôi có thể thu thập thông tin này bằng cách theo dõi giao dịch mua sắm, đơn đặt hàng của bạn hoặc các tương tác khác giữa bạn với LGE. 
+C.	Dữ liệu vị trí địa lý. Chúng tôi có thể thu thập thông tin về vị trí của bạn, bao gồm tên đường, thành phố hoặc thị trấn, tiểu bang, quốc gia và/hoặc tọa độ. Chúng tôi thu thập thông tin vị trí địa lý từ bạn nếu bạn quyết định cung cấp cho chúng tôi.
+D.	Suy luận về xu hướng và sở thích. Thông qua quá trình bạn tương tác với Dịch vụ, chúng tôi cũng có thể tạo hoặc thu thập các suy luận về bạn nhằm tạo lập một hồ sơ. Chúng tôi có thể sử dụng thông tin mà chúng tôi thu thập được nhằm rút ra các suy luận về sở thích cơ bản, khuynh hướng, hành vi, thái độ, khả năng hoặc các đặc điểm khác của bạn.
+
+Xin lưu ý rằng một số thông tin kể trên có thể được hệ thống của chúng tôi tự động thu thập thông qua cookie hoặc các công nghệ theo dõi khác. Cookie là những tệp dữ liệu nhỏ, có chức năng thu thập và theo dõi thông tin về cách bạn tương tác với các dịch vụ, quảng cáo hoặc các trang web, nền tảng trực tuyến khác. Cookie thường bao gồm mã nhận dạng thiết bị duy nhất, mã này được dùng để liên kết một số hành vi hoặc thông tin với bạn. 
+
+2.	Sử dụng thông tin cá nhân thu được qua Dịch vụ
+Chúng tôi sử dụng thông tin mà chúng tôi thu thập được trên Dịch vụ nhằm cung cấp Dịch vụ cho bạn cũng như nhằm hỗ trợ và nâng cao trải nghiệm người dùng của bạn. Cụ thể, chúng tôi sử dụng thông tin cá nhân của bạn cho các mục đích sau:
+
+A.	Để cung cấp Dịch vụ cho bạn. Chúng tôi có thể sử dụng Thông tin nhận dạng cơ bản, Dữ liệu vị trí địa lý và Suy luận về xu hướng và sở thích của bạn để cung cấp một số sản phẩm và dịch vụ cho bạn. (ví dụ để xem thiết bị di động của bạn đã được kích hoạt đúng cách hay chưa) 
+B.	Cung cấp cho bạn trải nghiệm thân thiện với người dùng khi bạn điều hướng Dịch vụ. Chúng tôi có thể sử dụng Thông tin nhận dạng cơ bản, Dữ liệu vị trí địa lý và Suy luận về xu hướng và sở thích của bạn để đảm bảo rằng Dịch vụ được điều chỉnh phù hợp với bạn và hoạt động một cách trơn tru. 
+C.	Hoàn thành bước đăng ký tài khoản hoặc thiết bị. Chúng tôi có thể sử dụng Thông tin nhận dạng cơ bản, Dữ liệu vị trí địa lý để hoàn thành bước đăng ký tài khoản hoặc thiết bị của bạn vào hệ thống của chúng tôi.
+D.	Đảm bảo rằng Dịch vụ có liên quan và/hoặc được điều chỉnh phù hợp với sở thích và nhu cầu của bạn. Chúng tôi có thể sử dụng Thông tin nhận dạng cơ bản, Dữ liệu vị trí địa lý và Suy luận về xu hướng và sở thích của bạn để điều chỉnh nội dung trên Dịch vụ cho phù hợp với sở thích và nhu cầu của bạn.
+E.	Thông tin liên lạc tới bạn. Chúng tôi có thể sử dụng Thông tin nhận dạng cơ bản và Dữ liệu vị trí địa lý để thông tin liên lạc tới bạn.
+F.	Cho phép bạn truy cập vào những phần giới hạn quyền tiếp cận của Dịch vụ. Chúng tôi có thể sử dụng Thông tin nhận dạng cơ bản của bạn để cho phép bạn truy cập vào những phần giới hạn quyền tiếp cận của Dịch vụ, chẳng hạn như những phần đòi hỏi phải có tài khoản mới được sử dụng hoặc truy cập.
+G.	Để tổng hợp số liệu thống kê. Chúng tôi có thể sử dụng Thông tin nhận dạng cơ bản, Hồ sơ và thông tin thương mại, Dữ liệu vị trí địa lý và Suy luận về xu hướng và sở thích để tổng hợp số liệu thống kê và dữ liệu phân tích khác về người dùng và/hoặc chức năng và mức sử dụng Dịch vụ.
+H.	Tuân thủ nghĩa vụ pháp lý của chúng tôi. Chúng tôi có thể sử dụng Thông tin nhận dạng cơ bản, Hồ sơ và thông tin thương mại, Dữ liệu vị trí địa lý và Suy luận về xu hướng và sở thích để tuân thủ mọi nghĩa vụ pháp lý áp dụng.
+I.	Bảo vệ và đảm bảo an toàn và bảo mật cho Dịch vụ, LGE, người dùng của LGE và những người khác nếu có. Chúng tôi có thể sử dụng Thông tin nhận dạng cơ bản, Hồ sơ và thông tin thương mại, Dữ liệu vị trí địa lý, và Suy luận về xu hướng và sở thích để bảo vệ, đảm bảo an toàn và bảo mật, cũng như để cung cấp các bản cập nhật khẩn cấp nhằm đáp ứng các vấn đề liên quan đến tính an toàn và bảo mật của Dịch vụ, LGE, người dùng của LGE và những người khác nếu cần và nếu có.
+J.	Tạo lập và duy trì hồ sơ nội bộ. Chúng tôi có thể sử dụng Thông tin nhận dạng cơ bản, Hồ sơ và thông tin thương mại, Dữ liệu vị trí địa lý và Suy luận về xu hướng và sở thích để tạo lập và duy trì hồ sơ nội bộ, chẳng hạn như hồ sơ về hoạt động tương tác, giao dịch mua sắm của người dùng, nghĩa vụ của chúng tôi theo chính sách Bảo hành sản phẩm có giới hạn cùng nhiều hồ sơ khác mà chúng tôi thấy cần thiết hoặc theo yêu cầu của pháp luật.
+
+3.	Chi sẻ và tiết lộ thông tin cá nhân thu được qua Dịch vụ
+
+A.	Chia sẻ vì mục đích công việc của chúng tôi
+Chúng tôi có thể chia sẻ thông tin chúng tôi thu thập được cho các thực thể bên ngoài vì mục đích công việc của chúng tôi. Chúng tôi chia sẻ thông tin này để cung cấp hoặc cho phép bạn sử dụng các đặc tính và chức năng trong Dịch vụ và vì nhiều mục đích nội bộ khác, chẳng hạn như cung cấp dịch vụ khách hàng, xử lý đơn hàng, đảm bảo tính bảo mật cho Dịch vụ, LGE và người dùng của LGE và phân tích dữ liệu thu được. Dưới đây là thông tin chi tiết hơn về lý do khiến chúng tôi chia sẻ thông tin.
+
+•	Để cung cấp sản phẩm hoặc dịch vụ. Chúng tôi có thể chia sẻ Thông tin nhận dạng cơ bản, Thông tin thương mại và Dữ liệu vị trí địa lý với các đối tác dịch vụ của mình để họ có thể giúp chúng tôi cung cấp cho bạn các sản phẩm hoặc dịch vụ mà bạn yêu cầu trên Dịch vụ. Chúng tôi cần chia sẻ thông tin cho những đối tác này để họ xử lý đơn hàng của bạn, đáp ứng yêu cầu của bạn, cung cấp dịch vụ hỗ trợ khách hàng cho bạn, cung cấp các dịch vụ hoặc chức năng khác.  Chúng tôi cũng có thể chia sẻ với công ty mẹ, công ty con và chi nhánh của chúng tôi để có thể phục vụ bạn tốt hơn nữa hoặc để duy trì hoạt động kinh doanh của chúng tôi.
+•	Vì các lý do pháp lý. Chúng tôi có thể chia sẻ tất cả các loại thông tin kể trên với đối tác dịch vụ hoặc các thực thể khác bên ngoài khi cần thiết nhằm tuân thủ nghĩa vụ pháp lý của mình, bao gồm nghĩa vụ tuân thủ luật hiện hành, thủ tục pháp lý hoặc án lệnh. Ngoài ra, chúng tôi cũng có thể chia sẻ thông tin để bảo vệ quyền hạn của LGE, người dùng của LGE hoặc bất kỳ cá nhân nào khác, để bảo vệ khỏi hành vi ác hiểm hoặc gian lận, để thực thi các Điều khoản và điều kiện của chúng tôi hoặc để hợp tác với các cơ quan thực thi pháp luật. 
+•	Vì các lý do nội bộ khác. Chúng tôi có thể chia sẻ tất cả các loại thông tin kể trên với đối tác dịch vụ và các thực thể khác phụ trách cung cấp cho LGE một số dịch vụ hoặc hỗ trợ các phòng ban nội bộ, như phân tích dữ liệu, duy trì bảo mật cho các hệ thống của chúng tôi hoặc đảm bảo rằng chúng tôi tuân thủ luật pháp. Ví dụ: chúng tôi có thể chia sẻ thông tin với các công ty kiểm toán bên ngoài, với các luật sư để xin lời khuyên pháp lý hoặc với các cố vấn chuyên môn khác. Những thực thể khác có thể tiếp nhận thông tin vì các mục đích trên gồm có nhà cung cấp dịch vụ bảo mật thông tin, công ty phân tích dữ liệu, chuyên gia đánh giá đảm bảo chất lượng và các kiểu thực thể tương tự. Chúng tôi cũng có thể chia sẻ với công ty mẹ, công ty con và chi nhánh của chúng tôi để có thể phục vụ bạn tốt hơn nữa hoặc để duy trì hoạt động kinh doanh của chúng tôi.
+•	Để thực hiện hoạt động mua bán hoặc sáp nhập. Nếu chúng tôi trực tiếp hay gián tiếp trải qua giai đoạn chuyển đổi cơ cấu hoạt động (gồm cả các đề xuất giao dịch), chẳng hạn như sáp nhập vào công ty khác, được công ty khác mua lại hoặc bán tất cả hay một phần tài sản của chúng tôi, chúng tôi có thể chia sẻ tất cả các loại thông tin kể trên cho người kế nhiệm hoặc tổ chức của người kế nhiệm tiềm năng, cũng như các cố vấn chuyên môn của họ trong quá trình chuyển đổi. 
+•	Khi bạn đồng ý để chúng tôi tiết lộ như vậy. Chúng tôi có thể chia sẻ một số thông tin với đối tác dịch vụ hoặc các thực thể khác khi bạn chỉ định chúng tôi chia sẻ hoặc đồng ý để chúng tôi chia sẻ thông tin đó. 
+
+4.	Bán thông tin cá nhân
+Chúng tôi không bán thông tin cá nhân cho bất kỳ ai và chỉ chia sẻ thông tin đó với các bên thứ ba phụ trách việc hỗ trợ bạn sử dụng các đặc tính và chức năng trên Dịch vụ, và vì nhiều mục đích nội bộ khác như được nêu rõ trong Chính sách bảo mật này.
+
+5.	Quản lý cookie và các công nghệ theo dõi khác
+Khi bạn sử dụng Dịch vụ, chúng tôi có thể sử dụng cookie – các tệp văn bản nhỏ chứa một chuỗi các ký tự chữ cái và số – và các công nghệ theo dõi khác. Chúng tôi có thể sử dụng cả cookie phiên và cookie vĩnh viễn. Cookie phiên sẽ biến mất sau khi bạn đóng ứng dụng. Cookie vĩnh viễn sẽ vẫn tồn tại sau khi bạn đóng ứng dụng và có thể được các ứng dụng của bạn sử dụng vào các lần truy cập Dịch vụ tiếp theo. Xin lưu ý rằng nếu bạn xóa hoặc tích chọn ô không chấp nhận cookie, bạn có thể không sử dụng được hết chức năng của một số tính năng trong Dịch vụ
+
+6.	Quản lý hoạt động thông tin liên lạc
+Đôi khi chúng tôi sẽ trao đổi thông tin qua email với người dùng Dịch vụ đã đăng ký các dịch vụ của chúng tôi. Chúng tôi có thể sử dụng địa chỉ email của bạn để xác nhận yêu cầu của bạn, để gửi cho bạn thông báo thanh toán, để gửi thông tin về những thay đổi ở sản phẩm và dịch vụ của chúng tôi và để gửi thông báo cũng như thực hiện yêu cầu tiết lộ khác theo pháp luật. Nói chung, người dùng không thể từ chối nhận các thư thông tin liên lạc như vậy, những thư đó chủ yếu mang tính chất cung cấp thông tin chứ không phải quảng cáo và bạn đã đồng ý nhận những email như vậy bằng cách cung cấp địa chỉ email. 
+Nếu bạn không còn muốn nhận các loại thư thông tin liên lạc như vậy từ chúng tôi nữa, bạn có thể hủy đăng ký bằng cách tích chọn hoặc hủy tích chọn ô phù hợp nếu có ô kiểm như vậy tại các điểm thu thập thông tin hoặc bằng cách liên lạc với chúng tôi. Chúng tôi sẽ xử lý yêu cầu hủy đăng ký của bạn trong thời gian sớm nhất có thể, nhưng xin lưu ý rằng trong một số trường hợp, bạn có thể phải nhận thêm một vài tin nhắn nữa tới khi chúng tôi xử lý yêu cầu hủy đăng ký. Ngoài ra bạn cũng có thể từ chối nhận các email như vậy bằng cách nhấp vào liên kết “hủy đăng ký” trong nội dung email.
+
+7.	Quyền riêng tư dành cho người dân California
+Phần này áp dụng đối với bạn nếu bạn là người dân California.
+
+A.	Quyền truy cập
+Là người dân California, bạn, theo các quy trình xác minh, có thể yêu cầu chúng tôi cung cấp thông tin chi tiết về những thông tin từ bạn và về bạn được chúng tôi thu thập trong suốt 12 tháng qua, những thông tin này bao gồm:
+•	Các loại thông tin cá nhân mà chúng tôi đã thu thập về bạn, bao gồm Thông tin nhận dạng cơ bản, Hồ sơ và thông tin thương mại, Dữ liệu vị trí địa lý và Suy luận về xu hướng và sở thích, cũng như bất kỳ thông tin nào khác mà bạn có thể chọn để gửi cho chúng tôi;
+•	Các loại nguồn cung cấp thông tin cá nhân;
+•	(Các) mục đích công việc hoặc thương mại khi chúng tôi thu thập thông tin cá nhân của bạn;
+•	Các nhóm bên thứ ba được chúng tôi chia sẻ thông tin cá nhân của bạn;
+•	Những phần thông tin cá nhân cụ thể mà chúng tôi đã thu thập về bạn; và 
+•	Các loại thông tin cá nhân mà chúng tôi tiết lộ vì mục đích công việc. 
+
+Nếu bạn muốn yêu cầu quyền truy cập như vậy đối với thông tin cá nhân của mình, vui lòng liên lạc với chúng tôi theo địa chỉ [caprivacy@lge.com] hoặc [833-660-0245].
+
+B.	Quyền xóa
+Là người dân California, bạn, theo các quy trình xác minh, có thể yêu cầu chúng tôi xóa bất kỳ thông tin cá nhân nào về bạn đã được chúng tôi thu thập, trừ một số trường hợp ngoại lệ, bao gồm nhưng không giới hạn ở trường hợp chúng tôi hoặc nhà cung cấp dịch vụ của chúng tôi cần thông tin đó để: 
+•	Hoàn tất giao dịch của bạn;
+•	Cung cấp hàng hóa hay dịch vụ cho bạn;
+•	Thực hiện hợp đồng giữa chúng tôi và bạn;
+•	Bảo vệ quyền bảo mật của bạn và truy tố những người xâm phạm quyền đó;
+•	Khắc phục hệ thống của chúng tôi nếu xảy ra sự cố;
+•	Bảo vệ quyền tự do ngôn luận của bạn hoặc của những người khác;
+•	Tuân thủ Đạo luật về Bảo mật Thông tin liên lạc qua đường Điện tử của California (Khoản § 1546 và các khoản tiếp theo trong Bộ luật Hình sự California);
+•	Tham gia vào các nghiên cứu khoa học, lịch sử hoặc thống kê theo hình thức bình duyệt hoặc công khai vì lợi ích cộng đồng, có tuân thủ mọi luật bảo mật và đạo đức áp dụng;
+•	Tuân thủ nghĩa vụ pháp lý; hoặc
+•	Sử dụng thông tin một cách hợp pháp và trong phạm vi nội bộ phù hợp với bối cảnh mà theo đó bạn cung cấp thông tin.
+Nếu bạn muốn yêu cầu xóa thông tin cá nhân của mình, vui lòng liên lạc với chúng tôi theo địa chỉ [caprivacy@lge.com] hoặc theo số [833-660-0245]. 
+
+C.	Thời gian và cách thức chúng tôi trả lời yêu cầu về quyền truy cập hoặc xóa của bạn
+Chúng tôi sẽ nỗ lực đáp ứng yêu cầu về quyền truy cập hoặc xóa khả xác minh của bạn trong vòng 45 ngày kể từ ngày tiếp nhận. Nếu chúng tôi cần thêm thời gian, chúng tôi sẽ thông báo cho bạn lý do và khoảng thời gian cần thêm bằng những phương thức hợp lý.
+
+D.	Không bán thông tin cá nhân của tôi (Quyền “từ chối”)
+Là người dân California, bạn có quyền “từ chối” hoặc yêu cầu chúng tôi ngừng bán hoặc chia sẻ thông tin cá nhân của bạn với các bên thứ ba để đổi lấy tiền hoặc thứ có giá trị khác. 
+Chúng tôi xin nhắc lại rằng, chúng tôi không bán thông tin cá nhân.
+
+E.	Quy trình xác minh
+Khi bạn gửi yêu cầu về quyền truy cập hoặc xóa thông tin của bạn, chúng tôi sẽ cần xác minh danh tính của bạn trước khi xử lý và đáp ứng yêu cầu đó. Chúng tôi sẽ tiến hành thủ tục theo luật áp dụng.
+
+F.	Chỉ định người đại diện được ủy quyền
+Là người dân California, bạn có thể chỉ định một người đại diện được ủy quyền thay mặt bạn thực thi quyền của bạn. Để chúng tôi tôn trọng yêu cầu của người đại diện này, bạn phải gửi đến chúng tôi văn bản ủy quyền cho người đại diện này.
+
+G.	Không phân biệt đối xử
+LGE không có quyền phân biệt đối xử với bạn khi bạn thực thi quyền riêng tư theo luật California của mình. 
+
+H.	Xóa đối với người dùng dưới 18 tuổi
+Những người dưới mười tám (18) tuổi là người dân California, đã đăng ký sử dụng Dịch vụ và đã đăng tải nội dung hoặc thông tin trên Dịch vụ, có thể yêu cầu chúng tôi xóa thông tin đó. Để yêu cầu chúng tôi xóa nội dung hoặc thông tin đã đăng tải, vui lòng gửi email mô tả chi tiết về nội dung hoặc thông tin đã đăng tải cụ thể tới địa chỉ caprivacy@lge.com. LGE có quyền yêu cầu bạn cung cấp những thông tin hỗ trợ chúng tôi xác nhận rằng Nội dung hoặc thông tin đã đăng tải mà bạn muốn xóa đó là do chính bạn tạo lập và đăng tải.
+LGE sẽ nỗ lực hết sức mình để xóa hoặc gỡ bỏ nội dung hoặc thông tin bạn đã đăng tải khỏi chế độ xem công khai trong thời gian sớm nhất có thể. Tuy nhiên, xin lưu ý rằng chúng tôi không đảm bảo sẽ xóa toàn bộ hoặc tất cả nội dung hoặc thông tin bạn đã đăng tải mà bạn yêu cầu chúng tôi xóa. Nội dung hoặc thông tin bạn đã đăng tải có thể vẫn còn trên phương tiện sao lưu, được lưu trong bộ nhớ đệm hoặc được LGE lưu trữ vì các mục đích pháp lý hoặc hành chính hoặc nội dung hay thông tin bạn đã đăng tải có thể vẫn được công khai nếu bạn hoặc ai đó đã chuyển tiếp hoặc đăng lại nội dung hoặc thông tin đó trên một trang web hoặc dịch vụ khác trước khi bị xóa. LGE có thể không được phép xóa hoặc cho phép xóa nội dung hoặc thông tin bạn đã đăng tải nếu luật pháp yêu cầu.
+
+8.	Dịch vụ Bên thứ ba
+Chính sách bảo mật này chỉ áp dụng đối với thông tin thu được qua Dịch vụ. Dịch vụ có thể chứa liên kết đến các nền tảng trực tuyến, dịch vụ và trang web khác do các bên thứ ba điều hành. Chúng tôi không kiểm soát những nền tảng trực tuyến, dịch vụ hoặc trang web như vậy và không chịu trách nhiệm về cách thực thi quyền riêng tư, nội dung và việc sử dụng thông tin của bạn của những nền tảng, dịch vụ hoặc trang web đó. 
+Thông tin mà bạn cung cấp trên các nền tảng công khai hoặc bán công khai, bao gồm thông tin bạn chia sẻ trên các trang web kết nối xã hội bên thứ ba (chẳng hạn như Facebook hoặc Twitter) cũng có thể được xem bởi những người dùng khác sử dụng Dịch vụ và/hoặc người dùng sử dụng các trang web bên thứ ba. Việc chúng tôi tích hợp các liên kết đến nền tảng, dịch vụ hoặc trang web bên thứ ba không chứng tỏ bất kỳ sự xác thực nào đối với nội dung trên các nền tảng đó hoặc chủ sở hữu hay người điều hành những nền tảng đó. Chúng tôi tuyên bố từ chối mọi trách nhiệm trước những hành động của các bên thứ ba, bao gồm nhưng không giới hạn ở những hành động liên quan đến việc các bên thứ ba sử dụng và tiết lộ thông tin cá nhân. 
+Mọi thông tin do các bên thứ ba tiết lộ phải được quản lý theo chính sách bảo mật liên quan của bên thứ ba.
+
+9.	Truyền thông tin ra nước ngoài
+Là một tổ chức toàn cầu, chúng tôi, các công ty con, chi nhánh và nhà cung cấp của chúng tôi có thể cần truyền thông tin của bạn ra bên ngoài Hoa Kỳ (ví dụ, chúng tôi có thể cần truyền thông tin tới các trụ sở của chúng tôi tại Hàn Quốc). Chúng tôi có thể truyền thông tin của bạn theo cách như vậy để cung cấp Dịch vụ cho bạn và vì các mục đích khác như đã nêu trong Chính sách bảo mật này, tuân theo Chính sách bảo mật này và bất kỳ luật áp dụng nào. Xin lưu ý rằng luật bảo vệ dữ liệu tại nhiều quốc gia trong số này có thể không áp dụng mức bảo vệ tương đương như những luật tại quốc gia sở tại của bạn. Tuy nhiên, trước khi truyền thông tin, chúng tôi sẽ thực hiện các bước để đảm bảo rằng các biện pháp bảo vệ đã được áp dụng, nhằm đảm bảo mức bảo vệ tương đương theo yêu cầu của luật bảo vệ dữ liệu áp dụng tại quốc gia nơi bạn đang sinh sống. Khi đồng ý với Chính sách bảo mật này, tức là bạn hoàn toàn đồng ý để chúng tôi, đối tác kinh doanh và nhà cung cấp của chúng tôi xử lý dữ liệu của bạn tại bất kỳ khu vực tài phán nào, bao gồm nhưng không giới hạn ở Hợp chủng quốc Hoa Kỳ và Hàn Quốc, theo Chính sách bảo mật này. Để biết thêm thông tin về cách chúng tôi xử lý và bảo vệ thông tin cá nhân của bạn, vui lòng liên lạc với chúng tôi theo địa chỉ [mc.customer-service@lge.com] hoặc theo số [833-660-0245].
+
+10.	Quyền riêng tư của trẻ em
+Dịch vụ này không hướng đến nhóm đối tượng dưới 16 tuổi. LGE không cố ý thu thập hoặc nài xin thông tin từ bất kỳ cá nhân nào dưới 16 tuổi hoặc cố ý cho phép những cá nhân như vậy sử dụng Dịch vụ. Nếu bạn dưới 16 tuổi, vui lòng không cố đăng ký vào Dịch vụ hoặc gửi bất kỳ thông tin nào cho chúng tôi.
+
+11.	Bảo mật
+Chúng tôi sẽ nỗ lực trong khả năng có thể để đảm bảo tính bảo mật cho các hệ thống của chúng tôi; tuy nhiên, không thủ thuật truyền thông tin nào qua Internet đảm bảo khả năng bảo mật 100%. Do đó, chúng tôi không thể đảm bảo hay chắc chắn hoàn toàn mọi thông tin bạn gửi cho chúng tôi sẽ luôn được bảo mật và bạn hiểu rằng bạn tự chịu rủi ro đối với bất kỳ thông tin nào bạn gửi tới LGE.
+Nếu chúng tôi phát hiện thấy có hành vi xâm phạm các hệ thống bảo mật của chúng tôi, chúng tôi có thể sẽ thông báo cho bạn theo hình thức điện tử để bạn có thể thực hiện các bước bảo vệ phù hợp. Khi sử dụng Dịch vụ hoặc cung cấp thông tin cho chúng tôi, tức là bạn đồng ý rằng chúng tôi có thể gửi thư điện tử cho bạn thông báo các vấn đề về bảo mật, quyền riêng tư và các vấn đề hành chính liên quan đến việc bạn sử dụng Dịch vụ. Chúng tôi có thể đăng tải một thông báo trên Dịch vụ nếu xảy ra sự cố hệ thống bảo mật bị xâm phạm. Trong những trường hợp như vậy, chúng tôi cũng có thể gửi email tới địa chỉ email mà bạn đã cung cấp cho chúng tôi. Tùy thuộc vào nơi bạn đang sinh sống, bạn có thể có quyền pháp lý được nhận thư thông báo về sự cố hệ thống bảo mật bị xâm phạm qua đường bưu điện.
+
+12.	Các thay đổi đối với Chính sách bảo mật này
+Chúng tôi có quyền thực hiện các thay đổi đối với Chính sách bảo mật này, tùy từng thời điểm và theo quyết định của chúng tôi. Khi thực hiện thay đổi, chúng tôi cũng sẽ chỉnh sửa ngày “cập nhật lần cuối” ghi trong Chính sách bảo mật này. Nếu có nhiều thay đổi đối với Chính sách bảo mật này, chúng tôi sẽ thông báo cho bạn bằng cách đăng tải một thông báo dễ thấy trên Dịch vụ, qua email theo địa chỉ email mà chúng tôi lưu trong hồ sơ hoặc bằng các cách thức khác, theo luật áp dụng. Chúng tôi khuyến nghị bạn nên xem lại Chính sách bảo mật này định kỳ để cập nhật thông tin về cách thức chúng tôi xử lý thông tin của bạn. 
+Nếu bạn không chấp nhận và đồng ý với Chính sách bảo mật này, bao gồm cả mọi thay đổi, thì bạn không được quyền truy cập hoặc sử dụng Dịch vụ.
+
+13.	Liên hệ
+Nếu bạn có bất kỳ thắc mắc gì về Chính sách bảo mật này hoặc cách thực thi quyền riêng tư của chúng tôi, xin liên lạc với chúng tôi theo địa chỉ [mc.customer-service@lge.com] hoặc 
+LG Electronics USA, Inc.
+1000 Sylvan Avenue
+Englewood Cliffs, NJ 07632
+Mọi thông tin bạn cung cấp trong bất kỳ văn bản thông tin liên lạc nào đều sẽ được xử lý theo Chính sách bảo mật này.

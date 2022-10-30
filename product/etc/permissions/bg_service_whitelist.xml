@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<permissions>
+<!--LGE-->
+    <allow-lg-bg-service package="com.lge.embms.mmwservice" />
+    <allow-lg-bg-service package="com.lge.embmsmodemservice" />
+    <allow-lg-bg-service package="com.lge.quicktools" />
+    <allow-lg-bg-service package="com.lge.maagent" />
+    <allow-lg-bg-service package="com.lge.laus" />
+
+<!-- LGU -->
+    <allow-lg-bg-service package="com.lguplus.lgugpsnwps" />
+
+<!--DCM-->    
+    <allow-lg-bg-service package="com.nttdocomo.android.epsmodecontrol" />
+</permissions>

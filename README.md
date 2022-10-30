@@ -1,0 +1,14 @@
+# mdh50lm-user 10 QKQ1.200216.002 220211534ef56 release-keys
+- manufacturer: lge
+- platform: mt6765
+- codename: mdh50lm
+- flavor: mdh50lm-user
+- release: 10
+- id: QKQ1.200216.002
+- incremental: 220211534ef56
+- tags: release-keys
+- fingerprint: lge/mdh50lm/mdh50lm:10/QKQ1.200216.002/220211534ef56:user/release-keys
+- is_ab: true
+- brand: lge
+- branch: mdh50lm-user-10-QKQ1.200216.002-220211534ef56-release-keys
+- repo: lge_mdh50lm_dump

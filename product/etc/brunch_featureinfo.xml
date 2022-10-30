@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Features>
+	<Representatives>
+		<Information key="Representative:Features" value="NO"/>
+	</Representatives>
+	<Defaults>
+		<Information key="UserAgent:TYPE" value="00100"/>
+		<Information key="UserAgent:DefaultPre" value="Player/LG Player 1.0 for Android "/>
+		<Information key="UserAgent:DefaultPost" value=" (stagefright alternative)"/>
+	</Defaults>
+	<Rtsps>
+		<Information key="Port:Min" value="0"/>
+		<Information key="Port:Max" value="0"/>
+		<Information key="RtpUdpNoDataTimeout" value="15000"/>
+	</Rtsps>
+	<NewFeatures>
+		<Information key="MW:X" value="15635"/>
+		<Information key="MW:Y" value="16450"/>
+		<Information key="CAMMW:X" value="15635"/>
+		<Information key="CAMMW:Y" value="16450"/>
+	</NewFeatures>
+</Features>

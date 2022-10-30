@@ -1,0 +1,1821 @@
+#line 1 "device/lge/sepolicy/common/property_contexts"
+
+###
+
+# ctl property (vendor)
+
+###
+
+# USB
+persist.vendor.lge.mausb.enable                  u:object_r:vendor_lge_usb_prop:s0 exact int
+persist.vendor.lge.usb.compliance_mode           u:object_r:vendor_lge_usb_prop:s0 exact string
+persist.vendor.lge.usb.diag_enable               u:object_r:vendor_lge_usb_prop:s0 exact int
+persist.vendor.lge.usb.host_disable              u:object_r:vendor_lge_usb_prop:s0 exact string
+persist.vendor.lge.usb.moisture_en               u:object_r:vendor_lge_usb_prop:s0 exact string
+persist.vendor.lge.usb.moisture_ux               u:object_r:vendor_lge_usb_prop:s0 exact string
+persist.vendor.lge.usb.pd_rev3_disable           u:object_r:vendor_lge_usb_prop:s0 exact string
+persist.vendor.lge.usb.typec.mode                u:object_r:vendor_lge_usb_prop:s0 exact string
+ro.vendor.lge.usb.diag_count                     u:object_r:vendor_lge_usb_prop:s0 exact int
+vendor.lge.usb.boot.config.name                  u:object_r:vendor_lge_usb_prop:s0 exact string
+vendor.lge.usb.compliance_state                  u:object_r:vendor_lge_usb_prop:s0 exact string
+vendor.lge.usb.config                            u:object_r:vendor_lge_usb_prop:s0 exact string
+vendor.lge.usb.controller                        u:object_r:vendor_lge_usb_prop:s0 exact string
+vendor.lge.usb.diag_count                        u:object_r:vendor_lge_usb_prop:s0 exact int
+vendor.lge.usb.persist.config                    u:object_r:vendor_lge_usb_prop:s0 exact string
+vendor.lge.usb.state                             u:object_r:vendor_lge_usb_prop:s0 exact string
+vendor.lge.usb.typec.control                     u:object_r:vendor_lge_usb_prop:s0 exact string
+vendor.lge.usb.typec.data_role                   u:object_r:vendor_lge_usb_prop:s0 exact string
+vendor.lge.usb.typec.mode                        u:object_r:vendor_lge_usb_prop:s0 exact string
+vendor.lge.usb.typec.power_role                  u:object_r:vendor_lge_usb_prop:s0 exact string
+vendor.lge.usb.typec.state                       u:object_r:vendor_lge_usb_prop:s0 exact string
+ro.vendor.lge.usb.skip_rndis                     u:object_r:vendor_lge_usb_prop:s0 exact int
+###
+
+# LgFeatures2 property
+ro.vendor.lge.feature.                   u:object_r:vendor_lge_lgfeatures2_prop:s0
+
+## RIL Property
+persist.vendor.lge.radio.adb_qmi_on      u:object_r:vendor_lge_ril_prop:s0 exact string
+vendor.lge.ril.vss.common_init           u:object_r:vendor_lge_ril_prop:s0 exact string
+vendor.lge.ril.vss.nv_init               u:object_r:vendor_lge_ril_prop:s0 exact string
+persist.vendor.lge.radio.adb_log_on_lg   u:object_r:vendor_lge_ril_prop:s0 exact string
+vendor.atd.sys.rild_init                 u:object_r:ctl_rildaemon_prop:s0
+###
+
+##################################################################################################
+# vendor exported property
+# coredomain have only getting permission of vendor property.
+##################################################################################################
+# model info exported property
+ro.vendor.lge.build.target_country     u:object_r:vendor_lge_exported_model_info_prop:s0 exact string
+ro.vendor.lge.build.target_operator    u:object_r:vendor_lge_exported_model_info_prop:s0 exact string
+ro.vendor.lge.build.target_region      u:object_r:vendor_lge_exported_model_info_prop:s0 exact string
+ro.boot.vendor.lge.rsuinfo             u:object_r:vendor_lge_exported_model_info_prop:s0 exact string
+
+# SW version
+ro.vendor.lge.swversion                u:object_r:vendor_lge_exported_swversion_prop:s0 exact string
+
+# LAOP
+ro.vendor.lge.capp_cupss.rootdir            u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+
+persist.vendor.lge.cota.operator            u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+persist.vendor.lge.cota.country             u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+ro.vendor.lge.laop                          u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+ro.vendor.lge.sim.operator.use              u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+ro.vendor.lge.laop.default.operator         u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+persist.vendor.lge.sim.country              u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+persist.vendor.lge.sim.operator             u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+persist.vendor.lge.sim.operator.sub         u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+persist.vendor.lge.sim2.country             u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+persist.vendor.lge.sim2.operator            u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+persist.vendor.lge.sim2.operator.sub        u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+ro.vendor.lge.naop                          u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+ro.boot.vendor.lge.fingerprint_sensor       u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+ro.boot.vendor.lge.gyro                     u:object_r:vendor_lge_exported_laop_prop:s0 exact string
+
+# Fota
+ro.vendor.lge.gota.enable                    u:object_r:vendor_lge_exported_fota_prop:s0 exact int
+
+# NFC
+ro.boot.vendor.lge.nfc.vendor               u:object_r:vendor_lge_exported_nfc_prop:s0 exact string
+
+# PAYMENT
+ro.boot.vendor.lge.wmc                  u:object_r:vendor_lge_exported_wmc_prop:s0 exact int
+
+# lafd exported property
+ro.vendor.lge.swversion_short          u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+ro.vendor.lge.swversion_rev            u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+ro.vendor.lge.factoryversion           u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+ro.vendor.lge.sbp.opresize_enabled     u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+ro.vendor.lge.laop.treble              u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+ro.boot.vendor.lge.model.factory       u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+ro.boot.vendor.lge.hw.revision         u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+ro.boot.vendor.lge.model.name          u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+ro.boot.vendor.lge.petname             u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+ro.boot.vendor.lge.laf                 u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+ro.boot.vendor.lge.id                  u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+persist.vendor.lge.sys.thermald_miti_off  u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+ro.boot.vendor.lge.opid                u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+vendor.lge.factory.cppreloads          u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+vendor.lge.factory.cppreloads_force    u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+persist.vendor.lge.mdm_osupgrade       u:object_r:vendor_lge_exported_factory_prop:s0 exact string
+
+
+# logger service exported property
+persist.vendor.lge.service.main.enable            u:object_r:vendor_lge_exported_logger_rw_prop:s0 exact string
+persist.vendor.lge.service.system.enable          u:object_r:vendor_lge_exported_logger_rw_prop:s0 exact string
+persist.vendor.lge.service.events.enable          u:object_r:vendor_lge_exported_logger_rw_prop:s0 exact string
+persist.vendor.lge.service.radio.enable           u:object_r:vendor_lge_exported_logger_rw_prop:s0 exact string
+persist.vendor.lge.service.kernel.enable          u:object_r:vendor_lge_exported_logger_rw_prop:s0 exact string
+persist.vendor.lge.service.crash.enable           u:object_r:vendor_lge_exported_logger_rw_prop:s0 exact string
+persist.vendor.lge.service.power.enable           u:object_r:vendor_lge_exported_logger_rw_prop:s0 exact string
+persist.vendor.lge.service.setwiz.enable          u:object_r:vendor_lge_exported_logger_rw_prop:s0 exact string
+
+# PST level property
+persist.vendor.lge.service.pst_level       u:object_r:vendor_lge_exported_logger_rw_prop:s0 exact string
+
+# Needed to be accessed before property HAL starting
+vendor.lge.vold.publicvolume_uuid               u:object_r:vendor_lge_exported_fs_vold_rw_prop:s0 exact string
+
+# Needed to be accessed before LGSystemSever init
+ro.boot.vendor.lge.hydra                        u:object_r:vendor_lge_exported_model_prop:s0 exact string
+ro.boot.vendor.lge.special.edition              u:object_r:vendor_lge_exported_model_prop:s0 exact string
+ro.vendor.lge.betapopup                         u:object_r:vendor_lge_exported_model_prop:s0 exact string
+ro.vendor.lge.chip.vendor                       u:object_r:vendor_lge_exported_model_prop:s0 exact string
+persist.vendor.lge.LiveDemoUnit                 u:object_r:vendor_lge_exported_model_prop:s0 exact string
+vendor.lge.wlan.chip.vendor                     u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wlan.chip.version                    u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wlan.chip.qca.version                u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wlan.earpiece                        u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wlan.start.runtime                   u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+persist.vendor.lge.wlan.chain                   u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+persist.vendor.lge.wlan.kpi_start               u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+persist.vendor.lge.ota_enable                   u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wifi.fcc.version                     u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wifi.ftm_test                        u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wifi.ssr                             u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wlan.cmcc.connect.type               u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wlan.ftmtest.autocal                 u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wlan.wifisharing_ph1                 u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wifi_ftm.wififtmd_start              u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wifi.driver.status                   u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wlan.passpoint_setting               u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+persist.vendor.lge.wifi.kpi                     u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+vendor.lge.wlan.chip.helium.version             u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+#[LGE_GNSS] LGP_GNSS_0139, LGP_GNSS_FRAMEWORKS_LPPE_SUPPORT, 20180531, seungkwan.jung, Add LPPE property permission
+persist.vendor.lge.gnss.lppe_support            u:object_r:vendor_lge_exported_gps_prop:s0 exact string
+#[LGE_GNSS] LGP_GNSS_0243, LGP_GNSS_FRAMEWORKS_GPS_WEEK_NUMBER, 20181211, jaehwan1.kim, Add GPS Week Number permission
+persist.vendor.lge.gnss.week_number             u:object_r:vendor_lge_exported_gps_prop:s0 exact string
+#[LGE_GNSS] LGP_GNSS_0352, LGP_GNSS_RUNTIME_LOG_LEVEL, 20190107, daewon84.yoo, Add GNSS Log property permission
+persist.vendor.lge.gnss.runtime_log_level       u:object_r:vendor_lge_exported_gps_prop:s0 exact string
+
+# Build
+ro.vendor.lge.lguiversion    u:object_r:vendor_lge_exported_build_prop:s0 exact string
+ro.vendor.lge.product.type   u:object_r:vendor_lge_exported_build_prop:s0 exact string
+ro.vendor.lge.platform.type  u:object_r:vendor_lge_exported_build_prop:s0 exact string
+
+# To use vendor property in adbd (adbd is force static executable, so it cannot use shared library of property HAL.
+vendor.lge.usb.adb_skip_auth  u:object_r:vendor_lge_exported_kernel_prop:s0 exact string
+
+# To maintain one source for pcas library installed both system and vendor.
+persist.vendor.lge.pcastest.fakemode         u:object_r:vendor_lge_exported_pcas_prop:s0 exact bool
+vendor.lge.pcastest.build.operator           u:object_r:vendor_lge_exported_pcas_prop:s0 exact string
+vendor.lge.pcastest.build.country            u:object_r:vendor_lge_exported_pcas_prop:s0 exact string
+vendor.lge.pcastest.build.region             u:object_r:vendor_lge_exported_pcas_prop:s0 exact string
+vendor.lge.pcastest.laop.def.operator        u:object_r:vendor_lge_exported_pcas_prop:s0 exact string
+vendor.lge.pcastest.laop                     u:object_r:vendor_lge_exported_pcas_prop:s0 exact bool
+vendor.lge.pcastest.naop                     u:object_r:vendor_lge_exported_pcas_prop:s0 exact bool
+vendor.lge.pcastest.naop.legacy              u:object_r:vendor_lge_exported_pcas_prop:s0 exact bool
+vendor.lge.pcastest.sim.operator.use         u:object_r:vendor_lge_exported_pcas_prop:s0 exact bool
+vendor.lge.pcastest.simop                    u:object_r:vendor_lge_exported_pcas_prop:s0 exact bool
+
+##################################################################################################
+
+
+# UICC
+vendor.lge.ril.sim_inserted.slot1  u:object_r:vendor_lge_ril_prop:s0 exact string
+vendor.lge.ril.sim_inserted.slot2  u:object_r:vendor_lge_ril_prop:s0 exact string
+vendor.lge.ril.sim_inserted.slot3  u:object_r:vendor_lge_ril_prop:s0 exact string
+vendor.lge.ril.sim_inserted.slot4  u:object_r:vendor_lge_ril_prop:s0 exact string
+persist.vendor.lge.ril.sim.otatime  u:object_r:vendor_lge_ril_prop:s0 exact string
+###
+
+# PROTOCOL_DATA
+vendor.lge.data.iwlan.cnd                  u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.lte.ipv.rmnet_data0        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.lte.ipv.rmnet_data1        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.lte.ipv.rmnet_data2        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.lte.ipv.rmnet_data3        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.lte.ipv.rmnet_data4        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.lte.ipv.rmnet_data5        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.lte.ipv.rmnet_data6        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.lte.ipv.rmnet_data7        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.inactivetime.1             u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.inactivetime.2             u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.inactivetime.3             u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.inactivetime.4             u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.inactivetime.5             u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.inactivetime.6             u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.inactivetime.7             u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.inactivetime.8             u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.hoaddr0          u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.hoaddr1          u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.hoaddr2          u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.hoaddr3          u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.hoaddr4          u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.gladdr0          u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.gladdr1          u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.gladdr2          u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.gladdr3          u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.gladdr4          u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.1.hoaddr0        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.1.hoaddr1        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.1.hoaddr2        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.1.hoaddr3        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.1.hoaddr4        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.1.gladdr0        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.1.gladdr1        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.1.gladdr2        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.1.gladdr3        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.1.gladdr4        u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.ho.srcifaces     u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.net.iwlan.ho.1.srcifaces   u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.tether.flag                u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.sipnai                     u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.mipnai                     u:object_r:vendor_lge_data_prop:s0 exact string
+persist.vendor.lge.data_netmgrd_mtu.0      u:object_r:vendor_lge_data_prop:s0 exact int
+persist.vendor.lge.data_netmgrd_mtu.1      u:object_r:vendor_lge_data_prop:s0 exact int
+persist.vendor.lge.data.ltedsds            u:object_r:vendor_lge_data_prop:s0 exact string
+persist.vendor.radio.enable_temp_dds       u:object_r:vendor_lge_data_prop:s0 exact bool
+persist.vendor.lge.data.iwlan              u:object_r:vendor_lge_data_prop:s0 exact int
+persist.vendor.radio.block_allow_data      u:object_r:vendor_lge_data_prop:s0 exact bool
+persist.vendor.lge.5g_networks             u:object_r:vendor_lge_data_prop:s0 exact bool
+vendor.lge.data.mtu.ccmni0                 u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.mtu.ccmni1                 u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.mtu.ccmni2                 u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.mtu.ccmni3                 u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.mtu.ccmni4                 u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.mtu.ccmni5                 u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.mtu.ccmni6                 u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.mtu.ccmni7                 u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.mtu.ccmni8                 u:object_r:vendor_lge_data_prop:s0 exact string
+vendor.lge.data.mtu.ccmni9                 u:object_r:vendor_lge_data_prop:s0 exact string
+###
+
+# BLUETOOTH
+vendor.lge.bt.dut.ready             u:object_r:vendor_lge_bt_prop:s0 exact string
+persist.vendor.lge.bt.sap           u:object_r:vendor_lge_bt_prop:s0 exact string
+persist.vendor.lge.bt.nonAFH        u:object_r:vendor_lge_bt_prop:s0 exact string
+###
+
+# TELEPHONY_CALL_FRAMEWORK
+vendor.lge.ril.cscategory           u:object_r:vendor_lge_ril_prop:s0 exact string
+vendor.lge.ril.ecclist.autoprofile  u:object_r:vendor_lge_ril_prop:s0 exact string
+vendor.lge.ril.ecclist.autoprofile1  u:object_r:vendor_lge_ril_prop:s0 exact string
+vendor.lge.ril.ecclist.autoprofile2  u:object_r:vendor_lge_ril_prop:s0 exact string
+persist.vendor.lge.ril.ltesiminfo   u:object_r:vendor_lge_ril_prop:s0 exact string
+persist.vendor.lge.ril.ltesiminfo1   u:object_r:vendor_lge_ril_prop:s0 exact string
+persist.vendor.lge.ril.ltesiminfo2   u:object_r:vendor_lge_ril_prop:s0 exact string
+persist.vendor.lge.ril.ltesiminfo3   u:object_r:vendor_lge_ril_prop:s0 exact string
+persist.vendor.lge.ril.ltesiminfo0   u:object_r:vendor_lge_ril_prop:s0 exact string
+persist.vendor.lge.ecc.hiddenmenu           u:object_r:vendor_lge_ril_prop:s0 exact string
+###
+
+# KERNEL
+ro.boot.vendor.lge.hw.subrev                u:object_r:vendor_lge_kernel_prop:s0 exact string
+ro.boot.vendor.lge.ddr_info                 u:object_r:vendor_lge_kernel_prop:s0 exact string
+ro.boot.vendor.lge.plmn                     u:object_r:vendor_lge_kernel_prop:s0 exact string
+vendor.lge.boot_completed                   u:object_r:vendor_lge_kernel_prop:s0 exact string
+vendor.lge.trigger_crash_after_boot         u:object_r:vendor_lge_kernel_prop:s0 exact int
+ro.boot.vendor.lge.ant_match                u:object_r:vendor_lge_kernel_prop:s0 exact string
+###
+
+# TELEPHONY_SMS_FRAMEWORK
+persist.vendor.lge.sms.disablelog           u:object_r:vendor_lge_sms_framework_prop:s0 exact string
+# LGE_CHANGE, [SMS_Patch_0616][COMMON], LGP_MSG_SMS_SOI_IMPLEMENT_GOOGLE_IMS_INTERFACE
+persist.vendor.lge.sms.gii                  u:object_r:vendor_lge_sms_framework_prop:s0 exact string
+###
+
+# OSF_USBC
+persist.vendor.lge.usb.provisioned              u:object_r:vendor_lge_osf_usbc_prop:s0 exact string
+###
+
+
+
+# Power Property
+persist.vendor.lge.service.bsm.bsm_ttf       u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.service.chg_mode          u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.service.qnovo_mode        u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.service.fakebatt          u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.service.fg.enable         u:object_r:vendor_lge_exported_logger_rw_prop:s0 exact string
+persist.vendor.lge.service.bsm.enable        u:object_r:vendor_lge_exported_logger_rw_prop:s0 exact string
+persist.vendor.lge.service.hvdcpfakemode     u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.sys.store_demo_enabled    u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.service.usbcurrentmax     u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.sys.highlux.menu_on       u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.hardreset                 u:object_r:vendor_lge_power_prop:s0 exact string
+persist.vendor.lge.sys.enable_hardreset      u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.qnovo.qni.health                  u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.qnovo.qni.safety                  u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.qnovo.qni.v-t_warning             u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.qnovo.qni.cap_proj                u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.qnovo.qni.factoryreset            u:object_r:vendor_lge_power_prop:s0 exact string
+persist.vendor.lge.chg.irc_enabled           u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.chg.irc_resistance        u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.mode                 u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.lcdon_offs           u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.sensor_wired         u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.sensor_wireless      u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.holddeg_wired0       u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.holddeg_wired1       u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.holddeg_wired2       u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.holddeg_wireless0    u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.holddeg_wireless1    u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.holddeg_wireless2    u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.tempoffs_wired0      u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.tempoffs_wired1      u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.tempoffs_wired2      u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.tempoffs_wireless0   u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.tempoffs_wireless1   u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.tempoffs_wireless2   u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.max_fcc_pps          u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.max_fcc_qc3          u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.max_fcc_qc2          u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.current_cp_pps       u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.current_cp_qc30      u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.current_wired0       u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.current_wired1       u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.current_wired2       u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.power_epp0           u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.power_epp1           u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.power_epp2           u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.power_bpp0           u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.power_bpp1           u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.actm.power_bpp2           u:object_r:vendor_lge_power_prop:s0
+vendor.lge.vtmode                            u:object_r:vendor_lge_power_prop:s0 exact string
+ro.boot.vendor.lge.charger_verbose           u:object_r:vendor_lge_power_prop:s0 exact string
+ro.boot.vendor.lge.hw.cable                  u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.vrcore.mode.on                    u:object_r:vendor_lge_power_prop:s0 exact string
+persist.vendor.lge.sys.smpl_cnt              u:object_r:vendor_lge_power_prop:s0
+vendor.lge.debug.dgpc_dbg_log                u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.debug.dgpc_disable                u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.compactmode.enabled               u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.debug.prmd_log.enable             u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.debug.prmd_log.mode               u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.battery_protect_mode              u:object_r:vendor_lge_power_prop:s0
+persist.vendor.lge.sys.thermald_miti_off2    u:object_r:vendor_lge_power_prop:s0 exact string
+# ro.vendor.extension_library
+###
+
+# Sensors
+###
+
+# Fingerprint
+persist.vendor.lge.fingerprint.              u:object_r:vendor_lge_fingerprint_prop:s0
+###
+
+# PCAS
+persist.vendor.radio.pcas_log                u:object_r:vendor_lge_ril_prop:s0 exact bool
+###
+
+# MODEM_BSP
+vendor.lge.ril.modem.uuid_info      u:object_r:vendor_lge_modem_bsp_prop:s0 exact string
+vendor.lge.ril.modembsp.bootup      u:object_r:vendor_lge_modem_bsp_prop:s0 exact bool
+vendor.lge.ril.modembsp.ssr         u:object_r:vendor_lge_modem_bsp_prop:s0 exact int
+vendor.lge.ril.bdl.seare            u:object_r:vendor_lge_modem_bsp_prop:s0 exact string
+###
+
+# IMS
+persist.vendor.lge.ims.atcmd_supported      u:object_r:vendor_lge_ims_prop:s0 exact bool
+persist.vendor.lge.ims.dualvolte           u:object_r:vendor_lge_ims_prop:s0 exact string
+###
+
+# Audio_BSP
+vendor.lge.audio.hifi_rec.concert_gain                u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.hifi_rec.concert_lcf                 u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.hifi_rec.concert_lmt                 u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.hifi_rec.normal_gain                 u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.hifi_rec.normal_lcf                  u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.hifi_rec.normal_lmt                  u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.hifi_rec.asmr_gain                   u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.hifi_rec.asmr_lcf                    u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.hifi_rec.asmr_lmt                    u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.hifi_rec.offset_gain                 u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.3rd.speaker.prot.enable            u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.handset_rx_type              u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.nsenabled                    u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.voice.clarity                u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.voice.bokeh                  u:object_r:vendor_lge_exported_audio_prop:s0 exact string
+ro.vendor.lge.config.hifi_enhance_support             u:object_r:vendor_lge_audio_prop:s0 exact int
+vendor.lge.fm_gain_control_headset                    u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.fm_gain_control_speaker                    u:object_r:vendor_lge_audio_prop:s0 exact string
+ro.vendor.lge.audio.cal.IND                           u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.hifi_adv_support             u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.hifi_dac                     u:object_r:vendor_lge_exported_audio_prop:s0 exact string
+ro.vendor.lge.vib_magnitude_index                     u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.vibrator.tuning                            u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.sku_value                    u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.headset_fluence              u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.sm_fluence                   u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.spk_sm_fluence               u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.voip_nsenabled               u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.spkcall_2mic                 u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.fm_gain_control_factor                     u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.spkr_prot_status                     u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.spkr_prot_in_voicecall               u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.debug.audio_dump                           u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.vib.max_vol                                u:object_r:vendor_lge_audio_prop:s0 exact string
+ro.vendor.lge.vib_duration_margin                     u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.hifi_menu                    u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.btring.gain                          u:object_r:vendor_lge_audio_prop:s0 exact string
+ro.vendor.lge.audio.cal.LOCAL                         u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.fm.desense.list                            u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.fm.desense.rssi                            u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.fm.fake.list                               u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.fm.fake.rssi                               u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.bt_wbs                               u:object_r:vendor_lge_audio_prop:s0 exact string
+ro.vendor.lge.config.vc_call_vol_default              u:object_r:vendor_lge_audio_prop:s0 exact string
+###
+
+# APVM
+ro.vendor.lge.cp_system_other_preload           u:object_r:vendor_lge_apvm_prop:s0 exact int
+persist.vendor.lge.copied_dp_preload_contents   u:object_r:vendor_lge_apvm_prop:s0 exact int
+###
+
+# Faceprint
+vendor.lge.faceprint.inform.camera          u:object_r:vendor_lge_faceprint_prop:s0 exact string
+vendor.lge.faceprint.use.camera             u:object_r:vendor_lge_faceprint_prop:s0 exact string
+persist.vendor.lge.faceprint.enable.logging u:object_r:vendor_lge_faceprint_prop:s0 exact string
+###
+
+#Handid
+persist.vendor.lge.vein.enable.logging      u:object_r:vendor_lge_vein_prop:s0 exact string
+###
+
+# Filesystem
+persist.vendor.lge.sys.emmc_name    u:object_r:vendor_lge_sys_emmc_name_prop:s0
+
+# Display
+persist.vendor.lge.video.enhancer              u:object_r:vendor_lge_display_prop:s0 exact int
+vendor.lge.video.player.ve_enable              u:object_r:vendor_lge_display_prop:s0 exact int
+vendor.lge.hdr.disable                         u:object_r:vendor_lge_display_prop:s0 exact int
+vendor.lge.hdr.disable2                        u:object_r:vendor_lge_display_prop:s0 exact int
+vendor.lge.hdmi.block                          u:object_r:vendor_lge_display_prop:s0 exact int
+###
+
+# Touch
+vendor.lge.dd.touch_enable              u:object_r:vendor_lge_touch_prop:s0 exact string
+###
+
+# Model
+vendor.lge.runtime_ldu_res             u:object_r:vendor_lge_model_prop:s0 exact string
+ro.vendor.lge.use_opr_wallpaper        u:object_r:vendor_lge_model_prop:s0 exact string
+###
+
+# Camera
+persist.vendor.lge.camera.is_lgcamera            u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.hw.camcorder.fpsrange                 u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.data.front.minfps             u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.data.rear.minfps              u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.module                 u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.DualFovCamID           u:object_r:vendor_lge_camera_prop:s0 exact string
+ro.vendor.lge.dev.fmode                          u:object_r:vendor_lge_camera_prop:s0 exact string
+ro.vendor.lge.dev.fmode_exif                     u:object_r:vendor_lge_camera_prop:s0 exact string
+ro.vendor.lge.dev.fmode_exif_atnt                u:object_r:vendor_lge_camera_prop:s0 exact string
+ro.vendor.lge.logical.camera                     u:object_r:vendor_lge_camera_prop:s0 exact string
+ro.vendor.lge.aux.camera                         u:object_r:vendor_lge_camera_prop:s0 exact string
+ro.vendor.lge.physical.camera                    u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.eeprom_aat             u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.osd.jtbd               u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.bwpeaking              u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.lgae_mode                u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.lgawb_mode               u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcsoft.makeup.dumping u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.lgzsl_delay              u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcsoft.log            u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcsoft.rtb.debugview  u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcsoft.rtb.dumpimg    u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcsoft.cb.lightmode   u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.sj.videonr             u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.lgcamera.perf                   u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.solution.AC.enabled                   u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.solution.AC.dump                      u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.solution.AC.simulation                u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.solution.AC.inputnum                  u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.solution.AC.param.dark_scale          u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.solution.AC.param.MinTransit          u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.solution.AC.param.MaxTransit          u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.solution.AC.param.lux_flag            u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.saattest                              u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.saat.offsetcal                        u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.allautotest.cameraois                 u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.allautotest.outfocusing               u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.allautotest.ldaf_disable              u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.aat.ldcal                             u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.AAT.ldcal.realvalue                   u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.AAT.ldcal.calcount                    u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.AAT.ldcal.calstatus                   u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.AAT.ldcal.errorstatus                 u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.data.ois.vendor               u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.data.ois.result               u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.solution.beautyshot.enable            u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.solution.VNR.enabled                  u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.solution.dump            u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.multisolution.dump       u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.solution.nightshot.dump  u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.solution.superzoom.dump  u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.perf                   u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.camera.pd_test.state                  u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.camera.pd_test.result                 u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.camera.induction_af_cal               u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.elvis.tune.fov         u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.elvis.tune.skew        u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.elvis.tune.time        u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.elvis.tune.mc.disable  u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.elvis.tune.cxgain      u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.elvis.tune.cygain      u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.elvis.tune.cxthres     u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.elvis.tune.cythres     u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.elvis.margin           u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.elvis.tune.cxcy.time   u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.film.debug                    u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.module_type            u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.inf_offset             u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.comp_offset            u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.fake_face.on           u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.gravity_cal.on         u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.laser.on               u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.far_end.margin         u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.af_selectfilter        u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.fullsweep.step         u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.af_fullsweep           u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.manual                 u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.manual.lastpos2        u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.manual.lastpos         u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.fdaf.log                      u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.debug.sf.directld             u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.debug.sf.stampinfo            u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.allautotest.camera.hw_test            u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.dual.log               u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.lgaf_mode                u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.pdaf_dump                     u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.pdaf_dump_startN              u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.pdaf_dump_frameN              u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.pd_roi_numx                   u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.pd_roi_numy                   u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.pd_roi_start_x                u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.pd_roi_start_y                u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.pd_roi_wratio                 u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.pd_roi_hratio                 u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.pdaf_aat               u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.manual.use             u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.camera.hw_test_result                 u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.show_lgae_log            u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.manual_ls_set            u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.long_short_ratio         u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.lock_process             u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.lgawblog                 u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.iqm_log                  u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.iqm_disable              u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.manual_long_safe_set     u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.debug.camera.long_safe_ratio          u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.WDR.simulation         u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.WDR.forceEnable        u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.WDR.inputNum           u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.WDR.enable             u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.WDR.dump               u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.WDR.gain               u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.WDR.gamma              u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.WDR.highlight          u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.WDR.gain_weight        u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.wdr.enhance.dinput                    u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.wdr.enhance.doutput                   u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.wdr2.dinput                           u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.wdr2.doutput                          u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.sz.enhance.dinput                     u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.sz.enhance.doutput                    u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.sz.dinput                             u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.sz.doutput                            u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.photosolid.dinput                     u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.photosolid.doutput                    u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcbeauty.dump         u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.picselfie.dump         u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcbeauty.dump2        u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.picselfie.dump2        u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcbeauty.loglevel     u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcbeauty.multithread  u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.probe_failed           u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.media.enable           u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.sys.camera.rotateJpeg                 u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.stability.debug        u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.Tele_LensTemperatureCorrection        u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.makeup.feature.facesoften             u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.makeup.feature.facewhiten             u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.makeup.feature.faceruddy              u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.makeup.feature.eyeenlargement         u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.makeup.feature.faceslender            u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.makeup.feature.blush                  u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.makeup.feature.eyeshadow              u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.makeup.feature.eyeline                u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.makeup.feature.eyelash                u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.makeup.feature.lipstick               u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcsoft.makeup.parameter.default      u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcsoft.slp.enable                    u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcsoft.slp.contrast                  u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcsoft.slp.sharpness                 u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcsoft.slp.brightness                u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.arcsoft.slp.dumping                   u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.uhdrec                                u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.is.margin                             u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.debug.level                           u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.stb.debuglv                           u:object_r:vendor_lge_camera_prop:s0 exact string
+persist.vendor.lge.camera.stb.perf                              u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.camera.cst.sof.timeout                               u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.camera.cst.sof.freeze                                u:object_r:vendor_lge_camera_prop:s0 exact string
+vendor.lge.QuadCFA.use.camera                                   u:object_r:vendor_lge_camera_prop:s0 exact string
+
+# WiFi
+vendor.lge.wifi_ftm.diagd_start            u:object_r:vendor_lge_wifi_prop:s0 exact string
+vendor.lge.wlan.monitor.status             u:object_r:vendor_lge_wifi_prop:s0 exact string
+vendor.lge.wlan_ril_start                    u:object_r:vendor_lge_wifi_prop:s0 exact string
+vendor.lge.hw.ftm_ptt_start                     u:object_r:vendor_lge_wifi_prop:s0 exact string
+vendor.lge.wlan.manual.netid                u:object_r:vendor_lge_wifi_prop:s0 exact string
+###
+
+# SAR controller
+persist.vendor.lge.sar_dependmode                  u:object_r:vendor_lge_sarcontroller_prop:s0 exact string
+persist.vendor.lge.sar_fakestatus                  u:object_r:vendor_lge_sarcontroller_prop:s0 exact string
+persist.vendor.lge.sar_keeponoff                   u:object_r:vendor_lge_sarcontroller_prop:s0 exact string
+persist.vendor.lge.wifi_sar_keeponoff              u:object_r:vendor_lge_sarcontroller_prop:s0 exact string
+persist.vendor.lge.wifi_sar_dependmode             u:object_r:vendor_lge_sarcontroller_prop:s0 exact string
+persist.vendor.lge.wifi_sar_fakestatus             u:object_r:vendor_lge_sarcontroller_prop:s0 exact string
+###
+
+# PROTOCOL_RADIO
+vendor.lge.gsm.lte.t3402                u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+vendor.lge.ril.ecclist.withcat          u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+vendor.lge.ril.ecclist.withcat1        u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+vendor.lge.ril.lte.info                    u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+vendor.lge.ril.lte.ulca                    u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+vendor.lge.ril.roaming.mask                u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+vendor.lge.ril.wcdma.SSMenu               u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+vendor.lge.ril.e911_rat_time                u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+persist.vendor.radio.clir0                 u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+persist.vendor.radio.clir1                 u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+persist.vendor.radio.clir2                 u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+persist.vendor.lge.radio.data_tuwb_timer       u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+persist.vendor.lge.ril.bitmask              u:object_r:vendor_lge_protocol_radio_prop:s0 exact string
+
+###
+
+## LAOP
+persist.vendor.lge.data.opdeletion          u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.data.sbp.update          u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.laop.test.enable         u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.laop.test.iccid          u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.radio.first-mccmnc       u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.radio.sim-fixed          u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.service.flex.enable      u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.service.flex.iccid       u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.service.flex.nt-mccmnc   u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.service.flex.region-mcc  u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.backup-status            u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.carriercode.date         u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.clientid-changed         u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.cota.changed             u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.cupss.changed            u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.cupss.next-root          u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.cupss.prev-rootdir       u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.cupss.subca-prev         u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.cupss.subca-prop         u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.cust.unifiedversion      u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.first-boot               u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.first-mcc                u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.first-mccmnc             u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.iccid                    u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.iccid-mcc                u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.last-iccid               u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.laop.incremental         u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.mcc-list                 u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.mccmnc-list              u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.minios.ntcode            u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.ntcode                   u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.ntcode_list              u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.ntcode-changed           u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.op_info                  u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.regional-mcc             u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.sim.operator.last        u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.sim.profile              u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.sim_country_fixed        u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.sim-changed              u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.smartca.changed          u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.smartca.undo             u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.subset-list              u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.swfv.flag                u:object_r:vendor_lge_laop_prop:s0 exact string
+vendor.lge.start.sap_etc_symlink            u:object_r:vendor_lge_laop_prop:s0 exact string
+vendor.lge.ril.sbp.read-iccid               u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.build.default_country         u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.sbp                           u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.sbp.ui                        u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.sbp.version                   u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.build.ui_base_ca              u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.cross.download                u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.laop.fixed_operator           u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.capp_cupss.op.dir             u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.capp_del_country_apk          u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.cupssgroup                    u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.firstboot.openani             u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.laop.brand                    u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.laop.default.country          u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.laop.default.iccid            u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.naop.support.sprint           u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.ntcode_mcc                    u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.op.integration                u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.opensw                        u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.opensw.enableca               u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.petname.country               u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.revshare.version              u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.sbp.op_preloadtype            u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.simbase                       u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.singleca.enable               u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.singleca.submit               u:object_r:vendor_lge_laop_prop:s0 exact string
+vendor.lge.sim_country                      u:object_r:vendor_lge_laop_prop:s0 exact string
+vendor.lge.sim_country_changed              u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.swv_date                      u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.boot.vendor.lge.sim_num                  u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.boot.vendor.lge.superset                 u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.boot.vendor.lge.ru                       u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.boot.vendor.lge.sku_carrier              u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.boot.vendor.lge.hw.rev                   u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.sim.operator.first       u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.naop_first-boot          u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.naop_sim-changed         u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.naop_last-carrier        u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.naop_last-iccid          u:object_r:vendor_lge_laop_prop:s0 exact string
+persist.vendor.lge.naop_uicc-iccid          u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.boot.vendor.lge.product.model            u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.build.fingerprint             u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.product.build.fingerprint     u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.product.device                u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.product.model                 u:object_r:vendor_lge_laop_prop:s0 exact string
+ro.vendor.lge.product.name                  u:object_r:vendor_lge_laop_prop:s0 exact string
+###
+
+# MSP
+ro.boot.vendor.lge.capsensor               u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.boot.vendor.lge.dtv                     u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.boot.vendor.lge.dtv_type                u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.boot.vendor.lge.fmradio                 u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.att_dualsim                  u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.factorytest                  u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.mid.bootstart                u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.minios.bootcomplete          u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.minios.bootstart             u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.swversion.postfix            u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.swversion_svn                u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.swversion_sltype             u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.swversion_arb                u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.swversion_vendor             u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.atd.lock                        u:object_r:vendor_lge_neverallow_prop:s0 exact string
+vendor.lge.bluefactorymode                 u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.cmd_block                       u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.factory.encrypt                 u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.factory_frp_check               u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.factory.pif                     u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.factory.qem                     u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.factory.ldu_csn                 u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.frstd.ctrl.run                  u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.mts.act                         u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.mts.work                        u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.mts.curcount                    u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.sleepmode.on                    u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.capp_info_collector          u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.swversion_shortdate          u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.suffix                       u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.minios.enable                u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.wine.ime                        u:object_r:vendor_lge_factory_prop:s0 exact string
+persist.vendor.lge.carrier                 u:object_r:vendor_lge_factory_prop:s0 exact string
+persist.vendor.lge.data.eut.status         u:object_r:vendor_lge_factory_prop:s0 exact string
+persist.vendor.lge.factory.log.enable      u:object_r:vendor_lge_factory_prop:s0 exact string
+persist.vendor.lge.factory.status          u:object_r:vendor_lge_factory_prop:s0 exact string
+persist.vendor.lge.modemport.enabled       u:object_r:vendor_lge_factory_prop:s0 exact string
+persist.vendor.lge.modem_data_clear        u:object_r:vendor_lge_factory_prop:s0 exact string
+ro.vendor.lge.swversion_disp               u:object_r:vendor_lge_factory_prop:s0 exact string
+vendor.lge.preload_copy_finished           u:object_r:vendor_lge_factory_prop:s0 exact string
+###
+
+# SystemUI
+vendor.lge.service.keyguard.status         u:object_r:vendor_lge_systemui_prop:s0 exact string
+###
+
+# SetupWizard
+vendor.lge.lgsetupwizard.status            u:object_r:vendor_lge_setupwizard_prop:s0 exact int
+vendor.lge.lgsetupwizard.frp_untrusted     u:object_r:vendor_lge_setupwizard_prop:s0 exact string
+vendor.lge.SetupDataEnable.status          u:object_r:vendor_lge_setupwizard_prop:s0 exact string
+###
+
+# MDM
+vendor.lge.wlan.mdm.autoconnectpolicy      u:object_r:vendor_lge_mdm_prop:s0 exact string
+vendor.lge.rctd.flag                       u:object_r:vendor_lge_mdm_prop:s0 exact string
+vendor.lge.rctd.rooted                     u:object_r:vendor_lge_mdm_prop:s0 exact bool
+###
+
+# Audio_F/W
+#af.music.outputid                               u:object_r:vendor_lge_mtk_audio_fw_prop:s0 exact int
+###
+
+# Call_APP
+vendor.lge.ril.nitz_received               u:object_r:vendor_lge_callapp_prop:s0 exact string
+###
+
+#KSUT
+ro.boot.vendor.lge.qeml                    u:object_r:vendor_lge_ksut_prop:s0 exact string
+ro.boot.vendor.lge.frp_status              u:object_r:vendor_lge_ksut_prop:s0 exact string
+
+# WFD
+vendor.lge.wfd.spmirroring.backlight            u:object_r:vendor_lge_wfd_prop:s0 exact string
+###
+
+# VR (Daydream)
+vendor.lge.vrmode                          u:object_r:vendor_lge_vr_prop:s0 exact bool
+
+# Kernel (DualScreen)
+persist.vendor.lge.dd.uart.enable          u:object_r:vendor_lge_dualscreen_prop:s0 exact string
+
+# AD earning
+persist.vendor.lge.ad.earnings                  u:object_r:vendor_lge_ad_earnings_prop:s0 exact string
+
+#GSI System
+ro.vendor.lge.gsi.brand                    u:object_r:vendor_lge_gsi_system_prop:s0 exact string
+
+# Emotional UX tiering
+ro.vendor.lge.animation.level              u:object_r:vendor_lge_animation_level_prop:s0 exact string
+#line 1 "vendor/lge/frameworks/lgevpn/3.8/sepolicy/property_contexts"
+# LGE VPN
+vendor.lge.service.vpnclientd.enable         u:object_r:vendor_lge_vpn_prop:s0 exact int
+###
+
+#line 1 "device/mediatek/sepolicy/basic/non_plat/property_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+#=============allow ccci_mdinit to start gsm0710muxd==============
+ctl.vendor.gsm0710muxd u:object_r:ctl_gsm0710muxd_prop:s0
+
+
+#=============allow mtkrild to set persist.ril property==============
+vendor.ril.ipo u:object_r:vendor_ril_ipo_prop:s0
+
+#=============allow netlog==============
+vendor.mtklog  u:object_r:debug_mtklog_prop:s0
+persist.vendor.mtklog u:object_r:persist_mtklog_prop:s0
+vendor.netlog u:object_r:debug_netlog_prop:s0
+
+#=============allow mdlogger==============
+vendor.mdlogger u:object_r:debug_mdlogger_prop:s0
+vendor.mdl u:object_r:vendor_mdl_prop:s0
+vendor.starting.mode  u:object_r:vendor_mdl_start_prop:s0
+vendor.usb. u:object_r:vendor_usb_prop:s0
+persist.vendor.usb. u:object_r:vendor_usb_prop:s0
+persist.vendor.mdl u:object_r:persist_mdlog_prop:s0
+vendor.pullmdlog u:object_r:vendor_mdl_pulllog_prop:s0
+
+
+#=============allow AEE==============
+# persist.vendor.mtk.aee.mode && persist.vendor.mtk.aee.dal
+persist.vendor.mtk.aee. u:object_r:persist_mtk_aee_prop:s0
+persist.vendor.mtk.aeev. u:object_r:persist_mtk_aeev_prop:s0
+
+# persist.vendor.aee.core.dump && persist.vendor.aee.core.direct
+persist.vendor.aee. u:object_r:persist_aee_prop:s0
+persist.vendor.aeev. u:object_r:persist_aeev_prop:s0
+
+# vendor.debug.mtk.aee.db
+vendor.debug.mtk.aee. u:object_r:debug_mtk_aee_prop:s0
+vendor.debug.mtk.aeev u:object_r:debug_mtk_aeev_prop:s0
+
+ro.vendor.aee.build.info u:object_r:ro_mtk_aee_prop:s0
+ro.vendor.aee.enforcing u:object_r:ro_mtk_aee_prop:s0
+ro.vendor.have_aee_feature u:object_r:ro_mtk_aee_prop:s0
+
+#=============allow AEE_Dumpstate==============
+vendor.debug.bq.dump u:object_r:debug_bq_dump_prop:s0
+
+#=============allow mux==============
+vendor.ril.mux.      u:object_r:gsm0710muxd_prop:s0
+
+#=============allow mdinit==============
+ctl.vendor.ril-daemon-mtk   u:object_r:ctl_ril-daemon-mtk_prop:s0
+ctl.vendor.fusion_ril_mtk   u:object_r:ctl_fusion_ril_mtk_prop:s0
+ctl.vendor.ril-proxy   u:object_r:ctl_ril-proxy_prop:s0
+ctl.vendor.viarild u:object_r:ctl_viarild_prop:s0
+
+ctl.vendor.muxreport-daemon u:object_r:ctl_muxreport-daemon_prop:s0
+ctl.vendor.ccci_fsd u:object_r:ctl_ccci_fsd_prop:s0
+ctl.vendor.ccci2_fsd u:object_r:ctl_ccci2_fsd_prop:s0
+ctl.vendor.ccci3_fsd u:object_r:ctl_ccci3_fsd_prop:s0
+
+vendor.ril.active.md        u:object_r:ril_active_md_prop:s0
+vendor.ril.mux.report.case  u:object_r:ril_mux_report_case_prop:s0
+vendor.ril.cdma.report      u:object_r:ril_cdma_report_prop:s0
+
+#=============allow dynamic telephony switch==============
+ro.boot.opt_c2k_lte_mode    u:object_r:tel_switch_prop:s0
+ro.boot.opt_c2k_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_eccci_c2k       u:object_r:tel_switch_prop:s0
+ro.boot.opt_lte_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_md1_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_md2_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_md3_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_md5_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_ps1_rat         u:object_r:tel_switch_prop:s0
+ro.boot.opt_sim_count       u:object_r:tel_switch_prop:s0
+ro.boot.opt_using_default   u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_c2k_lte_mode    u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_c2k_support     u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_eccci_c2k       u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_lte_support     u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_md1_support     u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_md3_support     u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_ps1_rat         u:object_r:tel_switch_prop:s0
+
+#=============allow bootanim==============
+persist.vendor.bootanim.     u:object_r:bootani_prop:s0
+
+#=============allow mnld_prop ==============
+vendor.gps.clock.type u:object_r:mnld_prop:s0
+vendor.gps.gps.version u:object_r:mnld_prop:s0
+vendor.gpsdbglog.enable u:object_r:mnld_prop:s0
+vendor.gpsdbglog. u:object_r:mnld_prop:s0
+vendor.debug.gps. u:object_r:mnld_prop:s0
+vendor.gps.almanac u:object_r:mnld_prop:s0
+vendor.gps.clock.calibration u:object_r:mnld_prop:s0
+
+#=============allow audiohal==============
+vendor.streamout.         u:object_r:audiohal_prop:s0
+vendor.streamin.          u:object_r:audiohal_prop:s0
+vendor.a2dp.              u:object_r:audiohal_prop:s0
+vendor.audiohal.          u:object_r:audiohal_prop:s0
+persist.vendor.audiohal.  u:object_r:audiohal_prop:s0
+persist.vendor.vow.       u:object_r:audiohal_prop:s0
+
+#=============allow wmt ==============
+persist.vendor.connsys.coredump.mode u:object_r:coredump_prop:s0
+persist.vendor.connsys. u:object_r:wmt_prop:s0
+vendor.connsys. u:object_r:wmt_prop:s0
+
+
+#=============allow c2k_prop ==============
+vendor.net.cdma.mdmstat u:object_r:net_cdma_mdmstat:s0
+
+
+#=============allow ccci_mdinit md status ==============
+vendor.mtk.md   u:object_r:mtk_md_prop:s0
+#============= allow factory idle current prop ==============
+vendor.debug.factory.idle_state    u:object_r:vendor_factory_idle_state_prop:s0
+
+#=============allow mobile log property================
+vendor.MB.            u:object_r:mobile_log_prop:s0
+
+#=============allow service.nvram_init property================
+vendor.service.nvram_init     u:object_r:service_nvram_init_prop:s0
+
+
+#=============Allow EM To Set Camera APP Mode  ==============
+vendor.client.      u:object_r:mtk_em_prop:s0
+
+#=============allow mediatek_prop ==============
+vendor.debug.camera.p2plug.log u:object_r:mediatek_prop:s0
+vendor.client.em.appmode u:object_r:mediatek_prop:s0
+#=============Property set by EM, for test/debug purpose=========
+persist.vendor.em.  u:object_r:mtk_em_sys_prop:s0
+persist.vendor.em.hidl.  u:object_r:mtk_em_hidl_prop:s0
+
+#=============allow em set tethering protocol================
+persist.vendor.net.auto.tethering   u:object_r:mtk_em_net_auto_tethering_prop:s0
+
+#=============allow em set ims operator property===========
+vendor.ril.volte.mal.pctid u:object_r:mtk_operator_id_prop:s0
+
+#=============allow em set simswitch property===========
+persist.vendor.radio.simswitch.emmode u:object_r:mtk_simswitch_emmode_prop:s0
+
+#=============allow em set mtk_dsbp_support property===========
+persist.vendor.radio.mtk_dsbp_support u:object_r:mtk_dsbp_support_prop:s0
+
+#=============allow em set imstestmode property===========
+persist.vendor.radio.imstestmode u:object_r:mtk_imstestmode_prop:s0
+
+#=============allow em set smsformat property===========
+persist.vendor.radio.smsformat u:object_r:mtk_smsformat_prop:s0
+
+#=============allow em set gprs.prefer property===========
+persist.vendor.radio.gprs.prefer u:object_r:mtk_gprs_prefer_prop:s0
+
+#=============allow em set testsim.cardtype property===========
+persist.vendor.radio.testsim.cardtype u:object_r:mtk_testsim_cardtype_prop:s0
+
+#=============allow em set ct.ir.engmode property===========
+persist.vendor.radio.ct.ir.engmode u:object_r:mtk_ct_ir_engmode_prop:s0
+
+#=============allow em set disable_c2k_cap property===========
+persist.vendor.radio.disable_c2k_cap u:object_r:mtk_disable_c2k_cap_prop:s0
+
+#=============allow em to set modem reset delay property================
+vendor.mediatek.debug.md.reset.wait u:object_r:mtk_debug_md_reset_prop:s0
+
+#=============allow em to set video log omx.* property================
+vendor.mtk.omx. u:object_r:mtk_omx_log_prop:s0
+
+#=============allow em to set vdec log property================
+vendor.mtk.vdec.log u:object_r:mtk_vdec_log_prop:s0
+
+#=============allow em to set vdectlc logproperty================
+vendor.mtk.vdectlc.log u:object_r:mtk_vdectlc_log_prop:s0
+
+#=============allow em to set venc h264 showlog property================
+vendor.mtk.venc.h264.showlog u:object_r:mtk_venc_h264_showlog_prop:s0
+
+#=============allow em to set modem warning property================
+persist.vendor.radio.modem.warning u:object_r:mtk_modem_warning_prop:s0
+
+#=============allow em to set bgdata disabled property================
+persist.vendor.radio.bgdata.disabled u:object_r:mtk_bgdata_disabled:s0
+
+#=============allow em to set telecom vibrate property================
+persist.vendor.radio.telecom.vibrate u:object_r:mtk_telecom_vibrate:s0
+
+#=============allow em to set gprs attach type property================
+persist.vendor.radio.gprs.attach.type u:object_r:mtk_gprs_attach_type:s0
+
+#=============allow em to set poweroffmd property================
+vendor.ril.test.poweroffmd u:object_r:mtk_power_off_md_type:s0
+vendor.ril.testmode u:object_r:mtk_power_off_md_type:s0
+
+
+#=============allow system server to set meta_connecttype property  ==============
+persist.vendor.meta.connecttype u:object_r:meta_connecttype_prop:s0
+
+#=============Telephony Sensitive property==============
+vendor.ril.iccid.sim u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.uim.subscriberid u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.last_iccid_sim  u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.ia.iccid u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.radio.ia u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.c2kirat.ia.sim1 u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.c2kirat.ia.sim2 u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.c2kirat.ia.sim3 u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.c2kirat.ia.sim4 u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ia   u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ia.1 u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ia.2 u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ia.3 u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.data.iccid u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.mobile.data u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ls1icid u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ls2icid u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ls3icid u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ls4icid u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.mtk.provision.mccmnc. u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ss.hashed_last_iccid1 u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ss.hashed_last_iccid2 u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ss.hashed_last_iccid3 u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ss.hashed_last_iccid4 u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.data.impi u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.data.gsm_imsi u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.data.cdma_imsi u:object_r:mtk_telephony_sensitive_prop:s0
+
+#=============allow sim config property==============
+vendor.gsm.sim.operator.default-name u:object_r:vendor_sim_system_prop:s0
+
+#=============allow processes to change thermal config================
+vendor.thermal.manager.data u:object_r:mtk_thermal_config_prop:s0
+#=============allow composer set property ============================
+vendor.debug.sf.hwc_pid u:object_r:graphics_hwc_pid_prop:s0
+vendor.debug.sf.latch_unsignaled u:object_r:graphics_hwc_latch_unsignaled_prop:s0
+vendor.debug.sf.hdr_enable u:object_r:graphics_hwc_hdr_prop:s0
+
+#============= atm modem mode property(ATM) ==============
+persist.vendor.atm.mdmode u:object_r:atm_mdmode_prop:s0
+
+#============= atm ip address property(ATM) ==============
+persist.vendor.atm.ipaddress u:object_r:atm_ipaddr_prop:s0
+
+#============= atm boot property(ATM) ==============
+ro.boot.atm u:object_r:mtk_default_prop:s0
+
+#=============allow consyslogger==============
+vendor.connsysfw u:object_r:vendor_connsysfw_prop:s0
+
+#============Label telephony property=======#
+vendor.ril. u:object_r:vendor_radio_prop:s0
+ro.vendor.ril. u:object_r:vendor_radio_prop:s0
+vendor.gsm. u:object_r:vendor_radio_prop:s0
+persist.vendor.radio. u:object_r:vendor_radio_prop:s0
+
+#=============allow bluetooth==============
+vendor.bthcisnoop u:object_r:vendor_bluetooth_prop:s0
+
+#=============em camera property==============
+vendor.debug. u:object_r:vendor_debug_prop:s0
+
+#=============allow ct volte==============
+persist.vendor.mtk_ct_volte_support u:object_r:mtk_ct_volte_prop:s0
+
+#============Label mtk ril mode=======#
+ro.vendor.mtk_ril_mode u:object_r:mtk_ril_mode_prop:s0
+
+#=============GPS support properties==============
+ro.vendor.mtk_gps_support u:object_r:mtk_gps_support_prop:s0
+ro.vendor.mtk_agps_app u:object_r:mtk_gps_support_prop:s0
+ro.vendor.mtk_log_hide_gps u:object_r:mtk_gps_support_prop:s0
+ro.vendor.mtk_hidl_consolidation u:object_r:mtk_gps_support_prop:s0
+
+#============allow rat config=======#
+ro.vendor.mtk_protocol1_rat_config u:object_r:mtk_rat_config_prop:s0
+
+#=============allow mtk aal==============#
+ro.vendor.mtk_aal_support u:object_r:mtk_aal_ro_prop:s0
+ro.vendor.mtk_ultra_dimming_support u:object_r:mtk_aal_ro_prop:s0
+ro.vendor.mtk_dre30_support u:object_r:mtk_aal_ro_prop:s0
+
+#=============allow mtk pq==============#
+persist.vendor.sys.pq. u:object_r:mtk_pq_prop:s0
+vendor.debug.pq. u:object_r:mtk_pq_prop:s0
+persist.vendor.sys.isp. u:object_r:mtk_pq_prop:s0
+persist.vendor.sys.mtkaal. u:object_r:mtk_pq_prop:s0
+ro.vendor.mtk_pq_color_mode u:object_r:mtk_pq_ro_prop:s0
+ro.vendor.mtk_blulight_def_support u:object_r:mtk_pq_ro_prop:s0
+ro.vendor.mtk_chameleon_support u:object_r:mtk_pq_ro_prop:s0
+ro.vendor.mtk_pq_support u:object_r:mtk_pq_ro_prop:s0
+
+# Mtk properties that allow all system/vendor processes to read.
+# Usually they are config properties (but not limited to)
+ro.vendor.mtk_tdd_data_only_support u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_audio_alac_support u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_support_mp2_playback u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_audio_ape_support u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_flv_playback_support u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_mtkps_playback_support u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_wearable_platform u:object_r:mtk_default_prop:s0
+ro.vendor.mediatek.platform u:object_r:mtk_default_prop:s0
+ro.vendor.mediatek.version.branch u:object_r:mtk_default_prop:s0
+ro.vendor.mediatek.version.release u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_exchange_support u:object_r:mtk_default_prop:s0
+vendor.met.running u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_disable_cap_switch u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_sim_card_onoff u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_perf_plus u:object_r:mtk_default_prop:s0
+
+#============mtk emmc=======#
+ro.vendor.mtk_emmc_support u:object_r:mtk_emmc_support_prop:s0
+
+# MTK connsys log feature
+ro.vendor.connsys.dedicated.log u:object_r:mtk_default_prop:s0
+
+#=============em usb property==============
+vendor.usb.port.mode u:object_r:vendor_em_usb_prop:s0
+vendor.em.usb. u:object_r:vendor_em_usb_prop:s0
+
+#=============allow em to set usb otg switch property  ==============
+persist.vendor.usb.otg.switch u:object_r:vendor_usb_otg_switch:s0
+
+#============mtk rsc========#
+ro.boot.rsc u:object_r:mtk_default_prop:s0
+
+#=============mtk anr property=============
+persist.vendor.dbg.anrflow u:object_r:mtk_anr_support_prop:s0
+persist.vendor.anr. u:object_r:mtk_anr_support_prop:s0
+vendor.anr.autotest u:object_r:mtk_anr_support_prop:s0
+
+#=============mtk app resolution tuner=============
+ro.vendor.app_resolution_tuner u:object_r:mtk_appresolutiontuner_prop:s0
+persist.vendor.dbg.disable.art u:object_r:mtk_appresolutiontuner_prop:s0
+
+#=============mtk fullscreen switch=============
+ro.vendor.fullscreen_switch u:object_r:mtk_fullscreenswitch_prop:s0
+
+#============= allow em set ims xcap property ===============
+persist.vendor.ss. u:object_r:mtk_ss_vendor_prop:s0
+
+# MTK Antutu feature
+ro.vendor.net.upload.benchmark.default u:object_r:mtk_antutu_prop:s0
+
+#=============malloc debug unwind backtrace switch property==============#
+vendor.debug.malloc.bt.switch u:object_r:mtk_malloc_debug_backtrace_prop:s0
+
+#=============allow gmo====================#
+ro.vendor.gmo.ram_optimize u:object_r:mtk_default_prop:s0
+ro.vendor.gmo.rom_optimize u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_config_max_dram_size u:object_r:mtk_default_prop:s0
+
+#=============MTK Voice Recognize property===========#
+vendor.voicerecognize.raw u:object_r:mtk_voicerecgnize_prop:s0
+vendor.voicerecognize_data.raw u:object_r:mtk_voicerecgnize_prop:s0
+vendor.voicerecognize.noDL u:object_r:mtk_voicerecgnize_prop:s0
+
+#=============allow radio to set/get xcap rawurl config================
+persist.vendor.mtk.xcap.rawurl  u:object_r:persist_xcap_rawurl_prop:s0
+
+#=============mtk bt enable SAP profile property=============#
+ro.vendor.mtk.bt_sap_enable u:object_r:mtk_bt_sap_enable_prop:s0
+
+#=============allow processes to change powerhal config================
+persist.vendor.powerhal. u:object_r:mtk_powerhal_prop:s0
+vendor.powerhal. u:object_r:mtk_powerhal_prop:s0
+
+#=============MTK Wifi wlan_assistant property=============
+vendor.mtk.nvram.ready u:object_r:mtk_nvram_ready_prop:s0
+
+#=============Wi-Fi Hotspot==============
+ro.vendor.wifi.sap.interface u:object_r:mtk_wifi_hotspot_prop:s0
+
+#=============allow mtk hdmi==============#
+persist.vendor.sys.hdmi_hidl. u:object_r:mtk_hdmi_prop:s0
+
+#=============mtk nn option==============#
+ro.vendor.mtk_nn.option u:object_r:mtk_nn_option_prop:s0
+
+#=============connsysloggerVendor control property=============
+init.svc.vendor.wlan_logger  u:object_r:init_svc_connsysloggerVendor_prop:s0
+
+#line 1 "device/mediatek/sepolicy/bsp/non_plat/property_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+#=============allow mdinit==============
+ctl.vendor.ccci_rpcd         u:object_r:ctl_ccci_rpcd_prop:s0
+ctl.vendor.ccci2_rpcd         u:object_r:ctl_ccci2_rpcd_prop:s0
+
+
+
+
+#=============allow teei daemon and init_thh daemon to set property  ==============
+vendor.soter.teei.   u:object_r:soter_teei_prop:s0
+
+#============= allow both system/vendor get mtklog_internal ==========================
+ro.vendor.mtklog_internal u:object_r:mtk_default_prop:s0
+
+#=============allow android log much detect==============
+vendor.logmuch.value  u:object_r:vendor_logmuch_prop:s0
+vendor.logmuch.delay  u:object_r:vendor_logmuch_prop:s0
+persist.vendor.logmuch u:object_r:logmuch_prop:s0
+
+#=============allow radio to set mtk_volte_enable property  ==============
+persist.vendor.mtk.volte.enable u:object_r:mtk_volte_prop:s0
+
+#=============allow radio to set volte_support property  ==============
+persist.vendor.volte_support u:object_r:mtk_volte_support_prop:s0
+
+#=============allow radio to set mtk_wfc_support property  ==============
+persist.vendor.mtk_wfc_support u:object_r:mtk_wfc_support_prop:s0
+
+#=============allow radio to set vilte_support property  ==============
+persist.vendor.vilte_support u:object_r:mtk_vilte_support_prop:s0
+
+#=============allow radio to set viwifi_support property  ==============
+persist.vendor.viwifi_support u:object_r:mtk_viwifi_support_prop:s0
+
+#=============allow radio to set mtk_rcs_ua_support property  ==============
+persist.vendor.mtk_rcs_ua_support u:object_r:mtk_rcs_ua_support_prop:s0
+
+#=============allow radio to set mtk_wfc_enable property  ==============
+persist.vendor.mtk.wfc.enable u:object_r:mtk_wfc_prop:s0
+
+#=============allow radio to set mtk_vilte_enable property  ==============
+persist.vendor.mtk.vilte.enable u:object_r:mtk_vilte_prop:s0
+
+#=============allow radio to set mtk_viwifi_enable property  ==============
+persist.vendor.mtk.viwifi.enable u:object_r:mtk_viwifi_prop:s0
+
+#=============allow radio to set mtk_vt_enable property  ==============
+persist.vendor.mtk.ims.video.enable u:object_r:mtk_vt_prop:s0
+
+#=============allow radio to set mtk_vonr_enable property  ==============
+persist.vendor.mtk.vonr.enable u:object_r:mtk_vonr_prop:s0
+
+#=============allow radio to set mtk_vinr_enable property  ==============
+persist.vendor.mtk.vinr.enable u:object_r:mtk_vinr_prop:s0
+
+#=============allow adb to set wfc mccmnc property  ==============
+persist.vendor.mtk.wfc.mccmnc_list u:object_r:mtk_wfc_mccmnc_prop:s0
+
+#=============allow adb to set entitlement property  ==============
+persist.vendor.entitlement_enabled u:object_r:mtk_wfc_entitlement_prop:s0
+persist.vendor.entitlement.sesurl u:object_r:mtk_wfc_entitlement_prop:s0
+persist.vendor.net.wo.epdg_fqdn u:object_r:mtk_wfc_entitlement_prop:s0
+
+#=============allow system_app to get opt-in property  ==============
+persist.vendor.mtk_wfc_opt_in u:object_r:mtk_wfc_opt_in_prop:s0
+persist.vendor.opt-in.url u:object_r:mtk_opt_in_url_prop:s0
+persist.vendor.apptoken.required u:object_r:mtk_apptoken_required_prop:s0
+
+#=============allow radio to set common data releated property  ==============
+vendor.ril.md_changed_apn_class u:object_r:mtk_common_data_prop:s0
+vendor.ril.md_changed_apn_class.iccid u:object_r:mtk_common_data_prop:s0
+persist.vendor.radio.default.data.selected u:object_r:mtk_common_data_prop:s0
+
+#=============allow atcid==============
+persist.vendor.service.atci   u:object_r:persist_service_atci_prop:s0
+vendor.mtk.atci   u:object_r:mtk_atci_prop:s0
+
+#=============allow carrier express (cxp)==============
+# mtk_cxp_vendor_prop: vendor set/get, system get
+# usp_srv_prop: system set/get
+#============================================
+persist.vendor.operator.optr    u:object_r:mtk_cxp_vendor_prop:s0
+persist.vendor.operator.spec    u:object_r:mtk_cxp_vendor_prop:s0
+persist.vendor.operator.seg    u:object_r:mtk_cxp_vendor_prop:s0
+persist.vendor.operator.subid    u:object_r:mtk_cxp_vendor_prop:s0
+persist.vendor.mtk_usp_md_sbp_code    u:object_r:mtk_cxp_vendor_prop:s0
+ro.vendor.mtk_carrierexpress_pack    u:object_r:mtk_cxp_vendor_prop:s0
+persist.vendor.mtk_usp_switch_mode    u:object_r:mtk_cxp_vendor_prop:s0
+
+persist.vendor.operator.optr_1    u:object_r:usp_srv_prop:s0
+persist.vendor.operator.spec_1    u:object_r:usp_srv_prop:s0
+persist.vendor.operator.seg_1    u:object_r:usp_srv_prop:s0
+persist.vendor.mtk_usp    u:object_r:usp_srv_prop:s0
+
+
+#=============allow em set vt operator property===========
+persist.vendor.vt. u:object_r:vendor_vt_prop:s0
+
+#=============allow system update to set prop=============
+persist.vendor.update_finished u:object_r:mtk_update_prop:s0
+persist.vendor.previous_slot u:object_r:mtk_update_prop:s0
+
+#=============allow system_server to set vendor.media.wfd.*==============
+vendor.media.wfd. u:object_r:media_wfd_prop:s0
+
+
+#=======================allow vsim===========================
+vendor.gsm.disable.sim.dialog     u:object_r:mtk_vsim_sys_prop:s0
+vendor.gsm.external.sim.enabled   u:object_r:mtk_vsim_prop:s0
+vendor.gsm.external.sim.inserted  u:object_r:mtk_vsim_prop:s0
+vendor.gsm.external.sim.internal  u:object_r:mtk_vsim_prop:s0
+vendor.gsm.modem.vsim.capability  u:object_r:mtk_vsim_prop:s0
+vendor.gsm.prefered.aka.sim.slot  u:object_r:mtk_vsim_prop:s0
+vendor.gsm.prefered.rsim.slot     u:object_r:mtk_vsim_prop:s0
+vendor.gsm.external.sim.timeout   u:object_r:mtk_vsim_prop:s0
+vendor.gsm.external.sim.connected u:object_r:mtk_vsim_prop:s0
+persist.vendor.radio.external.sim u:object_r:mtk_vsim_prop:s0
+persist.vendor.radio.vsim.timeout u:object_r:mtk_vsim_prop:s0
+
+vendor.trustkernel.   u:object_r:tkcore_prop:s0
+
+#============= allow em set ims xcap property ===============
+persist.vendor.gba u:object_r:vendor_ims_xcap_prop:s0
+persist.vendor.radio.ss.mode u:object_r:vendor_ims_xcap_prop:s0
+persist.vendor.radio.ss.xrdm u:object_r:vendor_ims_xcap_prop:s0
+persist.vendor.radio.xcap.cfn u:object_r:vendor_ims_xcap_prop:s0
+
+#============= allow supplementary service property ===============
+vendor.gsm.radio.ss.sc                  u:object_r:vendor_supp_serv_prop:s0
+vendor.gsm.radio.ss.imsdereg            u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.iccid.         u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.change.        u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu_over_ims       u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.sync_for_ota   u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.mode           u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.timeslot.      u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.querytype      u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.suppserv.                u:object_r:vendor_supp_serv_prop:s0
+vendor.suppserv.                        u:object_r:vendor_supp_serv_prop:s0
+
+#============= allow bluetooth to set prop ==============
+vendor.bluetooth.    u:object_r:mtk_bluetooth_prop:s0
+persist.vendor.bluetooth.    u:object_r:mtk_bluetooth_prop:s0
+
+#============= allow MD to set prop ==============
+ro.vendor.md_prop_ver u:object_r:mtk_md_version_prop:s0
+
+#=============allow EM set moms property===========
+persist.vendor.sys.disable.moms u:object_r:mtk_moms_prop:s0
+
+#=============allow EM set tel log property===========
+persist.vendor.log.tel_dbg u:object_r:mtk_em_tel_log_prop:s0
+persist.vendor.log.tel_log_ctrl u:object_r:mtk_log_tel_dbg_prop:s0
+
+#=============allow IMS property===========
+ro.vendor.md_auto_setup_ims u:object_r:mtk_ims_prop:s0
+ro.vendor.md_mims_support u:object_r:mtk_ims_prop:s0
+persist.vendor.ims_support u:object_r:mtk_ims_prop:s0
+ro.vendor.mtk_imsi_switch_support u:object_r:mtk_ims_prop:s0
+
+#=============allow ims config property===========
+vendor.ril.imsconfig.force.notify u:object_r:vendor_imsconfig_prop:s0
+
+#============= allow ipsec_mon to set prop ==============
+vendor.net.    u:object_r:mtk_network_prop:s0
+
+#=============allow CTA property===========
+vendor.cta.log.enable u:object_r:mtk_cta_log_prop:s0
+ro.vendor.mtk_mobile_management u:object_r:mtk_mobile_management_prop:s0
+
+#=============allow vendor_init to set ro.vendor.mtk_wfd_support==============
+ro.vendor.mtk_wfd_support u:object_r:ro_vendor_mtk_wfd_support_prop:s0
+
+#=============allow AudioServer property===========
+vendor.af.mixer.pcm           u:object_r:audio_prop:s0
+vendor.af.mixer.drc.pcm       u:object_r:audio_prop:s0
+vendor.af.timestretch.in.pcm  u:object_r:audio_prop:s0
+vendor.af.offload.write.raw   u:object_r:audio_prop:s0
+vendor.af.resampler.pcm       u:object_r:audio_prop:s0
+vendor.af.mixer.dwnmx.pcm     u:object_r:audio_prop:s0
+vendor.af.record.dump.pcm     u:object_r:audio_prop:s0
+vendor.af.mixer.limin.pcm     u:object_r:audio_prop:s0
+vendor.af.track.pcm           u:object_r:audio_prop:s0
+vendor.af.effect.pcm          u:object_r:audio_prop:s0
+vendor.af.audioflinger.log    u:object_r:audio_prop:s0
+vendor.af.track.log           u:object_r:audio_prop:s0
+vendor.af.policy.debug        u:object_r:audio_prop:s0
+vendor.af.dump.log            u:object_r:audio_prop:s0
+vendor.audioserver.           u:object_r:audio_prop:s0
+vendor.af.mixer.end.pcm           u:object_r:audio_prop:s0
+
+#=============allow mtk duraspeed property==============
+persist.vendor.duraspeed. u:object_r:mtk_duraspeed_prop:s0
+persist.vendor.low.memory.hint u:object_r:mtk_duraspeed_prop:s0
+persist.vendor.sys.vm.drop_caches u:object_r:mtk_duraspeed_drop_caches:s0
+
+#=============allow Multiple IMS property===========
+persist.vendor.mims_support u:object_r:mtk_mims_prop:s0
+
+#=============allow Multiple IMS property===========
+persist.vendor.mtk_dynamic_ims_switch u:object_r:mtk_dynims_prop:s0
+
+#=============allow Multiple IMS property===========
+ro.vendor.mtk_external_sim_support u:object_r:mtk_extsim_prop:s0
+ro.vendor.mtk_external_sim_only_slots u:object_r:mtk_extsim_prop:s0
+ro.vendor.mtk_non_dsda_rsim_support u:object_r:mtk_extsim_prop:s0
+ro.vendor.mtk_persist_vsim_disabled u:object_r:mtk_extsim_prop:s0
+
+#=============allow IMS/EIMS pdn info property==========
+vendor.ims.eims.pdn.info u:object_r:mtk_ims_eims_pdn_prop:s0
+
+#=============allow Modem Monitor property===========
+persist.vendor.mdmmonitor u:object_r:config_prop:s0
+ro.vendor.mtk_modem_monitor_support u:object_r:mtk_mdm_prop:s0
+ro.vendor.mtk_single_bin_modem_support u:object_r:mtk_mdm_prop:s0
+
+#=============allow Modem World Mode property===========
+ro.vendor.mtk_md_world_mode_support u:object_r:mtk_mdworldmode_prop:s0
+
+##OMA DRM
+ro.vendor.mtk_oma_drm_support u:object_r:mtk_oma_drm_support_prop:s0
+vendor.drm.forwardlock.only u:object_r:mtk_drm_fwd_lock_only_prop:s0
+
+#=============allow settings to get relevant property===========
+ro.vendor.mtk_miravision_support u:object_r:mtk_miravision_support_prop:s0
+ro.vendor.mtk_aod_support u:object_r:mtk_aod_support_prop:s0
+ro.vendor.mtk_default_write_disk u:object_r:mtk_default_write_disk_prop:s0
+ro.vendor.mtk_bg_power_saving_support u:object_r:mtk_bg_power_saving_support_prop:s0
+ro.vendor.mtk_bg_power_saving_ui u:object_r:mtk_bg_power_saving_ui_prop:s0
+ro.vendor.mtk_besloudness_support u:object_r:mtk_besloudness_support_prop:s0
+ro.vendor.mtk_hifiaudio_support u:object_r:mtk_hifiaudio_support_prop:s0
+ro.vendor.mtk_active_noise_cancel u:object_r:mtk_active_noise_cancel_prop:s0
+ro.vendor.mtk_wapi_support u:object_r:mtk_wapi_support_prop:s0
+
+#=============allow FastDormancy support property===============
+ro.vendor.mtk_fd_support u:object_r:mtk_fd_support_prop:s0
+
+#=============allow wappush property===========
+ro.vendor.mtk_wappush_support  u:object_r:mtk_wappush_prop:s0
+
+#=============allow MD Number Protocol===============
+ro.vendor.num_md_protocol u:object_r:num_md_protocol_prop:s0
+
+#=============allow NFC related property===========
+persist.vendor.st_nfc_gsma_support u:object_r:mtk_st_nfc_gsma_support_prop:s0
+persist.vendor.st_nfc_ignore_modem u:object_r:mtk_st_nfc_ignore_modem_prop:s0
+ro.vendor.mtk_nfc_addon_support u:object_r:mtk_nfc_addon_support_prop:s0
+ro.vendor.mtk_uicc_clf u:object_r:mtk_nfc_uicc_clf_prop:s0
+persist.vendor.radio.seapi.off u:object_r:mtk_radio_seapi_off_prop:s0
+persist.vendor.nxp_nfc_gsma_support u:object_r:mtk_nxp_nfc_gsma_support_prop:s0
+
+#=============MTK operator property===========
+ro.vendor.operator.  u:object_r:mtk_operator_prop:s0
+
+#=============allow vendor_init to set ro.vendor.mtk_system_update_support==============
+ro.vendor.mtk_system_update_support u:object_r:mtk_system_update_support_prop:s0
+
+#=============allow vendor_init to set ro.vendor.mtk_omacp_support==============
+ro.vendor.mtk_omacp_support u:object_r:mtk_omacp_support_prop:s0
+
+#=============allow libudf property===========
+persist.vendor.debug.fdleak         u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.fdleak.program u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.fdleak.bt2log  u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.fdleak.thd     u:object_r:mtk_libudf_prop:s0
+persist.vendor.libc.debug.malloc    u:object_r:mtk_libudf_prop:s0
+persist.vendor.libc.debug15.prog    u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug15.config       u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug15.config.file  u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug15.statis       u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.mmap           u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.mmap.program   u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.mmap.config    u:object_r:mtk_libudf_prop:s0
+
+#=============allow printk property===========
+persist.vendor.uartconsole.enable   u:object_r:mtk_printk_prop:s0
+
+#fm vibspk support
+ro.vendor.mtk_vibspk_support u:object_r:mtk_default_prop:s0
+
+#fm 50khz support
+ro.vendor.mtk_fm_50khz_support u:object_r:mtk_default_prop:s0
+
+#=============MTK camera property===========
+vendor.camera.save.temp.video  u:object_r:mtk_camera_prop:s0
+vendor.camera_af_power_debug  u:object_r:mtk_camera_prop:s0
+vendor.com.mediatek.gesture.pose  u:object_r:mtk_camera_prop:s0
+vendor.debug.dualcam.mode  u:object_r:mtk_camera_prop:s0
+vendor.debug.mtkcam.loglevel  u:object_r:mtk_camera_prop:s0
+vendor.mtkcamapp.cshot.platform  u:object_r:mtk_camera_prop:s0
+vendor.mtkcamapp.cshot.version  u:object_r:mtk_camera_prop:s0
+vendor.debug.stereo.single_main2  u:object_r:mtk_camera_prop:s0
+vendor.debug.surface.enabled  u:object_r:mtk_camera_prop:s0
+vendor.debug.thumbnailFromYuv.enable  u:object_r:mtk_camera_prop:s0
+vendor.lomoeffect.  u:object_r:mtk_camera_prop:s0
+vendor.mtk.camera.app.  u:object_r:mtk_camera_prop:s0
+vendor.multizone.af.window.ratio  u:object_r:mtk_camera_prop:s0
+persist.vendor.mtkcamapp.loglevel  u:object_r:mtk_camera_prop:s0
+persist.vendor.mtk_camera_app_version  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_cfb  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_dualdenoise_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_dualzoom_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_mfb_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_native_pip_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_vfb  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_camera_app_api_version  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_camera_app_version  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_emulator_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_fat_on_nand  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_multiwindow  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_slow_motion_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_zsdhdr_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_lomo_support  u:object_r:mtk_camera_prop:s0
+vendor.vdo.cam.effect  u:object_r:mtk_camera_prop:s0
+vendor.mtk.client.appmode u:object_r:mtk_camera_prop:s0
+
+#=============MTK gallery property===========
+vendor.debug.gallery.loglevel  u:object_r:mtk_gallery_prop:s0
+vendor.gallery.log.enable  u:object_r:mtk_gallery_prop:s0
+
+#=============MTK media property===========
+vendor.debug.log_delete  u:object_r:mtk_media_prop:s0
+vendor.debug.log_insert  u:object_r:mtk_media_prop:s0
+vendor.debug.log_query  u:object_r:mtk_media_prop:s0
+vendor.debug.log_scan  u:object_r:mtk_media_prop:s0
+vendor.debug.log_update  u:object_r:mtk_media_prop:s0
+
+#=============allow system apps read PrivacyProtectionLock property============
+ro.vendor.mtk_privacy_protection_lock u:object_r:mtk_default_prop:s0
+
+#=============allow RSC property===========
+ro.vendor.sys.current_rsc_path  u:object_r:mtk_rsc_prop:s0
+ro.vendor.vnd.current_rsc_path  u:object_r:mtk_rsc_prop:s0
+
+#=============allow system server read dhcp property ============
+persist.vendor.net.dhcp.renew u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_dhcpv6c_wifi u:object_r:mtk_default_prop:s0
+
+#=============allow AMS dynamic enable log property===========
+persist.vendor.sys.activitylog u:object_r:mtk_amslog_prop:s0
+
+#=============allow AMS-aal dynamic enable property===========
+persist.vendor.sys.mtk_app_aal_support u:object_r:mtk_amsaal_prop:s0
+
+#=============MTK PMS property===========
+persist.vendor.pms_removable  u:object_r:mtk_pms_prop:s0
+ro.vendor.mtk_carrierexpress_inst_sup u:object_r:mtk_pms_prop:s0
+
+#=============CT SelfRegister property===========
+ro.vendor.mtk_ct4greg_app u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_devreg_app u:object_r:mtk_default_prop:s0
+persist.vendor.radio.selfreg u:object_r:mtk_selfreg_prop:s0
+
+#=============MTK CDMA Less property===========
+persist.vendor.vzw_device_type u:object_r:persist_vendor_vzw_device_type:s0
+
+#=============allow RTT property==============
+persist.vendor.mtk_rtt_support    u:object_r:mtk_rtt_prop:s0
+
+#=============CTM property===========
+persist.vendor.ctm_slot_flag u:object_r:mtk_ctmslot_prop:s0
+
+#=============MTK UCE property===========
+persist.vendor.mtk_uce_support u:object_r:mtk_uce_support_prop:s0
+
+#=============USB CBA property===========
+ro.vendor.mtk_usb_cba_support u:object_r:mtk_default_prop:s0
+persist.vendor.sys.usb.activation u:object_r:mtk_cba_activation:s0
+
+#=============CDMA property===========
+vendor.cdma. u:object_r:cdma_prop:s0
+vendor.cdma.icc.operator.mcc u:object_r:vendor_cdma_prop:s0
+
+#=============ECBM property==============
+vendor.ril.cdma.inecmmode_by_slot u:object_r:mtk_cdma_ecm_prop:s0
+
+#=============MTK RCS property==============
+persist.vendor.mtk_rcs_support u:object_r:mtk_rcs_support_prop:s0
+persist.vendor.service.rcs u:object_r:service_rcs_prop:s0
+persist.vendor.service.tag.rcs u:object_r:service_rcs_prop:s0
+persist.vendor.service.tag.rcs.2 u:object_r:service_rcs_prop:s0
+persist.vendor.active.rcs.slot.id u:object_r:service_rcs_prop:s0
+
+#=============MTK World Phone property===========
+persist.vendor.radio.wm_selectmode  u:object_r:mtk_world_phone_prop:s0
+persist.vendor.radio.wm_fddtimer  u:object_r:mtk_world_phone_prop:s0
+
+#=============MTK Capability Switch property===========
+persist.vendor.radio.unlock  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.unlock.roaming  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.wait.imsi  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.waitimsi.roaming  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.sim.status  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.new.sim.slot  u:object_r:mtk_capability_switch_prop:s0
+vendor.ril.imsi.status.  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.simswitchstate  u:object_r:mtk_capability_switch_prop:s0
+
+#=============allow data shaping property==============
+persist.vendor.datashaping u:object_r:mtk_datashaping_prop:s0
+#=============MTK IMS Config Provision property===========
+persist.vendor.mtk.provision. u:object_r:mtk_provision_prop:s0
+
+#=============allow wfd hybrid encode property=============
+ro.vendor.mtk_hybrid_encode_support u:object_r:mtk_default_prop:s0
+
+# allow netdagent to set property
+vendor.net.rndis.client u:object_r:netdagent_prop:s0
+
+# allow get neuropilot property
+ro.vendor.mtk_nn_quant_preferred u:object_r:mtk_nn_quant_preferred_prop:s0
+ro.vendor.mtk_tflite_fuse_pad u:object_r:mtk_nn_quant_preferred_prop:s0
+
+# hdmi service property,used for tablet only
+ro.vendor.mtk_tb_hdmi u:object_r:mtk_default_prop:s0
+
+#=============allow system apps read sim_me_lock_mode property============
+ro.vendor.sim_me_lock_mode u:object_r:mtk_default_prop:s0
+
+#=============MTK CAM Security property=============
+ro.vendor.mtk_cam_security u:object_r:mtk_cam_security_prop:s0
+
+#=============allow subsidylock==============
+persist.vendor.subsidylock    u:object_r:mtk_subsidylock_prop:s0
+persist.vendor.subsidylock.connectivity_status   u:object_r:mtk_subsidylock_prop_connect:s0
+
+#============= meta set atci property ==============
+persist.vendor.service.atci.atm_mode u:object_r:atci_sys_prop:s0
+
+#=============Wi-Fi Hotspot==============
+vendor.wifi.tethering.channel u:object_r:mtk_wifi_hotspot_prop:s0
+
+#=============Telephony Add-on===========
+ro.vendor.mtk_telephony_add_on_policy  u:object_r:mtk_telephony_addon_prop:s0
+ro.vendor.mtk_telephon_add_on_pkg_file  u:object_r:mtk_telephony_addon_prop:s0
+
+#=============allow get ro.vendor.mtk_cta_support===============
+ro.vendor.mtk_cta_support u:object_r:mtk_cta_support_prop:s0
+
+#=============allow persist.vendor.heavy.loading.support===============
+persist.vendor.heavy.loading. u:object_r:mtk_heavy_loading_prop:s0
+
+#============all emcamera set camera prop=====================
+vendor.debug.camera. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.cameng. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.lsc_mgr.  u:object_r:mtk_emcamera_prop:s0
+vendor.debug.ae. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.ae_mgr. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.awb_mgr. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.hdr u:object_r:mtk_emcamera_prop:s0
+vendor.debug.shot. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.eis. u:object_r:mtk_emcamera_prop:s0
+persist.vendor.mtkcam. u:object_r:mtk_emcamera_prop:s0
+
+#============allow jpeg dec opt. property=========
+ro.vendor.jpeg_decode_sw_opt u:object_r:mtk_jpeg_opt_prop:s0
+#line 1 "device/lge/sepolicy/common/mtk/property_contexts"
+
+###
+
+# ctl property (vendor)
+
+###
+
+# USB
+###
+
+## RIL Property
+###
+
+##################################################################################################
+# vendor exported property
+# coredomain have only getting permission of vendor property.
+##################################################################################################
+# model info exported property
+
+# SW version
+
+# LAOP
+
+# Fota
+
+# NFC
+
+# PAYMENT
+
+# lafd exported property
+
+# logger service exported property
+
+# Needed to be accessed before property HAL starting
+
+# Needed to be accessed before LGSystemSever init
+
+# Build
+
+# To use vendor property in adbd (adbd is force static executable, so it cannot use shared library of property HAL.
+
+# To maintain one source for pcas library installed both system and vendor.
+##################################################################################################
+
+# UICC
+###
+
+# PROTOCOL_DATA
+###
+
+# BLUETOOTH
+###
+
+# TELEPHONY_CALL_FRAMEWORK
+###
+
+# KERNEL
+###
+
+# TELEPHONY_SMS_FRAMEWORK
+###
+
+# OSF_USBC
+###
+
+# Power Property
+vendor.lge.thermal.candidate                 u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.thermal.cmd                       u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.thermal.list                      u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.thermal.mode                      u:object_r:vendor_lge_power_prop:s0 exact string
+vendor.lge.thermal.state                     u:object_r:vendor_lge_power_prop:s0 exact string
+###
+
+# PCAS
+###
+
+# MODEM_BSP
+###
+
+# IMS
+###
+
+# Audio_BSP
+persist.vendor.lge.audio.aw_skt            u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.aw_mec            u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.ti_pnr            u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.ti_ftc            u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.ti_m_ftc            u:object_r:vendor_lge_audio_prop:s0 exact string
+vendor.lge.audio.ti_ftc_f            u:object_r:vendor_lge_audio_prop:s0 exact string
+persist.vendor.lge.audio.aux_attn            u:object_r:vendor_lge_audio_prop:s0 exact string
+###
+
+# APVM
+###
+
+# Faceprint
+###
+
+# Display
+###
+
+# Touch
+###
+
+# Model
+###
+
+# Camera
+vendor.camera.aux.packagelist                    u:object_r:vendor_camera_prop:s0 exact string
+###
+
+# MSP
+###
+
+# SystemUI
+###
+
+# SetupWizard
+###
+
+# MDM
+###
+
+# Audio_F/W
+###
+
+# Call_APP
+###
+
+#KSUT
+
+# WFD
+###
+
+vendor.perf.gestureflingboost.enable            u:object_r:vendor_scroll_prop:s0
+###
+#line 1 "system/sepolicy/reqd_mask/property_contexts"
+# empty property_contexts file - this file is used to generate an empty
+# non-platform property context for devices without any property_contexts
+# customizations.

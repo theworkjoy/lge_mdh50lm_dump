@@ -1,0 +1,100 @@
+﻿
+LG Electronics Co., Ltd. (hereinafter referred to as "the Company") collects, uses and processes personal information of customers (hereinafter referred to as "Users") as follows. This Privacy Policy is subject to change by the revision of the relevant laws or the Company's policies. In this case, the Company shall notify the User of such changes in advance. 
+
+1. Collection and Use of Data
+(1) Personal Information to Be Collected and Collection Method
+- Collected Items (Mandatory): IMEI information, model, version, country code, user's carrier information, Cloud Message key
+※ In the event that the personal information is collected on short-term basis for any other specific purpose, it shall be separately notified. And personal information is collected with the consent of the members. 
+- Collection Methods: Automatic collection when the User executes or uses the service
+※ The Company does not collect personal information if the user is a minor under the age of 14. If the Company inevitably collects personal information from minors under the age of 14, we will seek the consent of the legal representative in advance.
+
+(2) Purpose for Collecting Personal Information
+- Confirmation of latest version of software, notice and implementation of updates (including urgent updates and upgrades) 
+- Confirmation of the company's warranty (confirming whether it is a genuine product for the provision of the repair service)
+- Notification for the security and safety risks related to the user device
+- Company's product / service management and improvement, statistics / analysis
+※ An emergency software update ("emergency update") may be automatically downloaded and installed without your consent. This is done to prevent any serious device problems including, but not limited to:
+– Any problems directly related to your safety, e.g., security breaches, temperature issues.
+– Any problems related to the mobile network, e.g., device failures, send/receive issues, poor reception, network shutdowns.
+    Refer to the End User Software License Agreement for details.
+※ The Company can collect the personal information of the anonymous customers by removing the identification information, create the statistical data and use it to analyze the usage tendency and to improve the service
+
+(3) Period of Retention and Use of Collected Personal Information
+The Company collects and uses personal information from the information subject. Also, keeps it until the purpose of such collection and use is fulfilled. Therefore, it is the principle that the Company uses and stores personal information during the period of using the service.  Note, however, that the Company shall keep personal information during the following period if necessary, in accordance with the relevant statutes and internal policies of the Company.
+
+Category Records related to customer counseling 
+Retention Period: Until the end of the after-sale service related to the customer counseling or 30 days after the after-sale service. 
+
+Category: In the event that there are disputes, such as complaints and lawsuits, between the Company and a customer, and the disputes are not settled within the retention period. 
+Retention Period: Retention period: Until the dispute is settled
+
+Category: Consent was obtained from individual users 
+Retention Period: Period of agreement
+
+(4) Guide on the Right to Refuse the Agreement and Disadvantages of Disagreement
+Users may not agree to the collection and use of personal information, but it is essential for the company to collect and use personal information in order to provide software update services. Please note that the use/provision of many parts of the service may be restricted if you do not agree to the not agree to the collection and use of personal information.
+  
+2. Consignment of Personal Information Handling
+The Company may consign handling of the User's personal information to an outside specialized company to provide better services and for the User's convenience. The Company's external partners and scope of work are as follows: (The Company may add or change external partners to improve the Service.
+- Commissioned Work Details: To provide service, operate/manage the servers.
+- Commissioned Party: LG CNS 
+
+3. Rights of the user and legal agent, and exercise of the rights
+(1) The right to request to access, modify and delete personal information
+At any time, users or their legal representative may view or correct their registered personal information or that of a minor for whom they are the parent or legal guardian and may request the Company to delete such information. If you want to view, correct, or delete your personal information, please contact the personal information manager or person in charge of personal information in writing, by phone or by email. We will perform the relevant measures immediately. If such personal information is subject to collection to comply with other laws and regulations, however, the User may not request that the Company delete such information. If personal information is corrected and deleted, the User may not be able to use all or part of the Service. 
+
+(2) The right to Request to Stop Processing Personal Information
+At any time, users or their legal representative may request that the Company stop handling their registered personal information or that of a minor for whom they are the parent or legal guardian. If they wish the Company to stop handling such personal information, they should contact the CPO or staff in charge in writing, by phone, or by email so that the Company may take prompt action. The Company may continue processing such information under the applicable laws, notwithstanding requests from the User to stop doing so. In this case, the Company will promptly notify the User of the details. Regarding this matter, users may raise objections to the CPO and staff in charge in writing, by phone, by email, etc. 
+
+(3) Right to Withdraw Consent to Collection, Use and Provision of Personal Information
+At any time, users or their legal representative may withdraw their consent for the collection, use and provision of their registered personal information or that of a minor for whom they are the parent or legal guardian. To this end users may contact the CPO and the staff in charge specified in Article 8 in writing, by phone, or by email. The Company will then identify those users and take appropriate action including deletion of personal information.
+
+4. Matters Regarding Installation/Operation and Rejection of Auto Collection of Personal Information
+For the operation of the Service, the Company will automatically collect any information required to use the Service (e.g., access logs including IP, etc.). If the User rejects the automatic collection of such information, they may not be able to use the Service.
+
+5. Procedure for and Method of Destroying Personal Information
+In principle, the Company shall destroy any personal information without delay after the period of collection and use expires. The Company shall destroy personal information based on the following procedures.
+(1) Procedure for Discarding Information
+- After the Company fulfills its purpose for collecting and using personal information, any information inputted by the User to use the Service shall be moved to a separate database (or a separate document box if the information is on paper) and shall be stored in that database for a certain period before being destroyed as per the Company’s internal policies and other relevant laws or regulations. (see Period of Storage and Use)
+- Personal information moved to a separate database shall not be used for any purposes other than storage, unless otherwise specified by law.
+(2) Discarding Method 
+- Any personal information stored in electronic form shall be deleted in a technically irrevocable manner.
+
+6. Technical and Administrative Protection Measures for Protection of Personal Information
+The company has the technical and managerial measures in place to secure the safety of personal information, so that it is not lost, stolen, leaked, modified, or damaged when it is processed.
+(1) Technical protective measures
+- A security device is adopted to safely transfer personal information via network by using an encryption algorithm. 
+- To prevent external invasions such as hacking, each server controls unauthorized access from the outside and also has other technical systems for ensuring system security. The Company is fully committed to maintaining the security of personal information.
+- Any information that identifies and certifies Users will be encrypted prior to storage so as to prevent decoding.
+- Printing personal information on paper and/or transferring personal information to portable storage devices are strictly prohibited unless such actions are authorized and granted by the person in charge of personal information protection. The same rule applies to the reprinting or reproduction of printed materials.
+
+(2) Administrative Protective Measures
+- Access to the User's personal information is limited to the minimum number of persons.
+- In case the staff responsible for handling personal information changes due to a transfer or retirement, his or her access to the personal information processing system will be changed or canceled without delay. In this case, the records concerning authorization, changes and termination of the record shall be stored for at least 5 years.
+- The processing system and PCs used by the staff responsible for handling personal information shall be set so that personal information may not be accessed by or disclosed to unauthorized persons via Internet homepages, P2P or other file-sharing setups.
+- In collecting, using and destroying personal information, the Company shall record any reason for collection according to the recommended standards under applicable laws (relevant statutory rules including laws on facilitating the use of IT network and protecting information) and stipulate the internal policies and process, if applicable.
+- Every employee handling personal information shall receive in-house training on new security technology and privacy laws on a regular basis.
+- Upon employment, every employee of the Company shall sign a Confidentiality Agreement to prevent potential leaks or disclosure of personal information. Likewise, the Company will prepare an internal procedure for monitoring the current implementation of the Privacy Policy, as well as employees' compliance with said policy.
+- The handover of work related to the handling of personal information is now carefully implemented under tight security, with the Company providing a definitive scope of the employee's responsibility for incidents related to personal information after their employment and termination of employment.
+- The Company does not store personal information in combination with general data but keeps them separate from each other on different servers.
+- The Company designates the computing room and data archive as special protection zones, so access to such zones may be strictly controlled.
+- Note, however, that the Company shall not be held liable for damages resulting from the unexpected leak of personal information due to the User's carelessness or reasons other than the Company's intentional or gross negligence. 
+
+7. Link site
+We may provide a link to another company's website or data for you. In this case, we shall not be responsible for and guarantee the usefulness of the provided services or data from such links because we do not have any control over the external websites and data. 
+If you navigate to another website by clicking the link, be sure to review the policy of the newly visited website because the policy is not relevant to us.
+
+8. Contact Information of the Chief Privacy Officer (CPO)
+The Company designates the following department and chief privacy officer (CPO) to protect customers' personal information and settle any and all complaints regarding personal information.
+- Chief Privacy Officer: information security division Leader
+- e-Mail: mc.privacy@lge.com
+
+For any inquiries and complaints regarding the use of the Company's Service, please report to the chief privacy officer or supervising department. The Company shall take appropriate action promptly in the event of receiving any reports.
+
+For other questions about reporting or consulting on privacy violations, please contact the following institutions.
+- KISA Privacy Center (privacy.kisa.or.kr/118)
+- Supreme Prosecutors Office Cyber Investigation Team (www.spo.go.kr /1301)
+- National Police Service Cyber Security Bureau (cyberbureau.police.go.kr/182)
+
+Established on: Mar. 2, 2015
+Date of enforcement: DEC. 1, 2019

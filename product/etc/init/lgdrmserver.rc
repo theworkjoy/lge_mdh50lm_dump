@@ -1,0 +1,12 @@
+service lgdrm /product/bin/lgdrmserver
+    class main
+    user vendor_lgdrm
+    group vendor_lgdrm_acc net_raw
+
+# restart when servicemanager is restarted
+on property:init.svc.servicemanager=restarting
+    restart lgdrm
+
+on post-fs-data
+mkdir /data/lgdrm 0770 vendor_lgdrm vendor_lgdrm_acc
+chown vendor_lgdrm vendor_lgdrm_acc /data/lgdrm/FLLCKUI

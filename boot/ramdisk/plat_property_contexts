@@ -1,0 +1,1856 @@
+#line 1 "system/sepolicy/private/property_contexts"
+##########################
+# property service keys
+#
+#
+net.rmnet               u:object_r:net_radio_prop:s0
+net.gprs                u:object_r:net_radio_prop:s0
+net.ppp                 u:object_r:net_radio_prop:s0
+net.qmi                 u:object_r:net_radio_prop:s0
+net.lte                 u:object_r:net_radio_prop:s0
+net.cdma                u:object_r:net_radio_prop:s0
+net.dns                 u:object_r:net_dns_prop:s0
+sys.usb.config          u:object_r:system_radio_prop:s0
+ril.                    u:object_r:radio_prop:s0
+ro.ril.                 u:object_r:radio_prop:s0
+gsm.                    u:object_r:radio_prop:s0
+persist.radio           u:object_r:radio_prop:s0
+
+net.                    u:object_r:system_prop:s0
+dev.                    u:object_r:system_prop:s0
+ro.runtime.             u:object_r:system_prop:s0
+ro.runtime.firstboot    u:object_r:firstboot_prop:s0
+hw.                     u:object_r:system_prop:s0
+ro.hw.                  u:object_r:system_prop:s0
+sys.                    u:object_r:system_prop:s0
+sys.cppreopt            u:object_r:cppreopt_prop:s0
+sys.lpdumpd             u:object_r:lpdumpd_prop:s0
+sys.powerctl            u:object_r:powerctl_prop:s0
+sys.usb.ffs.            u:object_r:ffs_prop:s0
+service.                u:object_r:system_prop:s0
+dhcp.                   u:object_r:dhcp_prop:s0
+dhcp.bt-pan.result      u:object_r:pan_result_prop:s0
+bluetooth.              u:object_r:bluetooth_prop:s0
+
+debug.                  u:object_r:debug_prop:s0
+debug.db.               u:object_r:debuggerd_prop:s0
+dumpstate.              u:object_r:dumpstate_prop:s0
+dumpstate.options       u:object_r:dumpstate_options_prop:s0
+llk.                    u:object_r:llkd_prop:s0
+khungtask.              u:object_r:llkd_prop:s0
+ro.llk.                 u:object_r:llkd_prop:s0
+ro.khungtask.           u:object_r:llkd_prop:s0
+log.                    u:object_r:log_prop:s0
+log.tag                 u:object_r:log_tag_prop:s0
+log.tag.WifiHAL         u:object_r:wifi_log_prop:s0
+security.perf_harden    u:object_r:shell_prop:s0
+service.adb.root        u:object_r:shell_prop:s0
+service.adb.tcp.port    u:object_r:shell_prop:s0
+
+persist.audio.          u:object_r:audio_prop:s0
+persist.bluetooth.      u:object_r:bluetooth_prop:s0
+persist.debug.          u:object_r:persist_debug_prop:s0
+persist.logd.           u:object_r:logd_prop:s0
+ro.logd.                u:object_r:logd_prop:s0
+persist.logd.security   u:object_r:device_logging_prop:s0
+persist.logd.logpersistd        u:object_r:logpersistd_logging_prop:s0
+logd.logpersistd        u:object_r:logpersistd_logging_prop:s0
+persist.log.tag         u:object_r:log_tag_prop:s0
+persist.mmc.            u:object_r:mmc_prop:s0
+persist.netd.stable_secret      u:object_r:netd_stable_secret_prop:s0
+persist.sys.            u:object_r:system_prop:s0
+persist.sys.safemode    u:object_r:safemode_prop:s0
+persist.sys.theme       u:object_r:theme_prop:s0
+persist.sys.fflag.override.settings_dynamic_system    u:object_r:dynamic_system_prop:s0
+ro.sys.safemode         u:object_r:safemode_prop:s0
+persist.sys.audit_safemode      u:object_r:safemode_prop:s0
+persist.service.        u:object_r:system_prop:s0
+persist.service.bdroid. u:object_r:bluetooth_prop:s0
+persist.security.       u:object_r:system_prop:s0
+persist.traced.enable   u:object_r:traced_enabled_prop:s0
+traced.lazy.            u:object_r:traced_lazy_prop:s0
+persist.heapprofd.enable u:object_r:heapprofd_enabled_prop:s0
+persist.vendor.overlay.  u:object_r:overlay_prop:s0
+ro.boot.vendor.overlay.  u:object_r:overlay_prop:s0
+ro.boottime.             u:object_r:boottime_prop:s0
+ro.serialno             u:object_r:serialno_prop:s0
+ro.boot.btmacaddr       u:object_r:bluetooth_prop:s0
+ro.boot.serialno        u:object_r:serialno_prop:s0
+ro.bt.                  u:object_r:bluetooth_prop:s0
+ro.boot.bootreason      u:object_r:bootloader_boot_reason_prop:s0
+persist.sys.boot.reason u:object_r:last_boot_reason_prop:s0
+sys.boot.reason         u:object_r:system_boot_reason_prop:s0
+sys.boot.reason.last    u:object_r:last_boot_reason_prop:s0
+pm.                     u:object_r:pm_prop:s0
+test.sys.boot.reason    u:object_r:test_boot_reason_prop:s0
+sys.lmk.                u:object_r:system_lmk_prop:s0
+sys.trace.              u:object_r:system_trace_prop:s0
+
+# Boolean property set by system server upon boot indicating
+# if device owner is provisioned.
+ro.device_owner         u:object_r:device_logging_prop:s0
+
+# selinux non-persistent properties
+selinux.restorecon_recursive   u:object_r:restorecon_prop:s0
+
+# default property context
+*                       u:object_r:default_prop:s0
+
+# data partition encryption properties
+vold.                   u:object_r:vold_prop:s0
+ro.crypto.              u:object_r:vold_prop:s0
+
+# ro.build.fingerprint is either set in /system/build.prop, or is
+# set at runtime by system_server.
+ro.build.fingerprint    u:object_r:fingerprint_prop:s0
+
+ro.persistent_properties.ready  u:object_r:persistent_properties_ready_prop:s0
+
+# ctl properties
+ctl.bootanim            u:object_r:ctl_bootanim_prop:s0
+ctl.android.hardware.dumpstate u:object_r:ctl_dumpstate_prop:s0
+ctl.dumpstate           u:object_r:ctl_dumpstate_prop:s0
+ctl.fuse_               u:object_r:ctl_fuse_prop:s0
+ctl.mdnsd               u:object_r:ctl_mdnsd_prop:s0
+ctl.ril-daemon          u:object_r:ctl_rildaemon_prop:s0
+ctl.bugreport           u:object_r:ctl_bugreport_prop:s0
+ctl.console             u:object_r:ctl_console_prop:s0
+ctl.                    u:object_r:ctl_default_prop:s0
+
+# Don't allow blind access to all services
+ctl.sigstop_on$         u:object_r:ctl_sigstop_prop:s0
+ctl.sigstop_off$        u:object_r:ctl_sigstop_prop:s0
+ctl.start$              u:object_r:ctl_start_prop:s0
+ctl.stop$               u:object_r:ctl_stop_prop:s0
+ctl.restart$            u:object_r:ctl_restart_prop:s0
+ctl.interface_start$    u:object_r:ctl_interface_start_prop:s0
+ctl.interface_stop$     u:object_r:ctl_interface_stop_prop:s0
+ctl.interface_restart$  u:object_r:ctl_interface_restart_prop:s0
+
+ # Restrict access to starting/stopping adbd
+ctl.start$adbd             u:object_r:ctl_adbd_prop:s0
+ctl.stop$adbd              u:object_r:ctl_adbd_prop:s0
+ctl.restart$adbd           u:object_r:ctl_adbd_prop:s0
+
+# Restrict access to starting/stopping gsid.
+ctl.start$gsid          u:object_r:ctl_gsid_prop:s0
+ctl.stop$gsid           u:object_r:ctl_gsid_prop:s0
+ctl.restart$gsid        u:object_r:ctl_gsid_prop:s0
+
+# NFC properties
+nfc.                    u:object_r:nfc_prop:s0
+
+# These properties are not normally set by processes other than init.
+# They are only distinguished here for setting by qemu-props on the
+# emulator/goldfish.
+config.                 u:object_r:config_prop:s0
+ro.config.              u:object_r:config_prop:s0
+dalvik.                 u:object_r:dalvik_prop:s0
+ro.dalvik.              u:object_r:dalvik_prop:s0
+
+# Shared between system server and wificond
+wlan.                   u:object_r:wifi_prop:s0
+
+# Lowpan properties
+lowpan.                 u:object_r:lowpan_prop:s0
+ro.lowpan.              u:object_r:lowpan_prop:s0
+
+# heapprofd properties
+heapprofd.              u:object_r:heapprofd_prop:s0
+
+# hwservicemanager properties
+hwservicemanager.       u:object_r:hwservicemanager_prop:s0
+
+# Common default properties for vendor and odm.
+init.svc.odm.           u:object_r:vendor_default_prop:s0
+init.svc.vendor.        u:object_r:vendor_default_prop:s0
+ro.hardware.            u:object_r:vendor_default_prop:s0
+ro.odm.                 u:object_r:vendor_default_prop:s0
+ro.vendor.              u:object_r:vendor_default_prop:s0
+odm.                    u:object_r:vendor_default_prop:s0
+persist.odm.            u:object_r:vendor_default_prop:s0
+persist.vendor.         u:object_r:vendor_default_prop:s0
+vendor.                 u:object_r:vendor_default_prop:s0
+# ro.boot. properties are set based on kernel commandline arguments, which are vendor owned.
+ro.boot.                u:object_r:exported2_default_prop:s0
+
+# Properties that relate to time / time zone detection behavior.
+persist.time.           u:object_r:time_prop:s0
+
+# Properties that relate to server configurable flags
+device_config.reset_performed           u:object_r:device_config_reset_performed_prop:s0
+persist.device_config.activity_manager_native_boot. u:object_r:device_config_activity_manager_native_boot_prop:s0
+persist.device_config.attempted_boot_count        u:object_r:device_config_boot_count_prop:s0
+persist.device_config.input_native_boot. u:object_r:device_config_input_native_boot_prop:s0
+persist.device_config.netd_native.           u:object_r:device_config_netd_native_prop:s0
+persist.device_config.runtime_native.        u:object_r:device_config_runtime_native_prop:s0
+persist.device_config.runtime_native_boot.   u:object_r:device_config_runtime_native_boot_prop:s0
+persist.device_config.media_native.          u:object_r:device_config_media_native_prop:s0
+
+apexd.                  u:object_r:apexd_prop:s0
+persist.apexd.          u:object_r:apexd_prop:s0
+
+bpf.progs_loaded        u:object_r:bpf_progs_loaded_prop:s0
+
+gsid.                   u:object_r:gsid_prop:s0
+ro.gsid.                u:object_r:gsid_prop:s0
+
+# Property for disabling NNAPI vendor extensions on product image (used on GSI /product image,
+# which can't use NNAPI vendor extensions).
+ro.nnapi.extensions.deny_on_product                u:object_r:nnapi_ext_deny_product_prop:s0
+#line 1 "device/lge/sepolicy/private/property_contexts"
+
+# LGE private property
+# define as fuction catagory like below
+# # power, # camera etc..
+
+# ctl property (private)
+ctl.system.dumpreporter             u:object_r:product_lge_ctl_system_prop:s0
+ctl.system.ckerrorreporter          u:object_r:product_lge_ctl_system_prop:s0
+ctl.product.imsipsecclient          u:object_r:product_lge_ctl_ims_prop:s0
+ctl.system.encrypt                  u:object_r:product_lge_ctl_encrypt_prop:s0
+ctl.system.mount_encrypt            u:object_r:product_lge_ctl_encrypt_prop:s0
+ctl.system.keymaster_create         u:object_r:product_lge_ctl_encrypt_prop:s0
+###
+
+# to execute property migration logic, property labelling old property name to new property name label
+ro.model.name                     u:object_r:product_lge_system_prop:s0 exact string
+ro.lge.swversion                  u:object_r:product_lge_system_prop:s0 exact string
+ro.build.target_country           u:object_r:product_lge_system_prop:s0 exact string
+ro.build.target_operator          u:object_r:product_lge_system_prop:s0 exact string
+ro.build.target_region            u:object_r:product_lge_system_prop:s0 exact string
+persist.LiveDemoUnit              u:object_r:product_lge_system_prop:s0 exact string
+persist.audio.dmb_hifidac         u:object_r:product_lge_system_prop:s0 exact string
+persist.audio.hifi_dac            u:object_r:product_lge_system_prop:s0 exact string
+persist.lge.hifiquaddac           u:object_r:product_lge_system_prop:s0 exact string
+persist.service.main.enable       u:object_r:product_lge_system_prop:s0 exact string
+persist.service.system.enable     u:object_r:product_lge_system_prop:s0 exact string
+persist.service.events.enable     u:object_r:product_lge_system_prop:s0 exact string
+persist.service.radio.enable      u:object_r:product_lge_system_prop:s0 exact string
+persist.service.kernel.enable     u:object_r:product_lge_system_prop:s0 exact string
+persist.service.power.enable      u:object_r:product_lge_system_prop:s0 exact string
+persist.service.memory.enable     u:object_r:product_lge_system_prop:s0 exact string
+persist.service.crash.enable      u:object_r:product_lge_system_prop:s0 exact string
+persist.service.fg.enable         u:object_r:product_lge_system_prop:s0 exact string
+persist.service.packet.enable     u:object_r:product_lge_system_prop:s0 exact string
+ril.cdma.emergencyCall            u:object_r:product_lge_system_prop:s0 exact string
+ro.config.motor_type              u:object_r:product_lge_system_prop:s0 exact string
+ro.lge.globaleffect.dts           u:object_r:product_lge_system_prop:s0 exact string
+ro.lge.hw.cable                   u:object_r:product_lge_system_prop:s0 exact string
+ro.lge.petname                    u:object_r:product_lge_system_prop:s0 exact string
+ro.lge.capp_cupss.rootdir         u:object_r:product_lge_system_prop:s0 exact string
+ro.lge.swversion_short            u:object_r:product_lge_system_prop:s0 exact string
+persist.sys.sim.operator          u:object_r:product_lge_system_prop:s0 exact string
+persist.vendor.lge.service.igd.enable     u:object_r:product_lge_system_prop:s0 exact string
+persist.vendor.lge.service.igd.intnet     u:object_r:product_lge_system_prop:s0 exact string
+persist.vendor.lge.service.igd.extnet     u:object_r:product_lge_system_prop:s0 exact string
+persist.vendor.lge.service.igd.start      u:object_r:product_lge_system_prop:s0 exact string
+persist.sys.sim.profile           u:object_r:product_lge_system_prop:s0 exact string
+persist.service.email.enable      u:object_r:product_lge_system_prop:s0 exact string
+persist.sys.cust.emailringtone    u:object_r:product_lge_system_prop:s0 exact string
+ro.normalizedDensity              u:object_r:product_lge_system_prop:s0 exact string
+ro.lge.hydra                      u:object_r:product_lge_system_prop:s0 exact string
+ro.lge.suffix                     u:object_r:product_lge_system_prop:s0 exact string
+ro.build.default_country          u:object_r:product_lge_system_prop:s0 exact string
+persist.radio.camped_mccmnc       u:object_r:product_lge_system_prop:s0 exact string
+sys.factory.qem                   u:object_r:product_lge_system_prop:s0 exact string
+ro.sprint.rr.appenable            u:object_r:product_lge_system_prop:s0 exact string
+ro.sprint.hfa.flag                u:object_r:product_lge_system_prop:s0 exact string
+ro.chameleon.nativevowifi         u:object_r:product_lge_system_prop:s0 exact string
+persist.sys.fota_datapaypopup     u:object_r:product_lge_system_prop:s0 exact string
+persist.sys.lg.fota_silent        u:object_r:product_lge_system_prop:s0 exact string
+sys.otadm_boot_completed          u:object_r:product_lge_system_prop:s0 exact string
+persist.update_avail_time         u:object_r:product_lge_system_prop:s0 exact string
+persist.downloaded_time           u:object_r:product_lge_system_prop:s0 exact string
+persist.last_update_time          u:object_r:product_lge_system_prop:s0 exact string
+persist.radio.kr_ecclist          u:object_r:product_lge_system_prop:s0 exact string
+persist.radio.last_rat            u:object_r:product_lge_system_prop:s0 exact string
+persist.radio.isroaming           u:object_r:product_lge_system_prop:s0 exact string
+persist.security.sdc.enabled      u:object_r:product_lge_system_prop:s0 exact string
+persist.security.sdfullcrypto     u:object_r:product_lge_system_prop:s0 exact string
+persist.security.sdfullpercent    u:object_r:product_lge_system_prop:s0 exact string
+persist.security.sdmediacrypto    u:object_r:product_lge_system_prop:s0 exact string
+ril.gsm.reject_cause              u:object_r:product_lge_system_prop:s0 exact string
+persist.audio.voice.clarity       u:object_r:product_lge_system_prop:s0 exact string
+persist.audio.handset_rx_type     u:object_r:product_lge_system_prop:s0 exact string
+persist.audio.nsenabled           u:object_r:product_lge_system_prop:s0 exact string
+persist.sys.aodstatus_byuser      u:object_r:product_lge_system_prop:s0 exact string
+persist.sys.lg.resolution         u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# UICC
+product.lge.gsm.usim_perso_verified                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.ota_is_running                     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.ota_is_downloading                 u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.stk_title                          u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.stk_sume                           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.iccid-changed            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.ota_download             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.sys.ara.applet.using                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.iccid-changed2           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.iccid-changed3           u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ril.cdma.mdn                           u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.cat_init_done0                     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.cat_init_done1                     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.cat_init_done2                     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.stk_title1                         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.stk_title2                         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.stk_title3                         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.stk_sume1                          u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.stk_sume2                          u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.stk_sume3                          u:object_r:product_lge_system_prop:s0 exact string
+product.lge.gsm.ota_ignoreKey                      u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.stk_sume                            u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.enable_stk_scenario                 u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ril.cdma.phone.id                      u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ril.card_operator                      u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ril.card_provisioned                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ril.stk.isvolte                        u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ril.stk.issetupcall                    u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ril.stk.result_addinfo                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.ril.sim.otatime                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ril.inserted_sim_count                 u:object_r:product_lge_system_prop:s0 exact int
+###
+
+# VIEW
+product.lge.dsdp.mode                              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.display.size.control                    u:object_r:product_lge_system_prop:s0 exact bool
+ro.product.lge.enable.mini_activity                u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.mini_activity_height                u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.parallel.threads                    u:object_r:product_lge_system_prop:s0 exact int
+ro.product.lge.parallel.threshold                  u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.parallel.threads               u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.parallel.threshold             u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.resolution                     u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# Power BSP
+persist.product.lge.sys.batt_reboot_hist     u:object_r:product_lge_system_prop:s0 exact int
+ro.product.lge.brightness_config             u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.game_auto_mode                u:object_r:product_lge_system_prop:s0 exact int
+ro.product.lge.sys.ship_mode                 u:object_r:product_lge_system_prop:s0 exact bool
+###
+
+# APVM
+ro.product.lge.bg_apps_limit                       u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.bg_cached_ratio                     u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.mOomMinFree1                        u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.mOomMinFree2                        u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.mOomMinFree3                        u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.mOomMinFree4                        u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.mOomMinFree5                        u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.mOomMinFree6                        u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# BLUETOOTH
+product.lge.bt.a2dp.sinkmode                       u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.a2dp.pcmdump                        u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.avrcp.version                       u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.avrcp.peer_mtu                      u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.avrcp.pending_play                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.avrcp.pending_play_to_switch        u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.hfp.wbs_off                         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.hfp.busytone                        u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.pan                                 u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.tetherstate                         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.sdp.reject                          u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.sdp.reject.reset_db                 u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.sdp.reject.timer_interval           u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.snoop                               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.logger.media                        u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.logger.mask                         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.moca.hcitimeout                     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.moca.trigger_hcitimeout             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.vzw.sco_lv                          u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.vzw.tether_on                       u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.vzw.bt_on                           u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.disa.ccmodedump                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.a2dp.latency                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.a2dp.sbc_bitpool            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.a2dp.sbc_bitrate            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.a2dp.aac_bitrate            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.a2dp.scms_t                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.a2dp.con                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.a2dp.off_d                  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.a2dp.speaker                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.a2dp.offload                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.codec.exclude               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.avrcp.uniquid               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.avrcp.mselect               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.avrcp.remchar               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.avrcp.aosp                  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.avrcp.mtucheck              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.hfp.ind                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.hfp.vol                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.hfp.enable                  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.hfp.vr                      u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.hfpclient.vr                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.hfpclient.callstatus        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.avrcp.absvol                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.pbap.v12                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.map.cdma                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.sap.debug                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.parking                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.hidden                      u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.sig                         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.menuoff                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.aeskey                      u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.hci                         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.privlog                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.rubi                        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.hcitimeout                  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.patchram                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.tmppair                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt.avrcp.browsing              u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bt.dut.ready                           u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# TELEPHONY_CALL_FRAMEWORK
+ro.product.lge.radio.plmnbyrat                     u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.emergencycall                    u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.cdma.isin1xcall                  u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.cdma.prl_version                 u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.dds_operator                     u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio..subscriber_ids                  u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.dra_nw_type                      u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.acb_csfb                         u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.curr.call.sub                    u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.isNonLTESim                      u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.defaultNW                        u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.ecctask_wfc                      u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.mm_cause                         u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.gmm_cause                        u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.mm_temp                          u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.reject_nmo                       u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.lte_reject_cause                 u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.reject_cause                     u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.rc_2_rs_3_5.exist                u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.rat_changed                      u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.reject_rat                       u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.lte_available                    u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.lte_avail.bak                    u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.callmon.started                  u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.persolock_reject                 u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.isvoipcall                       u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.gsm.operator.alpha.data          u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.gsm.operator.numeric.tm          u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.call.imsservicestate             u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.ecclist.eccidlemode              u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.gsm.call.clear_codes             u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.lte_esm_reject_cause             u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.service_domain_value             u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.sar_support              u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.sar_ignore_usb           u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.sar_sensor_timer         u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.volte_tbcw_sub           u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.cbinfo_not_bar           u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.cscwstatus               u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.gsm.cota                 u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.kr_ecclist               u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.missing_phone            u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.last_rat                 u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.camped_mccmnc            u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.camped_mccmnc0           u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.camped_mccmnc1           u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.isroaming                u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.volte_tbcw_sub0          u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.volte_tbcw_sub1          u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.volte_tbcw_sub2          u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.cscwstatus0              u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.cscwstatus1              u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.cscwstatus2              u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.ecclist.eccidlemode1             u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.ecclist.eccidlemode2             u:object_r:product_lge_call_prop:s0 exact string
+ro.product.lge.radio.no_cdma                       u:object_r:product_lge_call_prop:s0 exact string
+ro.product.lge.radio.no_gsm                        u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.ecclist.autoprofile              u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.ecclist.autoprofile1             u:object_r:product_lge_call_prop:s0 exact string
+product.lge.radio.ecclist.autoprofile2             u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.manual_poweron                 u:object_r:product_lge_call_prop:s0 exact string
+product.lge.gsm.call.clir.init                     u:object_r:product_lge_call_prop:s0 exact string
+product.lge.adc.n11.first.number                   u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.second.number                  u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.third.number                   u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.forth.number                   u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.fifth.number                   u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.sixth.number                   u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.seventh.number                 u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.eighth.number                  u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.ninth.number                   u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.tenth.number                   u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.elevnth.number                 u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.twelfth.number                 u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.thirteenth.number              u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.fourteenth.number              u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.fifteenth.number               u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.sixteenth.number               u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.seventeenth.number             u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.eighteenth.number              u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.first.name                     u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.second.name                    u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.third.name                     u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.forth.name                     u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.fifth.name                     u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.sixth.name                     u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.seventh.name                   u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.eighth.name                    u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.ninth.name                     u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.tenth.name                     u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.elevnth.name                   u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.twelfth.name                   u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.thirteenth.name                u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.fourteenth.name                u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.fifteenth.name                 u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.sixteenth.name                 u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.seventeenth.name               u:object_r:product_lge_adc_n11_prop:s0 exact string
+product.lge.adc.n11.eighteenth.name                u:object_r:product_lge_adc_n11_prop:s0 exact string
+persist.product.lge.callfrw.force.mptysrvcc        u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.force.bsrvcc           u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.dbg                    u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.test_operator          u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.test_country           u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.test_region            u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest             u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.dbg         u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.vdbg        u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.country     u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.operator    u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.region      u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.ss          u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.opnumeric   u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.mcc         u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.mnc         u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.gid         u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.imsi        u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.nwoperator  u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.roaming     u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.showplmn    u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.plmn        u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.showspn     u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.spn         u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.emergonly   u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.callfrw.nwnametest.networkmcc  u:object_r:product_lge_call_test_prop:s0 exact string
+persist.product.lge.radio.ctc_operator             u:object_r:product_lge_call_external_writable_prop:s0 exact string
+persist.product.lge.radio.gfit_popup_on            u:object_r:product_lge_call_external_writable_prop:s0 exact string
+persist.product.lge.sar.ratpreference              u:object_r:product_lge_call_external_writable_prop:s0 exact string
+persist.product.lge.ecc.hiddenmenu                 u:object_r:product_lge_call_external_writable_prop:s0 exact string
+persist.product.lge.radio.no_fake_mcc              u:object_r:product_lge_call_external_writable_prop:s0 exact string
+product.lge.ril.lte.emm_reject                     u:object_r:product_lge_call_prop:s0 exact string
+product.lge.ril.lte.emm_reject1                    u:object_r:product_lge_call_prop:s0 exact string
+product.lge.ril.lte.esm_reject                     u:object_r:product_lge_call_prop:s0 exact string
+product.lge.ril.lte.esm_reject1                    u:object_r:product_lge_call_prop:s0 exact string
+ro.product.lge.second_network.gw                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ril.cdma.roamingarea                   u:object_r:product_lge_call_prop:s0 exact string
+product.lge.ril.lte.wipinetval                     u:object_r:product_lge_call_prop:s0 exact string
+product.lge.ril.cdma.currentch                     u:object_r:product_lge_call_prop:s0 exact string
+product.lge.ril.lte.cid                            u:object_r:product_lge_call_prop:s0 exact string
+product.lge.ril.lte.tac                            u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.nw_ecc_type              u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.radio.isinflightstate          u:object_r:product_lge_call_external_writable_prop:s0 exact string
+product.lge.5g.display0                            u:object_r:product_lge_call_prop:s0 exact string
+product.lge.5g.display1                            u:object_r:product_lge_call_prop:s0 exact string
+product.lge.5g.display2                            u:object_r:product_lge_call_prop:s0 exact string
+product.lge.5g.notified                            u:object_r:product_lge_call_prop:s0 exact bool
+product.lge.5g.lgu_state                           u:object_r:product_lge_call_prop:s0 exact string
+product.lge.5g.lgu_state0                          u:object_r:product_lge_call_prop:s0 exact string
+product.lge.5g.lgu_state1                          u:object_r:product_lge_call_prop:s0 exact string
+product.lge.5g.allocated0                          u:object_r:product_lge_call_prop:s0 exact string
+product.lge.5g.allocated1                          u:object_r:product_lge_call_prop:s0 exact string
+product.lge.5g.allocated2                          u:object_r:product_lge_call_prop:s0 exact string
+product.lge.5g.disp_avail0                         u:object_r:product_lge_call_prop:s0 exact bool
+product.lge.5g.disp_avail1                         u:object_r:product_lge_call_prop:s0 exact bool
+persist.product.lge.5g.indicator.option            u:object_r:product_lge_call_prop:s0 exact string
+persist.product.lge.5g.basicIndicatorConfig        u:object_r:product_lge_call_external_writable_prop:s0 exact string
+product.lge.5g.indicator.rat                       u:object_r:product_lge_call_external_writable_prop:s0 exact string
+###
+
+# MODEL
+ro.product.lge.support_lgu_070voip                 u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.build.no_modem                      u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.support.waterproof                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.support.lglens                         u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.giovanna                            u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.dcm.osu                             u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.round_search_widget                 u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.brand_dsny                          u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.brand_qua                           u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.bellsoundflash.support              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.cta.feature.enable                  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.calendstartday            u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.autoprofile                         u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.support.only_front_led              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.chilecbalert              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.hidevoltemenu                       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.vivodatadialog            u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.lexus                               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.prefnet                   u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# VR
+product.lge.vr_plugged        u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# TELEPHONY_SMS_FRAMEWORK
+persist.product.lge.sms.cdma.format                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.ims                        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.forcegsm7                  u:object_r:product_lge_sms_app_prop:s0 exact string
+persist.product.lge.sms.dcnaddress                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.sync.sending               u:object_r:product_lge_sms_prop:s0 exact string
+persist.product.lge.sms.dan.support                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.starte911call              u:object_r:product_lge_sms_prop:s0 exact string
+persist.product.lge.sms.receivingblocking          u:object_r:product_lge_sms_prop:s0 exact string
+persist.product.lge.sms.phoneid                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.l3ack.mtk                  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.cdg.flag                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.filter.mode                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.cbtestmode                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.callback                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.disablelog                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.onesku                     u:object_r:product_lge_system_prop:s0 exact string
+
+## LGE_CHANGE [SMS_Patch_0621][VZW], LGP_MSG_SMS_SMS_TO_911
+persist.product.lge.sms.smsto911.enable            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.smsto911.scbm.state       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sms.smsto911.ecbm.calibration  u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# FileSystem
+product.lge.vold.publicvolume_uuid                 u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.hwbinder.vm.size                    u:object_r:product_lge_system_prop:s0 exact int
+###
+
+# SYSTEM_FRAMEWORK
+persist.product.lge.service.memory.enable          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.logsize.enable         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.logsize.setting        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.logger.low             u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.movetosdcard.enable            u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# PERF_TRACKER
+persist.product.lge.pt.enable                      u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.pt.any_net                     u:object_r:product_lge_system_prop:s0 exact string
+###
+
+
+
+
+# PROTOCOL_DATA
+persist.data_netmgrd_mtu                           u:object_r:qct_data_prop:s0 exact int
+persist.product.lge.data.operator.use              u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.rfm.smartupdate           u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.rfm.debug.pt              u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.wifi.notifier             u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.iwlan.multi.processing    u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.vdbg                      u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.dbg                       u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.telephony.oosisdc              u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.debug                     u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.iwlan.netbt               u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.data.iwlan.lam                 u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.data.gpri.dp.checker           u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.gpri.dp.level             u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.data.gpri.dp.interval          u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.data.gpri.dp.wl                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.gpri.dp.status            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.spr.test                  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.swandbglv                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.dsqn_data_cont            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.rcis_ver                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.fakereject                        u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.userdataenabled                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.hasLimit                          u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.overWarningByte                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.restrictBackdata                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.set_policy_data_enable            u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.emergencystate                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.ims_pco                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.internet_pco              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.iwlan.hfwbt               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.iwlan.hfwbtd              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.fd                        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.softphone                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.useperguarding            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.nosockdel                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.iwlan.mode                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.iwlan.apn                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.iwlan.keep                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.iwlan.priv_iid            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.iwlan.kam.tm              u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.iwlan.kam                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.diable_v6_fqdn            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.earlyroute                u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.data.iwlan                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.iwlan.mtk                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.iwlan.use.aosp            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.blkfqdn.inroam            u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.clat_iid                          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.block_dr                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.gsm.apn.sim.operator.mvno.type    u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.gsm.apn.sim.operator.mvno.data    u:object_r:product_lge_system_prop:s0 exact string
+
+persist.product.lge.data.tether_ipa                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.service.privacy.enable    u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.overwarning                       u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.support_mpdn                      u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.lastnumeric               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.ril.current.datatech              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.check.ota.perm            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.sim.appfamily             u:object_r:product_lge_system_prop:s0 exact string
+
+persist.product.lge.data.support_lte_preferred     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.mptcp.kt_5g_spec          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.mptcp.use_socks_private_ip u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.mptcp.proxy_server_addr_v4 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.mptcp.proxy_server_addr_v6 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.mptcp.feature_bit_info    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.mptcp.allowed_apps        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.mptcp.test_sim            u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.mptcp.roaming             u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.mptcp.usb_tethering       u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.mptcp.mape_address        u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.data.mptcp.support_mptcp            u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.enabled                     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.mainfo_kt                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.mainfo_skt_id               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.mainfo_skt_pw               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.mobile_netid                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.testmode                    u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.package_cache               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.redsocks_vdbg               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.reply_test                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.wifi_connected              u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.test_auth                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.mptcp.test_redsocks_init_fail     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.zr.enable                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.zr.test_apps              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.port_forwarding.enable    u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.net_tcp_delack_lte                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.net_tcp_delack_default            u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.net_tcp_usercfg_lte               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.net_tcp_usercfg_default           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.allow_multi_dataconnection u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.org.retry_count                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.ims.connection                    u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.ims.connection1                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.dsqn                      u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.blkdnsinbg                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.net.Is_phone_booted               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.apn_combine_skt           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.apn_combine_kt            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.usim_mobility             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.attach.rej                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.iwlan.6                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.vnd_rps                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.tethering.clat                    u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.is_dropping_packet                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.block_ssdp                u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.data.afwdata.LGfeatureset           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.telephony.mpdn            u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.net.data_roaming_check            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.clat_rps_xps              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.packet.enable             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.xfrm.enable               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.bdns.                             u:object_r:product_lge_system_prop:s0
+persist.product.lge.data.service.reject_count      u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.imscalltype                       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.pertest                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.pergood                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.iwlandbg                  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.perwindorwsize            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.perthvt                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.usewdrssi                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.isupgrade                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.new_roaming_skt_kt        u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.simple_roaming_kt         u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.radio.lab                 u:object_r:product_lge_system_prop:s0 exact bool
+persist.product.lge.data.disable.preR8_1           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.disable.preR8_2           u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.ld.rx                             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.ld.tx                             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.iwlan.preference.                 u:object_r:product_lge_system_prop:s0
+persist.product.lge.data.fast.recovery.timer       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.fast.recovery.rsrp        u:object_r:product_lge_system_prop:s0 exact string
+
+## Belows are MTK property but under LGE(DATA)'s control.
+net.wo.                                            u:object_r:epdg_data_prop:s0
+persist.net.wo.                                    u:object_r:epdg_data_prop:s0
+net.handover.rat                                   u:object_r:epdg_data_prop:s0 exact int
+##
+###
+
+# KERNEL
+ro.boot.product.lge.device_color                   u:object_r:product_lge_system_prop:s0 exact string
+ro.boot.product.lge.normalizedDensity              u:object_r:product_lge_system_prop:s0 exact string
+ro.boot.product.lge.hiddenreset                    u:object_r:product_lge_system_prop:s0 exact string
+ro.boot.product.lge.ddr_size                u:object_r:product_lge_system_prop:s0 exact string
+ro.boot.product.lge.bootreasoncode                 u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# MSP
+product.lge.ost.start                             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.selfd.ext2_start                      u:object_r:product_lge_system_prop:s0 exact string
+product.lge.taio.start                            u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# OSF_USBC
+persist.product.lge.usb.always                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.usb.moisture                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.usb.present                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.usb.trf.popup                  u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# DM_FOTA
+ro.product.lge.sprint.hfa.flag                     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.sprint.hfa.retry                       u:object_r:product_lge_system_prop:s0 exact string
+product.lge.otadm_boot_completed                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.fota_datapaypopup              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.update_avail_time              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.downloaded_time                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.last_update_time               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.configurationver               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.omadm.db                       u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# PCAS
+persist.product.lge.pcastest.callfeature     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.pcastest.datafeature     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.pcastest.wififeature     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.supportvolte             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.supportvolte.sim2        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.supportvt                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.supportvt.sim2           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.supportvowifi            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.supportvowifi.sim2       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.supportviwifi            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.supportviwifi.sim2       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.supportrcs               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.supportrcs.sim2          u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# Modem_BSP
+persist.product.lge.service.odm_log.noti           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.odm_log.svc            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sys.bootcnt                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.odm_log.enable         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.odm_mdm_log.enable     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.dm_app.enable          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.moca.gps_log_status    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.moca.dpl_log_status    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.moca.enable            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.moca.cdump_only        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.moca.crash             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.moca.lognum            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.moca.logmax            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.moca.log_autoDel       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.moca.operator_mode     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.moca.cslog             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.booting_log.enable     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.moca.debug_enable              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.moca.enable_ramdumps           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.moca                           u:object_r:product_lge_system_prop:s0 exact string
+
+
+
+persist.product.lge.service.moca.anynetwork        u:object_r:product_lge_system_prop:s0 exact string
+product.lge.debug.odm_log.get_data     		       u:object_r:product_lge_system_prop:s0 exact string
+product.lge.debug.odm_log.enable                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.debug.odm_log.tx_mode                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.debug.odm_log                          u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# Power framework(CFW)
+persist.product.lge.silentreset                    u:object_r:product_lge_system_prop:s0 exact string
+ro.boot.product.lge.carrier_code                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sys.aodstatus_byuser           u:object_r:product_lge_system_prop:s0 exact string
+product.lge.service.shutdownanim.exit              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.power_vol_level                     u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.power_vol_level_mccmnc              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.hl_mode                             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.shutdownanim.completed                 u:object_r:product_lge_system_prop:s0 exact string
+product.lge.shutdownanim.loopexit                  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.waitsound                 u:object_r:product_lge_system_prop:s0 exact string
+product.lge.shutdownsound.end                      u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.timepwroff                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.view.toucheventfilter                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.bezellessgrip.debuglevel               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.elt.status                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.elt.power                      u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.view.activefilter                   u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.view.activefilter.velocity          u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# IMS
+product.lge.ims.lgu.dualnumber                     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ims.provisioned                        u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ims.reg                                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ims.pid                                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ims.att.no_resources                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.ims.callingplus                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.ims.volte_open                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.ims.wfc_accepted               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.ims.defaultvideocallsetting    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.ims.roaming                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.ims.no_sim_caps                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ims.msim_slotid                        u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.chameleon.nativevowifi              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.ims.enable             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.ims.vonr                       u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# OS_PERF
+ro.product.lge.task_snapshot.cache_size            u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# WIFI
+product.lge.wifi.assoclistsize          u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.siminserted            u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.softap5g               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.fcc.na.version         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wfd.source                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wfd.sink                    u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wfd.state                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wfd.cert                    u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wfd.spmirroring             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wfd.test.mode               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wfd.sink.mode               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wfd.bitratecontrol          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.wlan.favorite       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.wlan.monitoring     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.common_hotspot         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.patch                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.dcf.enable             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.fastroaming            u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.feature.version        u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.lguaka                 u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.traffic.trigger        u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.txpower                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.sarmode                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.softap.fromhidden      u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.atthotspot             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.profileMgr             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.softapwps              u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.offloading             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.offloading.ongoing     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.eapaka.aggregation     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.tethering_oc   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.data.tethering_status       u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.aggregation            u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.unified_settings       u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.80211ac                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.ktversion              u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.mdmi                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.voip                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.mimo.chain             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sys.ktpopup         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.offdelay               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.test_profile           u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.gons.enable              u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.gons.scan.scanonly     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.gons.scan.completed    u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.hidden_backoff         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.dhcp_fail              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.wlan.sys.security   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.callingwifiuid         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.kcc.version            u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.ce.version             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wifi.telec.version          u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.att_firstnet           u:object_r:product_lge_system_prop:s0 exact string
+product.lge.wlan.roaming_status         u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# LOGGER SERVICE
+persist.product.lge.service.removelog             u:object_r:product_lge_system_prop:s0 exact int
+###
+
+# BSP_Display
+ro.product.lge.lcd_default_brightness u:object_r:product_lge_system_prop:s0 exact int
+ro.product.lge.trueview               u:object_r:product_lge_system_prop:s0 exact bool
+###
+
+# Audio_BSP
+product.lge.config.call_music_ring_attn            u:object_r:product_lge_system_prop:s0 exact string
+product.lge.normalizer.param                       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.audio.dmb_hifidac              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.audio.dual_audio               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.audio.spk_boombox              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.audio.twin_headset             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.audio.twin_headset_on          u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.config.emergency_alarm              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.config.motor_type                   u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.config.timer_alert                  u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.config.vc_call_vol_default          u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.config.vibrate_type                 u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.hide_audio_device_type              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.ivt_noti_magnitude                  u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.ivt_ring_magnitude                  u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.ivt_touch_magnitude                 u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.noise.suppression                   u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.ns.default                          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.receiver.as.mic.enable         u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.voice.clarity                       u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.usbcall.support                     u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.stereo_speaker                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.audio.piezo_receiver           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.audio.receiver_extra_volume    u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.extcon.h2w                          u:object_r:product_lge_system_prop:s0 exact int
+ro.product.lge.extcon.usb_audio                    u:object_r:product_lge_system_prop:s0 exact int
+ro.product.lge.extcon.hdmi_audio                   u:object_r:product_lge_system_prop:s0 exact int
+ro.product.lge.extcon.hdmi                         u:object_r:product_lge_system_prop:s0 exact int
+ro.product.lge.a2v_tuning_param                    u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.a2v_support                         u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.audio.cal.LOCAL                     u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.audio.4mic                          u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.hifi_rec_asmr                       u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.mtk.ratselection.timeout            u:object_r:product_lge_system_prop:s0 exact int
+###
+
+# DRM
+ro.boot.product.lge.special.edition.fullname       u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# Build
+ro.product.lge.build.basetag        u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.build.branch         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sys.coredump    u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# AudioFramework
+ro.product.lge.audio_soundexception                u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.globaleffect.ceq                    u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.globaleffect.dts                    u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.bt_gain_control_factor              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.mqa_support_ver                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.hifiquaddac                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sound_enable                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.system_volume                  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.bt_gain_control_factor         u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# SystemFramework
+ro.product.lge.adoptable_storage  u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# MMS
+persist.product.lge.gsm.mms.roaming.enabled        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.gsm.mms.enabled                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.message_boost                  u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# LAF
+ro.boot.product.lge.wp_addr_0 u:object_r:product_lge_system_prop:s0 exact string
+ro.boot.product.lge.wp_addr_1 u:object_r:product_lge_system_prop:s0 exact string
+ro.boot.product.lge.wp_addr_2 u:object_r:product_lge_system_prop:s0 exact string
+ro.boot.product.lge.wp_addr_3 u:object_r:product_lge_system_prop:s0 exact string
+ro.boot.product.lge.wp_addr_4 u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# LGMDM
+persist.product.lge.mdm_boota           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.mdm_boots           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.mdm_shuta           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.mdm_shuts           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.mdm_safemode        u:object_r:product_lge_system_prop:s0 exact bool
+product.lge.lgmdm_expr                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.lgmdm_version               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.secpolicy.camera.disabled   u:object_r:product_lge_system_prop:s0 exact bool
+###
+
+# RCT
+ro.product.lge.rctver                   u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# HiddenMenu
+product.lge.sys.allautotest.run                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.fake_roaming             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.high_temp_off                  u:object_r:product_lge_system_prop:s0 exact string
+product.lge.capture_signboard.enabled              u:object_r:product_lge_system_prop:s0 exact string
+# HiddenMenu FactorySimReceiver
+persist.product.lge.service.factory.enable         u:object_r:product_lge_system_prop:s0 exact string
+# HiddenMenu ADB-over-WIFI
+persist.product.lge.rftest                         u:object_r:product_lge_system_prop:s0 exact string
+# HiddenMenu ETC
+persist.product.lge.radio.pccprxdrxmode            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.sccprxdrxmode            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.wcdma.summary          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.wcdma.set_0            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.btui.ssp_debug         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.prxdrxmode               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.horxdxmode               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.mdlogger.running               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.mtk_log.enable         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.sys.lge.log_helper_prop                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.service.diag_log.socket.enable         u:object_r:product_lge_system_prop:s0 exact string
+product.lge.service.diag_log.socket.ip             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.tdscdma_present          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.ims_onoff                u:object_r:product_lge_system_prop:s0 exact string
+product.lge.debug.camera.new_sensor                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.tds_ho_test_onoff        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sys.usb.uim_insert             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.lte.summary            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.lte.set_0              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.lte.set_1              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.mcjdm.hiddenmenu                    u:object_r:product_lge_system_prop:s0 exact bool
+product.lge.benchmarkEnable                        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.ats_start                      u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.5g.summary             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.5g.set_0               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.5g.set_1               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.5g.set_2               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.5g.set_3               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.5g.set_4               u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# OSF Sprint
+ro.product.lge.sprint.rr.appenable     u:object_r:product_lge_system_prop:s0 exact string
+ro.home.operator.carrierid             u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# OSF SB
+ro.cdma.home.operator.alpha            u:object_r:product_lge_system_prop:s0 exact string
+ro.device.product.category             u:object_r:product_lge_system_prop:s0 exact string
+
+# Encryption
+ro.product.lge.ssbd.session                   u:object_r:product_lge_system_prop:s0 exact string
+ro.boot.product.lge.encrypt_minios            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.security.sdc.enabled      u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.security.sdfullcrypto     u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.security.sdmediacrypto    u:object_r:product_lge_system_prop:s0 exact int
+product.lge.ssu.anim                          u:object_r:product_lge_system_prop:s0 exact bool
+product.lge.boot_sound.off                    u:object_r:product_lge_system_prop:s0 exact int
+product.lge.copy_logs_to_cache                u:object_r:product_lge_system_prop:s0 exact int
+persist.product.lge.security.sdfullpercent    u:object_r:product_lge_system_prop:s0 exact int
+###
+
+# MDFPP
+ro.product.lge.support_mdfpp                  u:object_r:product_lge_system_prop:s0 exact bool
+ro.product.lge.support_cbc_only               u:object_r:product_lge_system_prop:s0 exact bool
+ro.product.lge.support_rek_kek                u:object_r:product_lge_system_prop:s0 exact bool
+###
+
+# LAOP
+persist.product.lge.fb.install              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test.carrier       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test.ad            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test.gid           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test.imsi          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test.mccmnc        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test.nt.2nd        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test.nt.mccmnc     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test.nt.subset     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test.spn           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test2.enable       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test2.iccid        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test2.carrier      u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test2.ad           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test2.gid          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test2.imsi         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test2.mccmnc       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test2.nt.2nd       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test2.nt.mccmnc    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test2.nt.subset    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.laop.test2.spn          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.cupss.next-root   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.first-set         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.mvno.subset-list  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.flex.2nd-ntcode u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.flex.country    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.flex.nt-subset  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cota.simswap            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cota.mother_suffix      u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cota.offer_reset        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cupss.default           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cupss.integration       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.iccid_lang         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.gmail.default           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.ntcode_lang             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.op_name                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.prepaid                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.service.naot.index      u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sim.operator.googlefi   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.runtime_symlinks.incremental        u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.flexgpio                     u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.locales.overlay              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.naop.legacy                  u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.preferred_app                u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.priv-app                     u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.revshare                     u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.sbp.block-popup              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.sbp.opresize                 u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.sbp.opresizeratio            u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.smartca.suw                  u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.smartca.version              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.vodafone_family              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.brand1                           u:object_r:product_lge_system_prop:s0 exact string
+product.lge.sbp.bootanim                    u:object_r:product_lge_system_prop:s0 exact string
+product.lge.sbp.load_props_done             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.ims.runtime_installed           u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.swversion_prev_svn           u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.laop.dppreload               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.sim_mccmnc        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.sim_spn           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.priv.sim-mccmnc         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.priv.sim-imsi           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.priv.sim-gid            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.priv.sim-spn            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.priv.sim-iccid          u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.msn.provision                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.msn_channel             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.first-sim               u:object_r:product_lge_system_prop:s0 exact string
+product.lge.sbp.opname                      u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# PROTOCOL_RADIO
+ro.product.lge.radio_gpri                       u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.amrwb_gpri                     u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.radio_mcfg                      u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.radio_gpri_ssr                       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.gpri.volte              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.gpri.volte.sim2         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.gpri.numeric_st1       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.gpri.numeric           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.GPRIcotaversion       u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.GPRIcotaversion_st1   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.prevswversion         u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.prevswversion_st1     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.amrwbversion          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.gpri.parser           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.radio.gpri.parser.sim2      u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# FOTA
+ro.boot.product.lge.fota                           u:object_r:product_lge_system_prop:s0 exact string
+ro.boot.product.lge.fota_reboot                    u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (UpdateCenter)
+persist.product.lge.appbox.smartca                          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.gdec                         u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (BNRD)
+product.lge.bnrd                                            u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (Settings)
+ro.product.lge.display_manufacture_sn                       u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.sar.value                                    u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.cupps.regulatory                             u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.lcd_auto_brightness_mode                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sys.cust.lte_config                     u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.start_toast                        u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.data_warning                       u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.regulatory.suffix.u                          u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (LGSetupWizard)
+ro.product.lge.locale.defcountry                            u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.langselect                         u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.brand_sbelderly                              u:object_r:product_lge_system_prop:s0 exact string
+product.lge.lgsetupwizard.wifistatus                        u:object_r:product_lge_system_prop:s0 exact string
+product.lge.suw.no_connectivity                             u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (SystemUI)
+product.lge.sys.knockon.knockoff.distance                   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.iuc_audio_path                          u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.quick_task_tools                             u:object_r:product_lge_system_prop:s0 exact string
+product.lge.service.knockcode.status                        u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.lteadvanced                                  u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.support_systemui_capture                     u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# Browser
+persist.product.lge.downloads.config                       u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# ART
+product.lge.service.art.running                    u:object_r:product_lge_qat_prop:s0 exact string
+product.lge.service.art.mtbf                       u:object_r:product_lge_qat_prop:s0 exact string
+###
+
+# FM Radio Property
+ro.product.lge.fm.module          u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (Setting)
+ro.product.lge.supported_carrier_list              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.support.density                     u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.manner_sound                        u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.regulatory.suffix                   u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.hw.revision_partial_fixed           u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.hw.revision_fixed                   u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.app_info_caching.enable             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.rmsmartwrd                u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.rmprefimeisv              u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.skt_t_safety_menu_opt               u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.has_left_sidekey                    u:object_r:product_lge_system_prop:s0 exact string
+ro.product.lge.sutel_number_enabled                u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (Setting & SUW )
+ro.product.lge.navi_bar_default                    u:object_r:product_lge_system_prop:s0 exact string
+ro.vendor.lge.default_rotation_value               u:object_r:product_lge_system_prop:s0 exact string
+
+# App (Camera)
+product.lge.sys.camera_orientation                 u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (CameraSolution)
+oem_trusted_authority                              u:object_r:product_lge_system_prop:s0 exact string
+oem_trusted_certificate                            u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (Contact)
+persist.product.lge.cust.imeisv                    u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.collapserule              u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.contacts.duo                   u:object_r:product_lge_system_prop:s0 exact string
+product.lge.debug.contacts.rcs                     u:object_r:product_lge_system_prop:s0 exact string
+product.lge.rcscall.tag.googleec                   u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# USB_Framework
+persist.product.lge.service.usb_ther               u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.mtp_popup.disabled             u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.usb_ther_always                u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (Email)
+persist.product.lge.service.email.enable           u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.cust.emailringtone             u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (SignBoard)
+product.lge.user_switch_cha.disabled               u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (SAAT)
+product.lge.sys.saat.run                           u:object_r:product_lge_system_prop:s0 exact string
+product.lge.sys.saattest                           u:object_r:product_lge_system_prop:s0 exact string
+product.lge.sys.saat.camera.pdaf_test              u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (WifiSettings)
+persist.product.lge.sys.advanced.wifiless          u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.sys.cust.blockssid             u:object_r:product_lge_system_prop:s0 exact bool
+ro.product.lge.suwcheckconnectivity                u:object_r:product_lge_system_prop:s0 exact bool
+###
+
+# App (BluetoothSettings)
+product.lge.service.btui.gap.pairByLocal           u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# App (MA-Agent)
+persist.product.lge.data.mptcp_lgu                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.mptcp_kt                  u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.mptcp_skt                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.mptcp_ais                 u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.data.mptcp.mape_port           u:object_r:product_lge_system_prop:s0 exact string
+###
+
+# CNAS
+ro.boot.product.lge.cnas_enable              u:object_r:product_lge_cnas_cnas_prop:s0 exact string
+###
+
+# lmkd
+ro.lmk.enable_hswap                        u:object_r:product_lge_system_prop:s0 exact bool
+ro.lmk.min_file_pages                      u:object_r:product_lge_system_prop:s0 exact int
+ro.lmk.mli_mode                            u:object_r:product_lge_system_prop:s0 exact int
+ro.lmk.mli_disable                         u:object_r:product_lge_system_prop:s0 exact bool
+ro.lmk.psi_reclaim_stall_ms                u:object_r:product_lge_system_prop:s0 exact int
+
+# Kernel
+persist.product.lge.profiled.build.version   u:object_r:product_lge_system_prop:s0 exact string
+
+# IQI
+persist.product.lge.boot.reason.diag   u:object_r:product_lge_system_prop:s0 exact string
+persist.product.lge.iqi.settings       u:object_r:product_lge_system_prop:s0 exact bool
+
+# SWITCHING OPERATOR
+product.lge.switchingoperator.showpopup            u:object_r:product_lge_system_prop:s0 exact string
+
+# Hybrid HMD VR
+product.lge.vr_undisturbed                 u:object_r:product_lge_system_prop:s0 exact bool
+product.lge.vr_connected                   u:object_r:product_lge_system_prop:s0 exact bool
+
+# GNSS
+# [LGE_GNSS] LGP_GNSS_0337, LGP_GNSS_FRAMEWORKS_ALLOW_EMERGENCY_SUPL_FOR_TEST, 2019-07-16, daewon84.yoo, Always allow emergency SUPL for Test
+persist.product.lge.gnss.allow_emergency_supl   u:object_r:product_lge_system_prop:s0 exact bool
+# [LGE_GNSS] LGP_GNSS_Q_0041, LGP_GNSS_ALLOW_NI_REQUEST_FOR_TEST, 2020-03-04, taeyoung.wi, Allow all NI request for test same as NFW app permission
+persist.product.lge.gnss.allow_ni_request       u:object_r:product_lge_system_prop:s0 exact bool
+
+# Wi-Fi
+persist.product.lge.wifi.isremovenv             u:object_r:vendor_lge_exported_wifi_prop:s0 exact string
+
+# root
+product.lge.adb_root                    u:object_r:product_lge_adb_root:s0 exact bool
+ro.product.lge.enable_root              u:object_r:product_lge_system_prop:s0 exact bool
+#line 1 "device/mediatek/sepolicy/basic/plat_private/property_contexts"
+#=============allow ccci_mdinit to ctl. mdlogger==============
+ctl.mdlogger u:object_r:ctl_mdlogger_prop:s0
+ctl.emdlogger1       u:object_r:ctl_emdlogger1_prop:s0
+ctl.emdlogger2       u:object_r:ctl_emdlogger2_prop:s0
+ctl.emdlogger3       u:object_r:ctl_emdlogger3_prop:s0
+
+init.svc.emdlogger1 u:object_r:init_svc_emdlogger1_prop:s0
+init.svc.aee_aedv u:object_r:init_svc_aee_aedv_prop:s0
+
+#allow mtk audio hidl service to read "ro.audio.usb.period_us"
+ro.audio.usb.period_us u:object_r:exported_default_prop:s0 exact int
+
+#allow adb daemon to read "persist.adb.nonblocking_ffs"
+persist.adb.nonblocking_ffs u:object_r:exported_default_prop:s0 exact int
+#line 1 "device/mediatek/sepolicy/bsp/plat_private/property_contexts"
+#=============allow atcid==============
+ctl.atcid-daemon-u u:object_r:ctl_atcid-daemon-u_prop:s0
+ctl.atci_service u:object_r:ctl_atci_service_prop:s0
+persist.vendor.radio.port_index  u:object_r:mtk_atci_sys_prop:s0
+vendor.ril.atci.flightmode u:object_r:mtk_atci_sys_prop:s0
+persist.vendor.service.atci.autostart u:object_r:mtk_atci_sys_prop:s0
+persist.vendor.service.atci.usermode u:object_r:mtk_atci_sys_prop:s0
+
+#=============allow mtk aal==============#
+persist.vendor.sys.aal. u:object_r:mtk_aal_prop:s0
+
+#============allow permission control set property=========
+vendor.moms.permission.control.policy.set u:object_r:mtk_permission_control_prop:s0
+
+
+#=============allow terservice to set terservice property==============
+persist.vendor.ter u:object_r:terservice_prop:s0
+vendor.ter.service u:object_r:terservice_prop:s0
+
+#=============allow systemui to get ro.vendor.mtk_cta_set===============
+ro.vendor.mtk_cta_set u:object_r:mtk_cta_set_prop:s0
+
+#=============allow RSC===============
+ro.sys.current_rsc_path u:object_r:mtk_rsc_sys_prop:s0
+ro.product.current_rsc_path u:object_r:mtk_rsc_sys_prop:s0
+
+#=============DMC control property==============
+ro.vendor.mtk_dmc_support  u:object_r:mtk_dmc_prop:s0
+ro.vendor.mtk_mapi_support u:object_r:mtk_dmc_prop:s0
+vendor.dmc.apm.active      u:object_r:mtk_dmc_prop:s0
+
+#=============PKM control property==============
+init.svc.pkm_service u:object_r:mtk_pkm_init_prop:s0
+
+#=============MDM init control property==============
+init.svc.md_monitor u:object_r:init_svc_md_monitor_prop:s0
+
+#=============Restrict access to starting/stopping campostalgo===============
+ctl.start$camerapostalgo     u:object_r:ctl_campostalgo_prop:s0
+ctl.stop$camerapostalgo      u:object_r:ctl_campostalgo_prop:s0
+ctl.restart$camerapostalgo   u:object_r:ctl_campostalgo_prop:s0
+#line 1 "system/sepolicy/public/property_contexts"
+# vendor-init-readable
+persist.radio.airplane_mode_on u:object_r:exported2_radio_prop:s0 exact int
+
+# vendor-init-settable
+af.fast_track_multiplier u:object_r:exported3_default_prop:s0 exact int
+audio.camerasound.force u:object_r:exported_audio_prop:s0 exact bool
+audio.deep_buffer.media u:object_r:exported3_default_prop:s0 exact bool
+audio.offload.video u:object_r:exported3_default_prop:s0 exact bool
+audio.offload.min.duration.secs u:object_r:exported3_default_prop:s0 exact int
+camera.disable_zsl_mode u:object_r:exported3_default_prop:s0 exact bool
+camera.fifo.disable u:object_r:exported3_default_prop:s0 exact int
+dalvik.vm.appimageformat u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.backgroundgctype u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.boot-dex2oat-threads u:object_r:exported_dalvik_prop:s0 exact int
+dalvik.vm.boot-image u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.checkjni u:object_r:exported_dalvik_prop:s0 exact bool
+dalvik.vm.dex2oat-Xms u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.dex2oat-Xmx u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.dex2oat-filter u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.dex2oat-flags u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.dex2oat-threads u:object_r:exported_dalvik_prop:s0 exact int
+dalvik.vm.dexopt.secondary u:object_r:exported_dalvik_prop:s0 exact bool
+dalvik.vm.execution-mode u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.extra-opts u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.foreground-heap-growth-multiplier u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.gctype u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.heapgrowthlimit u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.heapmaxfree u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.heapminfree u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.heapsize u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.heapstartsize u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.heaptargetutilization u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.hot-startup-method-samples u:object_r:exported_dalvik_prop:s0 exact int
+dalvik.vm.image-dex2oat-Xms u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.image-dex2oat-Xmx u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.image-dex2oat-filter u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.image-dex2oat-flags u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.image-dex2oat-threads u:object_r:exported_dalvik_prop:s0 exact int
+dalvik.vm.isa.arm.features u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.arm.variant u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.arm64.features u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.arm64.variant u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.mips.features u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.mips.variant u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.mips64.features u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.mips64.variant u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.unknown.features u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.unknown.variant u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.x86.features u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.x86.variant u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.x86_64.features u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.isa.x86_64.variant u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.jitinitialsize u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.jitmaxsize u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.jitprithreadweight u:object_r:exported_dalvik_prop:s0 exact int
+dalvik.vm.jitthreshold u:object_r:exported_dalvik_prop:s0 exact int
+dalvik.vm.jittransitionweight u:object_r:exported_dalvik_prop:s0 exact int
+dalvik.vm.jniopts u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.lockprof.threshold u:object_r:exported_dalvik_prop:s0 exact int
+dalvik.vm.method-trace u:object_r:exported_dalvik_prop:s0 exact bool
+dalvik.vm.method-trace-file u:object_r:exported_dalvik_prop:s0 exact string
+dalvik.vm.method-trace-file-siz u:object_r:exported_dalvik_prop:s0 exact int
+dalvik.vm.method-trace-stream u:object_r:exported_dalvik_prop:s0 exact bool
+dalvik.vm.profilesystemserver u:object_r:exported_dalvik_prop:s0 exact bool
+dalvik.vm.profilebootimage u:object_r:exported_dalvik_prop:s0 exact bool
+dalvik.vm.usejit u:object_r:exported_dalvik_prop:s0 exact bool
+dalvik.vm.usejitprofiles u:object_r:exported_dalvik_prop:s0 exact bool
+dalvik.vm.zygote.max-boot-retry u:object_r:exported_dalvik_prop:s0 exact int
+drm.service.enabled u:object_r:exported3_default_prop:s0 exact bool
+keyguard.no_require_sim u:object_r:exported3_default_prop:s0 exact bool
+media.recorder.show_manufacturer_and_model u:object_r:exported3_default_prop:s0 exact bool
+media.stagefright.cache-params u:object_r:exported3_default_prop:s0 exact string
+media.stagefright.thumbnail.prefer_hw_codecs u:object_r:exported3_default_prop:s0 exact bool
+persist.bluetooth.a2dp_offload.cap u:object_r:bluetooth_a2dp_offload_prop:s0 exact string
+persist.bluetooth.a2dp_offload.disabled u:object_r:bluetooth_a2dp_offload_prop:s0 exact bool
+persist.bluetooth.bluetooth_audio_hal.disabled u:object_r:bluetooth_audio_hal_prop:s0 exact bool
+persist.bluetooth.btsnoopenable u:object_r:exported_bluetooth_prop:s0 exact bool
+persist.config.calibration_fac u:object_r:exported3_default_prop:s0 exact string
+persist.dbg.volte_avail_ovr u:object_r:exported3_default_prop:s0 exact int
+persist.dbg.vt_avail_ovr u:object_r:exported3_default_prop:s0 exact int
+persist.dbg.wfc_avail_ovr u:object_r:exported3_default_prop:s0 exact int
+persist.radio.multisim.config u:object_r:exported3_radio_prop:s0 exact string
+persist.sys.dalvik.vm.lib.2 u:object_r:exported2_system_prop:s0 exact string
+persist.sys.media.avsync u:object_r:exported2_system_prop:s0 exact bool
+persist.sys.hdmi.keep_awake u:object_r:exported2_system_prop:s0 exact bool
+persist.sys.sf.color_mode u:object_r:exported2_system_prop:s0 exact int
+persist.sys.sf.color_saturation u:object_r:exported2_system_prop:s0 exact string
+persist.sys.sf.native_mode u:object_r:exported2_system_prop:s0 exact int
+pm.dexopt.ab-ota u:object_r:exported_pm_prop:s0 exact string
+pm.dexopt.bg-dexopt u:object_r:exported_pm_prop:s0 exact string
+pm.dexopt.boot u:object_r:exported_pm_prop:s0 exact string
+pm.dexopt.downgrade_after_inactive_days u:object_r:exported_pm_prop:s0 exact int
+pm.dexopt.first-boot u:object_r:exported_pm_prop:s0 exact string
+pm.dexopt.inactive u:object_r:exported_pm_prop:s0 exact string
+pm.dexopt.install u:object_r:exported_pm_prop:s0 exact string
+pm.dexopt.shared u:object_r:exported_pm_prop:s0 exact string
+ro.af.client_heap_size_kbyte u:object_r:exported3_default_prop:s0 exact int
+ro.audio.monitorRotation u:object_r:exported3_default_prop:s0 exact bool
+ro.bluetooth.a2dp_offload.supported u:object_r:bluetooth_a2dp_offload_prop:s0 exact bool
+ro.boot.vendor.overlay.theme u:object_r:exported_overlay_prop:s0 exact string
+ro.boot.wificountrycode u:object_r:exported3_default_prop:s0 exact string
+ro.bt.bdaddr_path u:object_r:exported_bluetooth_prop:s0 exact string
+ro.camera.notify_nfc u:object_r:exported3_default_prop:s0 exact int
+ro.camera.enableLazyHal u:object_r:exported3_default_prop:s0 exact bool
+ro.com.android.dataroaming u:object_r:exported3_default_prop:s0 exact bool
+ro.com.android.prov_mobiledata u:object_r:exported3_default_prop:s0 exact bool
+ro.config.alarm_alert u:object_r:exported2_config_prop:s0 exact string
+ro.config.media_vol_steps u:object_r:exported2_config_prop:s0 exact int
+ro.config.notification_sound u:object_r:exported2_config_prop:s0 exact string
+ro.config.ringtone u:object_r:exported2_config_prop:s0 exact string
+ro.control_privapp_permissions u:object_r:exported3_default_prop:s0 exact string
+ro.cp_system_other_odex u:object_r:exported3_default_prop:s0 exact int
+ro.crypto.allow_encrypt_override u:object_r:exported2_vold_prop:s0 exact bool
+ro.crypto.scrypt_params u:object_r:exported2_vold_prop:s0 exact string
+ro.crypto.volume.filenames_mode u:object_r:exported2_vold_prop:s0 exact string
+ro.dalvik.vm.native.bridge u:object_r:exported_dalvik_prop:s0 exact string
+ro.enable_boot_charger_mode u:object_r:exported3_default_prop:s0 exact bool
+ro.gfx.driver.0 u:object_r:exported3_default_prop:s0 exact string
+ro.gfx.angle.supported u:object_r:exported3_default_prop:s0 exact bool
+ro.hdmi.device_type u:object_r:exported3_default_prop:s0 exact string
+ro.hdmi.wake_on_hotplug u:object_r:exported3_default_prop:s0 exact bool
+ro.lmk.critical_upgrade u:object_r:exported3_default_prop:s0 exact bool
+ro.lmk.downgrade_pressure u:object_r:exported3_default_prop:s0 exact int
+ro.lmk.kill_heaviest_task u:object_r:exported3_default_prop:s0 exact bool
+ro.lmk.upgrade_pressure u:object_r:exported3_default_prop:s0 exact int
+ro.lmk.use_minfree_levels u:object_r:exported3_default_prop:s0 exact bool
+ro.lmk.low u:object_r:exported3_default_prop:s0 exact int
+ro.lmk.medium u:object_r:exported3_default_prop:s0 exact int
+ro.lmk.critical u:object_r:exported3_default_prop:s0 exact int
+ro.lmk.kill_timeout_ms u:object_r:exported3_default_prop:s0 exact int
+ro.lmk.swap_free_low_percentage u:object_r:exported3_default_prop:s0 exact int
+ro.lmk.log_stats u:object_r:exported3_default_prop:s0 exact bool
+ro.lmk.use_psi u:object_r:exported3_default_prop:s0 exact bool
+ro.lmk.psi_partial_stall_ms u:object_r:exported3_default_prop:s0 exact int
+ro.lmk.psi_complete_stall_ms u:object_r:exported3_default_prop:s0 exact int
+ro.lmk.thrashing_limit u:object_r:exported3_default_prop:s0 exact int
+ro.lmk.thrashing_limit_decay u:object_r:exported3_default_prop:s0 exact int
+ro.minui.default_rotation u:object_r:exported3_default_prop:s0 exact string
+ro.minui.overscan_percent u:object_r:exported3_default_prop:s0 exact int
+ro.minui.pixel_format u:object_r:exported3_default_prop:s0 exact string
+ro.oem_unlock_supported u:object_r:exported3_default_prop:s0 exact int
+ro.opengles.version u:object_r:exported3_default_prop:s0 exact int
+ro.radio.noril u:object_r:exported3_default_prop:s0 exact string
+ro.retaildemo.video_path u:object_r:exported3_default_prop:s0 exact string
+ro.statsd.enable u:object_r:exported3_default_prop:s0 exact bool
+ro.sf.disable_triple_buffer u:object_r:exported3_default_prop:s0 exact bool
+ro.sf.lcd_density u:object_r:exported3_default_prop:s0 exact int
+ro.storage_manager.enabled u:object_r:exported3_default_prop:s0 exact bool
+ro.telephony.call_ring.multiple u:object_r:exported3_default_prop:s0 exact bool
+ro.telephony.default_cdma_sub u:object_r:exported3_default_prop:s0 exact int
+ro.telephony.default_network u:object_r:exported3_default_prop:s0 exact string
+ro.url.legal u:object_r:exported3_default_prop:s0 exact string
+ro.url.legal.android_privacy u:object_r:exported3_default_prop:s0 exact string
+ro.vendor.build.security_patch u:object_r:vendor_security_patch_level_prop:s0 exact string
+ro.zram.mark_idle_delay_mins u:object_r:exported3_default_prop:s0 exact int
+ro.zram.first_wb_delay_mins u:object_r:exported3_default_prop:s0 exact int
+ro.zram.periodic_wb_delay_hours u:object_r:exported3_default_prop:s0 exact int
+ro.zygote u:object_r:exported3_default_prop:s0 exact string
+sendbug.preferred.domain u:object_r:exported3_default_prop:s0 exact string
+sys.usb.controller u:object_r:exported2_system_prop:s0 exact string
+sys.usb.ffs.max_read u:object_r:exported_ffs_prop:s0 exact int
+sys.usb.ffs.max_write u:object_r:exported_ffs_prop:s0 exact int
+sys.usb.ffs.ready u:object_r:exported_ffs_prop:s0 exact bool
+sys.usb.mtp.device_type u:object_r:exported2_system_prop:s0 exact int
+sys.usb.ffs.mtp.ready u:object_r:exported_ffs_prop:s0 exact bool
+sys.usb.state u:object_r:exported2_system_prop:s0 exact string
+telephony.lteOnCdmaDevice u:object_r:exported3_default_prop:s0 exact int
+tombstoned.max_tombstone_count u:object_r:exported3_default_prop:s0 exact int
+vold.post_fs_data_done u:object_r:exported2_vold_prop:s0 exact int
+vts.native_server.on u:object_r:exported3_default_prop:s0 exact bool
+wlan.driver.status u:object_r:exported_wifi_prop:s0 exact enum ok unloaded
+
+# vendor-init-readable
+apexd.status u:object_r:apexd_prop:s0 exact enum starting ready
+dev.bootcomplete u:object_r:exported3_system_prop:s0 exact bool
+persist.sys.device_provisioned u:object_r:exported3_system_prop:s0 exact string
+persist.sys.theme u:object_r:theme_prop:s0 exact string
+persist.sys.usb.usbradio.config u:object_r:exported3_system_prop:s0 exact string
+sys.boot_completed u:object_r:exported3_system_prop:s0 exact bool
+sys.retaildemo.enabled u:object_r:exported3_system_prop:s0 exact int
+sys.user.0.ce_available u:object_r:exported3_system_prop:s0 exact bool
+sys.vdso u:object_r:exported3_system_prop:s0 exact string
+
+# vendor-init-settable
+persist.sys.zram_enabled u:object_r:exported2_system_prop:s0 exact bool
+sys.usb.config u:object_r:exported_system_radio_prop:s0 exact string
+sys.usb.configfs u:object_r:exported_system_radio_prop:s0 exact int
+
+# public-readable
+aac_drc_boost u:object_r:exported2_default_prop:s0 exact int
+aac_drc_cut u:object_r:exported2_default_prop:s0 exact int
+aac_drc_enc_target_level u:object_r:exported2_default_prop:s0 exact int
+aac_drc_heavy u:object_r:exported2_default_prop:s0 exact int
+aac_drc_reference_level u:object_r:exported2_default_prop:s0 exact int
+ro.aac_drc_effect_type u:object_r:exported2_default_prop:s0 exact int
+drm.64bit.enabled u:object_r:exported2_default_prop:s0 exact bool
+dumpstate.dry_run u:object_r:exported_dumpstate_prop:s0 exact bool
+dumpstate.unroot u:object_r:exported_dumpstate_prop:s0 exact bool
+hal.instrumentation.enable u:object_r:exported2_default_prop:s0 exact bool
+init.svc.bugreport u:object_r:exported2_default_prop:s0 exact string
+init.svc.console u:object_r:exported2_default_prop:s0 exact string
+init.svc.dumpstatez u:object_r:exported2_default_prop:s0 exact string
+init.svc.mediadrm u:object_r:exported2_default_prop:s0 exact string
+init.svc.surfaceflinger u:object_r:exported2_default_prop:s0 exact string
+init.svc.tombstoned u:object_r:exported2_default_prop:s0 exact string
+init.svc.zygote u:object_r:exported2_default_prop:s0 exact string
+libc.debug.malloc.options u:object_r:exported2_default_prop:s0 exact string
+libc.debug.malloc.program u:object_r:exported2_default_prop:s0 exact string
+libc.debug.hooks.enable u:object_r:exported2_default_prop:s0 exact string
+persist.sys.locale u:object_r:exported_system_prop:s0 exact string
+persist.sys.timezone u:object_r:exported_system_prop:s0 exact string
+persist.sys.test_harness u:object_r:test_harness_prop:s0 exact bool
+ro.adb.secure u:object_r:exported_secure_prop:s0 exact int
+ro.arch u:object_r:exported2_default_prop:s0 exact string
+ro.audio.ignore_effects u:object_r:exported2_default_prop:s0 exact bool
+ro.baseband u:object_r:exported2_default_prop:s0 exact string
+ro.boot.avb_version u:object_r:exported2_default_prop:s0 exact string
+ro.boot.baseband u:object_r:exported2_default_prop:s0 exact string
+ro.boot.bootdevice u:object_r:exported2_default_prop:s0 exact string
+ro.boot.bootloader u:object_r:exported2_default_prop:s0 exact string
+ro.boot.boottime u:object_r:exported2_default_prop:s0 exact string
+ro.boot.console u:object_r:exported2_default_prop:s0 exact string
+ro.boot.hardware u:object_r:exported2_default_prop:s0 exact string
+ro.boot.hardware.color u:object_r:exported2_default_prop:s0 exact string
+ro.boot.hardware.sku u:object_r:exported2_default_prop:s0 exact string
+ro.boot.keymaster u:object_r:exported2_default_prop:s0 exact string
+ro.boot.mode u:object_r:exported2_default_prop:s0 exact string
+ro.boot.vbmeta.avb_version u:object_r:exported2_default_prop:s0 exact string
+ro.boot.verifiedbootstate u:object_r:exported2_default_prop:s0 exact string
+ro.boot.veritymode u:object_r:exported2_default_prop:s0 exact string
+ro.boot.dynamic_partitions u:object_r:exported_default_prop:s0 exact string
+ro.boot.dynamic_partitions_retrofit u:object_r:exported_default_prop:s0 exact string
+ro.bootloader u:object_r:exported2_default_prop:s0 exact string
+ro.build.date u:object_r:exported2_default_prop:s0 exact string
+ro.build.date.utc u:object_r:exported2_default_prop:s0 exact int
+ro.build.description u:object_r:exported2_default_prop:s0 exact string
+ro.build.display.id u:object_r:exported2_default_prop:s0 exact string
+ro.build.fingerprint u:object_r:exported_fingerprint_prop:s0 exact string
+ro.build.host u:object_r:exported2_default_prop:s0 exact string
+ro.build.id u:object_r:exported2_default_prop:s0 exact string
+ro.build.product u:object_r:exported2_default_prop:s0 exact string
+ro.build.system_root_image u:object_r:exported2_default_prop:s0 exact bool
+ro.build.tags u:object_r:exported2_default_prop:s0 exact string
+ro.build.user u:object_r:exported2_default_prop:s0 exact string
+ro.build.version.base_os u:object_r:exported2_default_prop:s0 exact string
+ro.build.version.codename u:object_r:exported2_default_prop:s0 exact string
+ro.build.version.incremental u:object_r:exported2_default_prop:s0 exact string
+ro.build.version.preview_sdk u:object_r:exported2_default_prop:s0 exact int
+ro.build.version.release u:object_r:exported2_default_prop:s0 exact string
+ro.build.version.sdk u:object_r:exported2_default_prop:s0 exact int
+ro.build.version.security_patch u:object_r:exported2_default_prop:s0 exact string
+ro.crypto.state u:object_r:exported_vold_prop:s0 exact string
+ro.crypto.type u:object_r:exported_vold_prop:s0 exact string
+ro.debuggable u:object_r:exported2_default_prop:s0 exact int
+ro.hardware u:object_r:exported2_default_prop:s0 exact string
+ro.product.brand u:object_r:exported2_default_prop:s0 exact string
+ro.product.cpu.abi u:object_r:exported2_default_prop:s0 exact string
+ro.product.cpu.abilist u:object_r:exported2_default_prop:s0 exact string
+ro.product.device u:object_r:exported2_default_prop:s0 exact string
+ro.product.manufacturer u:object_r:exported2_default_prop:s0 exact string
+ro.product.model u:object_r:exported2_default_prop:s0 exact string
+ro.product.name u:object_r:exported2_default_prop:s0 exact string
+ro.property_service.version u:object_r:exported2_default_prop:s0 exact int
+ro.revision u:object_r:exported2_default_prop:s0 exact string
+ro.secure u:object_r:exported_secure_prop:s0 exact int
+service.bootanim.exit u:object_r:exported_system_prop:s0 exact int
+sys.boot_from_charger_mode u:object_r:exported_system_prop:s0 exact int
+sys.use_memfd u:object_r:use_memfd_prop:s0 exact bool
+vold.decrypt u:object_r:exported_vold_prop:s0 exact string
+
+# vendor-init-settable|public-readable
+aaudio.hw_burst_min_usec u:object_r:exported_default_prop:s0 exact int
+aaudio.minimum_sleep_usec u:object_r:exported_default_prop:s0 exact int
+aaudio.mixer_bursts u:object_r:exported_default_prop:s0 exact int
+aaudio.mmap_exclusive_policy u:object_r:exported_default_prop:s0 exact int
+aaudio.mmap_policy u:object_r:exported_default_prop:s0 exact int
+aaudio.wakeup_delay_usec u:object_r:exported_default_prop:s0 exact int
+dev.mnt.part.data u:object_r:dev_mnt_part_data_prop:s0 exact string
+gsm.sim.operator.numeric u:object_r:exported_radio_prop:s0 exact string
+media.mediadrmservice.enable u:object_r:exported_default_prop:s0 exact bool
+persist.rcs.supported u:object_r:exported_default_prop:s0 exact int
+rcs.publish.status u:object_r:exported_radio_prop:s0 exact string
+ro.bionic.2nd_arch u:object_r:cpu_variant_prop:s0 exact string
+ro.bionic.2nd_cpu_variant u:object_r:cpu_variant_prop:s0 exact string
+ro.bionic.arch u:object_r:cpu_variant_prop:s0 exact string
+ro.bionic.cpu_variant u:object_r:cpu_variant_prop:s0 exact string
+ro.board.platform u:object_r:exported_default_prop:s0 exact string
+ro.boot.fake_battery u:object_r:exported_default_prop:s0 exact int
+ro.boot.hardware.revision u:object_r:exported_default_prop:s0 exact string
+ro.boot.product.hardware.sku u:object_r:exported_default_prop:s0 exact string
+ro.boot.slot_suffix u:object_r:exported_default_prop:s0 exact string
+ro.bootimage.build.date u:object_r:exported_default_prop:s0 exact string
+ro.bootimage.build.date.utc u:object_r:exported_default_prop:s0 exact int
+ro.bootimage.build.fingerprint u:object_r:exported_default_prop:s0 exact string
+ro.build.expect.baseband u:object_r:exported_default_prop:s0 exact string
+ro.build.expect.bootloader u:object_r:exported_default_prop:s0 exact string
+ro.carrier u:object_r:exported_default_prop:s0 exact string
+ro.config.low_ram u:object_r:exported_config_prop:s0 exact bool
+ro.config.vc_call_vol_steps u:object_r:exported_config_prop:s0 exact int
+ro.frp.pst u:object_r:exported_default_prop:s0 exact string
+ro.hardware.activity_recognition u:object_r:exported_default_prop:s0 exact string
+ro.hardware.audio u:object_r:exported_default_prop:s0 exact string
+ro.hardware.audio.a2dp u:object_r:exported_default_prop:s0 exact string
+ro.hardware.audio.hearing_aid u:object_r:exported_default_prop:s0 exact string
+ro.hardware.audio.primary u:object_r:exported_default_prop:s0 exact string
+ro.hardware.audio.usb u:object_r:exported_default_prop:s0 exact string
+ro.hardware.audio_policy u:object_r:exported_default_prop:s0 exact string
+ro.hardware.bootctrl u:object_r:exported_default_prop:s0 exact string
+ro.hardware.camera u:object_r:exported_default_prop:s0 exact string
+ro.hardware.consumerir u:object_r:exported_default_prop:s0 exact string
+ro.hardware.context_hub u:object_r:exported_default_prop:s0 exact string
+ro.hardware.egl u:object_r:exported_default_prop:s0 exact string
+ro.hardware.fingerprint u:object_r:exported_default_prop:s0 exact string
+ro.hardware.flp u:object_r:exported_default_prop:s0 exact string
+ro.hardware.gatekeeper u:object_r:exported_default_prop:s0 exact string
+ro.hardware.gps u:object_r:exported_default_prop:s0 exact string
+ro.hardware.gralloc u:object_r:exported_default_prop:s0 exact string
+ro.hardware.hdmi_cec u:object_r:exported_default_prop:s0 exact string
+ro.hardware.hwcomposer u:object_r:exported_default_prop:s0 exact string
+ro.hardware.input u:object_r:exported_default_prop:s0 exact string
+ro.hardware.keystore u:object_r:exported_default_prop:s0 exact string
+ro.hardware.keystore_desede u:object_r:exported_default_prop:s0 exact string
+ro.hardware.lights u:object_r:exported_default_prop:s0 exact string
+ro.hardware.local_time u:object_r:exported_default_prop:s0 exact string
+ro.hardware.memtrack u:object_r:exported_default_prop:s0 exact string
+ro.hardware.nfc u:object_r:exported_default_prop:s0 exact string
+ro.hardware.nfc_nci u:object_r:exported_default_prop:s0 exact string
+ro.hardware.nfc_tag u:object_r:exported_default_prop:s0 exact string
+ro.hardware.nvram u:object_r:exported_default_prop:s0 exact string
+ro.hardware.power u:object_r:exported_default_prop:s0 exact string
+ro.hardware.radio u:object_r:exported_default_prop:s0 exact string
+ro.hardware.sensors u:object_r:exported_default_prop:s0 exact string
+ro.hardware.sound_trigger u:object_r:exported_default_prop:s0 exact string
+ro.hardware.thermal u:object_r:exported_default_prop:s0 exact string
+ro.hardware.tv_input u:object_r:exported_default_prop:s0 exact string
+ro.hardware.type u:object_r:exported_default_prop:s0 exact string
+ro.hardware.vehicle u:object_r:exported_default_prop:s0 exact string
+ro.hardware.vibrator u:object_r:exported_default_prop:s0 exact string
+ro.hardware.virtual_device u:object_r:exported_default_prop:s0 exact string
+ro.hardware.vulkan u:object_r:exported_default_prop:s0 exact string
+ro.hwui.use_vulkan u:object_r:exported_default_prop:s0 exact bool
+ro.kernel.qemu u:object_r:exported_default_prop:s0 exact bool
+ro.kernel.qemu. u:object_r:exported_default_prop:s0
+ro.kernel.android.bootanim u:object_r:exported_default_prop:s0 exact int
+ro.odm.build.date u:object_r:exported_default_prop:s0 exact string
+ro.odm.build.date.utc u:object_r:exported_default_prop:s0 exact int
+ro.odm.build.fingerprint u:object_r:exported_default_prop:s0 exact string
+ro.oem.key1 u:object_r:exported_default_prop:s0 exact string
+ro.product.board u:object_r:exported_default_prop:s0 exact string
+ro.product.cpu.abilist32 u:object_r:exported_default_prop:s0 exact string
+ro.product.cpu.abilist64 u:object_r:exported_default_prop:s0 exact string
+ro.product.first_api_level u:object_r:exported_default_prop:s0 exact int
+ro.product.odm.brand u:object_r:exported_default_prop:s0 exact string
+ro.product.odm.device u:object_r:exported_default_prop:s0 exact string
+ro.product.odm.manufacturer u:object_r:exported_default_prop:s0 exact string
+ro.product.odm.model u:object_r:exported_default_prop:s0 exact string
+ro.product.odm.name u:object_r:exported_default_prop:s0 exact string
+ro.product.vendor.brand u:object_r:exported_default_prop:s0 exact string
+ro.product.vendor.device u:object_r:exported_default_prop:s0 exact string
+ro.product.vendor.manufacturer u:object_r:exported_default_prop:s0 exact string
+ro.product.vendor.model u:object_r:exported_default_prop:s0 exact string
+ro.product.vendor.name u:object_r:exported_default_prop:s0 exact string
+ro.telephony.iwlan_operation_mode u:object_r:exported_radio_prop:s0 exact enum default legacy AP-assisted
+ro.vendor.build.date u:object_r:exported_default_prop:s0 exact string
+ro.vendor.build.date.utc u:object_r:exported_default_prop:s0 exact int
+ro.vendor.build.fingerprint u:object_r:exported_default_prop:s0 exact string
+ro.vndk.lite u:object_r:exported_default_prop:s0 exact bool
+ro.vndk.version u:object_r:exported_default_prop:s0 exact string
+ro.vts.coverage u:object_r:exported_default_prop:s0 exact int
+wifi.active.interface u:object_r:exported_wifi_prop:s0 exact string
+wifi.concurrent.interface u:object_r:exported_default_prop:s0 exact string
+wifi.direct.interface u:object_r:exported_default_prop:s0 exact string
+wifi.interface u:object_r:exported_default_prop:s0 exact string
+ro.apex.updatable u:object_r:exported_default_prop:s0 exact bool
+
+# public-readable
+ro.boot.revision u:object_r:exported2_default_prop:s0 exact string
+ro.bootmode u:object_r:exported2_default_prop:s0 exact string
+ro.build.type u:object_r:exported2_default_prop:s0 exact string
+sys.shutdown.requested u:object_r:exported_system_prop:s0 exact string
+
+# Using Sysprop as API. So the ro.surface_flinger.* are guaranteed to be API-stable
+ro.surface_flinger.default_composition_dataspace u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.default_composition_pixel_format u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.force_hwc_copy_for_virtual_displays u:object_r:exported_default_prop:s0 exact bool
+ro.surface_flinger.has_HDR_display u:object_r:exported_default_prop:s0 exact bool
+ro.surface_flinger.has_wide_color_display u:object_r:exported_default_prop:s0 exact bool
+ro.surface_flinger.max_frame_buffer_acquired_buffers u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.max_virtual_display_dimension u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.primary_display_orientation u:object_r:exported_default_prop:s0 exact string
+ro.surface_flinger.present_time_offset_from_vsync_ns u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.running_without_sync_framework u:object_r:exported_default_prop:s0 exact bool
+ro.surface_flinger.start_graphics_allocator_service u:object_r:exported_default_prop:s0 exact bool
+ro.surface_flinger.use_color_management u:object_r:exported_default_prop:s0 exact bool
+ro.surface_flinger.use_context_priority u:object_r:exported_default_prop:s0 exact bool
+ro.surface_flinger.use_vr_flinger u:object_r:exported_default_prop:s0 exact bool
+ro.surface_flinger.vsync_event_phase_offset_ns u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.vsync_sf_event_phase_offset_ns u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.wcg_composition_dataspace u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.wcg_composition_pixel_format u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.display_primary_red u:object_r:exported_default_prop:s0 exact string
+ro.surface_flinger.display_primary_green u:object_r:exported_default_prop:s0 exact string
+ro.surface_flinger.display_primary_blue u:object_r:exported_default_prop:s0 exact string
+ro.surface_flinger.display_primary_white u:object_r:exported_default_prop:s0 exact string
+ro.surface_flinger.protected_contents u:object_r:exported_default_prop:s0 exact bool
+ro.surface_flinger.set_idle_timer_ms u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.set_touch_timer_ms u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.set_display_power_timer_ms u:object_r:exported_default_prop:s0 exact int
+ro.surface_flinger.support_kernel_idle_timer u:object_r:exported_default_prop:s0 exact bool
+ro.surface_flinger.use_smart_90_for_video u:object_r:exported_default_prop:s0 exact bool
+ro.surface_flinger.color_space_agnostic_dataspace u:object_r:exported_default_prop:s0 exact int

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--==================================================================================-->
+<!-- Do not change the order of the following list.				                      -->
+<!-- it is sorted in the order of priority. 					                      -->
+<!-- element decription is as below, so be careful when you change the value.
+    <SolutionSupport>
+    SOLUTION_MASK_SNAPSHOT = (1 << 0);
+    SOLUTION_MASK_PREVIEW  = (1 << 1);
+    SOLUTION_MASK_VIDEO    = (1 << 2);					                              -->
+<!--==================================================================================-->
+
+<LGCameraSolution>
+
+<SolutionList>
+<!-- SuperZoom -->
+	<Solution>
+		<SolutionName>SuperZoom</SolutionName>
+		<SolutionSupport>0</SolutionSupport>
+		<SolutionIndex>1</SolutionIndex>
+		<MaxFrameCount>10</MaxFrameCount>
+		<Condition>
+			<ShotMode>1</ShotMode>
+			<Zoom>
+				<MinZoom>3.6</MinZoom>
+			</Zoom>
+			<Flash>off</Flash> <!-- on / off / auto -->
+		</Condition>
+	</Solution>
+<!-- HDR -->
+	<Solution>
+		<SolutionName>HDR</SolutionName>
+		<SolutionSupport>1</SolutionSupport>
+		<SolutionIndex>4</SolutionIndex>
+		<MaxFrameCount>3</MaxFrameCount>
+		<fastshutter>3</fastshutter>
+		<Condition>
+			<ShotMode>5</ShotMode>
+			<NeedUserSelect>true</NeedUserSelect>
+			<ShotToShotDuration>300</ShotToShotDuration>
+			<Gain>
+				<MaxGain>3.0</MaxGain>
+			</Gain>
+			<Flash>off</Flash>
+		</Condition>
+	</Solution>
+<!-- AIShutter -->
+	<Solution>
+		<SolutionName>AIShutter</SolutionName>
+		<SolutionSupport>0</SolutionSupport>
+		<SolutionIndex>16384</SolutionIndex>
+		<MaxFrameCount>3</MaxFrameCount>
+		<fastshutter>-1</fastshutter>
+		<Condition>
+			<CamId>0,2</CamId>
+			<ShotMode>5</ShotMode>
+			<NeedUserSelect>true</NeedUserSelect>
+			<Gain>
+				<MinGain>44.0</MinGain>
+			</Gain>
+			<LuxIdx>
+				<MinLuxIdx>390.0</MinLuxIdx>
+			</LuxIdx>
+			<Flash>off</Flash>
+		</Condition>
+	</Solution>
+<!-- MFNR -->
+	<Solution>
+		<SolutionName>MFNR</SolutionName>
+		<SolutionSupport>0</SolutionSupport>
+		<SolutionIndex>1024</SolutionIndex>
+		<MaxFrameCount>5</MaxFrameCount>
+		<Condition>
+			<ShotMode>5</ShotMode>
+		    <NeedUserSelect>true</NeedUserSelect>
+			<Gain>
+				<MinGain>3.0</MinGain>
+			</Gain>
+			<Flash>off</Flash>
+		</Condition>
+	</Solution>
+<!-- NoiseReduction -->
+	<Solution>
+		<SolutionName>NoiseReduction</SolutionName>
+		<SolutionSupport>1</SolutionSupport>
+		<SolutionIndex>8</SolutionIndex>
+		<MaxFrameCount>5</MaxFrameCount>
+		<Condition>
+			<ShotMode>16389</ShotMode>
+			<NeedUserSelect>true</NeedUserSelect>
+			<Gain>
+				<MinGain>6.0,6.0,6.0,6.0,6.0</MinGain>
+			</Gain>
+			<Flash>off</Flash>
+		</Condition>
+	</Solution>
+<!-- NoiseReduction for bright condition
+	<Solution>
+		<SolutionName>NoiseReduction</SolutionName>
+		<SolutionSupport>1</SolutionSupport>
+		<SolutionIndex>8</SolutionIndex>
+		<MaxFrameCount>10</MaxFrameCount>
+		<Condition>
+			<ShotMode>16389</ShotMode>
+			<NeedUserSelect>true</NeedUserSelect>
+			<ShotToShotDuration>300</ShotToShotDuration>
+			<Gain>
+				<MinGain>0.0,0.0,0.0,0.0,0.0</MinGain>
+			</Gain>
+			<Flash>off</Flash>
+		</Condition>
+	</Solution>-->
+<!-- NoiseReduction w flash -->
+	<Solution>
+		<SolutionName>FlashNoiseReduction</SolutionName>
+		<SolutionSupport>0</SolutionSupport>
+		<SolutionIndex>2</SolutionIndex>
+		<MaxFrameCount>3</MaxFrameCount>
+		<Condition>
+			<CameraId>rear</CameraId>
+			<Flash>on</Flash>
+		</Condition>
+	</Solution>
+<!-- WDR -->
+	<Solution>
+		<SolutionName>WDR</SolutionName>
+		<SolutionSupport>0</SolutionSupport>
+		<SolutionIndex>4096</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+		<Condition>
+			<ShotMode>5</ShotMode>
+			<NeedUserSelect>true</NeedUserSelect>
+			<Gain>
+				<MaxGain>3.0</MaxGain>
+			</Gain>
+			<Flash>off</Flash>
+		</Condition>
+	</Solution>
+<!-- BeautyShot -->
+	<Solution>
+		<SolutionName>BeautyShot</SolutionName>
+		<SolutionSupport>3</SolutionSupport>
+		<SolutionIndex>16</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+		<Condition>
+			<NeedUserSelect>true</NeedUserSelect>
+			<CameraId>front</CameraId>
+		</Condition>
+	</Solution>
+<!-- Make up -->
+    <Solution>
+        <SolutionName>Makeup</SolutionName>
+        <SolutionSupport>7</SolutionSupport>
+        <SolutionIndex>8192</SolutionIndex>
+        <MaxFrameCount>1</MaxFrameCount>
+        <Condition>
+            <NeedUserSelect>true</NeedUserSelect>
+            <CameraId>front</CameraId>
+        </Condition>
+    </Solution>
+<!--  Studio  -->
+    <Solution>
+        <SolutionName>Studio</SolutionName>
+        <SolutionSupport>3</SolutionSupport>
+        <SolutionIndex>131072</SolutionIndex>
+        <MaxFrameCount>1</MaxFrameCount>
+        <fastshutter>-1</fastshutter>
+        <Condition>
+            <NeedUserSelect>true</NeedUserSelect>
+        </Condition>
+    </Solution>
+<!-- AutoContrast -->
+	<Solution>
+		<SolutionName>AutoContrast</SolutionName>
+		<SolutionSupport>0</SolutionSupport>
+		<SolutionIndex>64</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+		<Condition>
+			<CameraId>rear</CameraId>
+			<ShotMode>1</ShotMode>
+			<NeedUserSelect>true</NeedUserSelect>
+			<Gain>
+				<MaxGain>5.0</MaxGain>
+			</Gain>
+			<LuxIdx>
+				<MinLuxIdx>10.0</MinLuxIdx>
+			</LuxIdx>
+			<Flash>off</Flash>
+			<facedetect>0</facedetect>
+			<HDR>off</HDR>
+			<fastshot2shot>true</fastshot2shot>
+		</Condition>
+	</Solution>
+<!-- AutoContrastPreview -->
+	<Solution>
+		<SolutionName>AutoContrast</SolutionName>
+		<SolutionSupport>0</SolutionSupport>
+		<SolutionIndex>64</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+		<Condition>
+			<CameraId>rear</CameraId>
+			<ShotMode>1</ShotMode>
+			<NeedUserSelect>true</NeedUserSelect>
+			<Zoom> <!-- superzoom ON -->
+				<MinZoom>3.6</MinZoom>
+			</Zoom>
+			<Gain>
+				<MaxGain>5.0</MaxGain>
+			</Gain>
+			<Film>off</Film>
+		</Condition>
+	</Solution>
+<!-- AutoContrastForText -->
+	<Solution>
+		<SolutionName>AutoContrastForText</SolutionName>
+		<SolutionSupport>3</SolutionSupport>
+		<SolutionIndex>64</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+		<Condition>
+			<NeedUserSelect>true</NeedUserSelect>
+		</Condition>
+	</Solution>
+<!-- FilmEmulator -->
+	<Solution>
+		<SolutionName>FilmEmulator</SolutionName>
+		<SolutionSupport>1</SolutionSupport>
+		<SolutionIndex>32</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+		<Condition>
+			<NeedUserSelect>true</NeedUserSelect>
+		</Condition>
+	</Solution>
+<!-- OutFocus -->
+	<Solution>
+		<SolutionName>OutFocus</SolutionName>
+		<SolutionSupport>3</SolutionSupport>
+		<SolutionIndex>256</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+                <fastshutter>-1</fastshutter>
+		<Condition>
+			<NeedUserSelect>true</NeedUserSelect>
+		</Condition>
+	</Solution>
+<!-- Signature -->
+	<Solution>
+		<SolutionName>Signature</SolutionName>
+		<SolutionSupport>1</SolutionSupport>
+		<SolutionIndex>128</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+		<Condition>
+			<NeedUserSelect>true</NeedUserSelect>
+			<fastshot2shot>true</fastshot2shot>
+		</Condition>
+	</Solution>
+<!-- VideoNR -->
+	<Solution>
+		<SolutionName>VideoNR</SolutionName>
+		<SolutionSupport>0</SolutionSupport>
+		<SolutionIndex>512</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+		<Condition> <!-- hfr should be add -->
+			<ShotMode>5</ShotMode>
+			<Resolution>
+				<maxVideoWidth>2160</maxVideoWidth>
+				<maxVideoHeight>1080</maxVideoHeight>
+			</Resolution>
+			<Gain>
+				<MinGain>24.0,0.0,16.0,16.0,0.0</MinGain>
+			</Gain>
+			<maxFps>30</maxFps>
+		</Condition>
+	</Solution>
+<!-- VideoNRPreview -->
+	<Solution>
+		<SolutionName>VideoNRPreview</SolutionName>
+		<SolutionSupport>0</SolutionSupport>
+		<SolutionIndex>512</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+		<Condition>
+			<ShotMode>5</ShotMode>
+			<Gain>
+				<MinGain>24.0,0.0,16.0,16.0,0.0</MinGain>
+			</Gain>
+		</Condition>
+	</Solution>
+<!-- HDR for drchecker -->
+	<Solution>
+		<SolutionName>DRChecker</SolutionName>
+		<SolutionSupport>2</SolutionSupport>
+		<SolutionIndex>2048</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+		<Condition>
+			<NeedUserSelect>true</NeedUserSelect>
+			<Flash>off</Flash>
+		</Condition>
+	</Solution>
+	<Solution>
+		<SolutionName>LowLightUserNoti</SolutionName>
+		<SolutionSupport>2</SolutionSupport>
+		<SolutionIndex>1073741824</SolutionIndex>
+		<MaxFrameCount>1</MaxFrameCount>
+		<Condition>
+			<Gain>
+				<MinGain>12.0,12.0,12.0</MinGain>
+			</Gain>
+		</Condition>
+	</Solution>
+</SolutionList>
+
+<SolutionParamList>
+<!-- rear -->
+	<SolutionParam>
+			<LowLightGain>22.0</LowLightGain>
+	</SolutionParam>
+<!-- front -->
+	<SolutionParam>
+			<LowLightGain>7.0</LowLightGain>
+	</SolutionParam>
+<!-- rear2 -->
+	<SolutionParam>
+			<LowLightGain>22.0</LowLightGain>
+	</SolutionParam>
+
+	<!-- AI CAM Color temperature threshold -->
+	<SolutionParam>
+		<pet_rear>3000;6000</pet_rear>
+	</SolutionParam>
+	<SolutionParam>
+		<city_rear>3000;6000</city_rear>
+	</SolutionParam>
+	<SolutionParam>
+		<food_rear>3000;6000</food_rear>
+	</SolutionParam>
+	<SolutionParam>
+		<landscape_rear>3000;6000</landscape_rear>
+	</SolutionParam>
+	<SolutionParam>
+		<sunset_rear>3000;6000</sunset_rear>
+	</SolutionParam>
+	<SolutionParam>
+		<beverage_rear>3000;6000</beverage_rear>
+	</SolutionParam>
+	<SolutionParam>
+		<sky_rear>3000;6000</sky_rear>
+	</SolutionParam>
+	<SolutionParam>
+		<person_rear>3000;6000</person_rear>
+	</SolutionParam>
+	<SolutionParam>
+		<person_front>3000;6000</person_front>
+	</SolutionParam>
+	<SolutionParam>
+		<people_rear>3000;6000</people_rear>
+	</SolutionParam>
+	<SolutionParam>
+		<people_front>3000;6000</people_front>
+	</SolutionParam>
+	<SolutionParam>
+		<baby_rear>3000;6000</baby_rear>
+	</SolutionParam>
+	<SolutionParam>
+		<baby_front>3000;6000</baby_front>
+	</SolutionParam>
+
+</SolutionParamList>
+
+</LGCameraSolution>
+

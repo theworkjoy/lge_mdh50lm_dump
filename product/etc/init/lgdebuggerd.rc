@@ -1,0 +1,10 @@
+service lgdebuggerd /product/bin/lgdebuggerd
+    user system
+    group system log
+    oneshot
+    # Don't start lgdebuggerd until after the real /data is mounted.
+    class late_start
+
+# restart when shutdown is requested
+on property:sys.shutdown.requested=*
+    restart lgdebuggerd

@@ -1,0 +1,74 @@
+########################################
+#LGBackup System service daemon
+########################################
+service bnrd /sbin/bnrd
+    class main
+    socket bnrd stream 660 root system
+    user root
+    group system radio sdcard_rw
+    disabled
+    seclabel u:r:installd:s0
+
+on property:product.lge.bnrd=1
+    start bnrd
+
+on property:product.lge.bnrd=0
+    stop bnrd
+
+########################################
+# LGP_DATA_DSQN
+########################################
+service dsqn /product/bin/dsqn
+    disabled
+    user root
+
+on property:persist.product.lge.data.dsqn=1
+        start dsqn
+
+on property:persist.product.lge.data.dsqn=0
+        stop dsqn
+
+########################################
+# LGP_DATA_TCPIP_MPTCP_SOCKS
+########################################
+service socks /system/xbin/redsocks -c /system/etc/redsocks.conf
+    disabled
+    user root
+
+on property:product.lge.data.mptcp.enabled=1
+        start socks
+
+on property:product.lge.data.mptcp.enabled=0
+        stop socks
+
+########################################
+# LGP_DATA_TCPIP_MPTCP_SKT
+########################################
+service socks-v6 /system/xbin/redsocks-v6 -c /system/etc/redsocks_v6.conf
+    disabled
+    user root
+
+on property:product.lge.data.mptcp.enabled=1
+        start socks-v6
+
+on property:product.lge.data.mptcp.enabled=0
+        stop socks-v6
+
+########################################
+# platform_modem_bsp@lge.com ModemBSP
+########################################
+#LGE_CHANGE_S, Advanced MOCA, huny.lee@lge.com
+service moca_service /product/bin/advanced_moca -s
+    class late_start
+    user root
+    group system sdcard_r sdcard_rw radio misc bluetooth
+    disabled
+    oneshot
+    socket Full.MOCA.port stream 660 system system
+
+on property:persist.product.lge.service.moca.enable=1
+    start moca_service
+
+on property:persist.product.lge.service.moca.enable=0
+    stop moca_service
+#LGE_CHANGE_E, Advanced MOCA, huny.lee@lge.com

@@ -1,0 +1,28 @@
+# AB Q
+system                                                    /system                  ext4   ro,barrier=1,discard                                                                                       wait,slotselect,logical,first_stage_mount
+vendor                                                    /vendor                  ext4   ro,barrier=1,discard                                                                                       wait,slotselect,logical,first_stage_mount
+product                                                   /product                 ext4   ro,barrier=1,discard                                                                                       wait,slotselect,logical,first_stage_mount
+
+/dev/block/platform/bootdevice/by-name/md_udc             /metadata                ext4   noatime,nosuid,nodev,discard                                                                               wait,formattable
+/dev/block/platform/bootdevice/by-name/userdata           /data                    ext4   noatime,nosuid,nodev,noauto_da_alloc                                                                       latemount,wait,check,quota,reservedsize=128M,formattable,resize,fileencryption=aes-256-xts:aes-256-cts,checkpoint=block
+/dev/block/platform/bootdevice/by-name/para               /misc                    emmc   defaults                                                                                                   defaults
+/dev/block/platform/bootdevice/by-name/misc2              /misc2                   emmc   defaults                                                                                                   defaults
+/dev/block/platform/bootdevice/by-name/encrypt            /encrypt                 emmc   defaults                                                                                                   defaults
+/dev/block/platform/bootdevice/by-name/eksst              /eksst                   emmc   defaults                                                                                                   defaults
+/dev/block/platform/bootdevice/by-name/frp                /persistent	           emmc   defaults                                                                                                   defaults
+/dev/block/platform/bootdevice/by-name/fota               /fota                    emmc   defaults                                                                                                   defaults
+/dev/block/platform/bootdevice/by-name/power              /power                   ext4   noatime,nosuid,nodev,noauto_da_alloc,discard                                                               wait,check
+/dev/block/platform/bootdevice/by-name/nvdata             /nvdata                  ext4   noatime,nosuid,nodev,noauto_da_alloc,discard                                                               wait,check
+/dev/block/platform/bootdevice/by-name/els                /els                     ext4   noatime,nosuid,nodev,noauto_da_alloc,discard                                                               wait,check
+/dev/block/platform/bootdevice/by-name/mpt                /mpt                     ext4   noatime,nosuid,nodev,noauto_da_alloc,discard                                                               wait,check
+/dev/block/platform/bootdevice/by-name/persist_lg         /mnt/vendor/persist-lg   ext4   noatime,nosuid,nodev,noauto_da_alloc,discard                                                               wait,check
+/dev/block/platform/bootdevice/by-name/p_persist_lg       /mnt/product/persist-lg  ext4   noatime,nosuid,nodev,noauto_da_alloc,discard                                                               wait,check
+/dev/block/platform/bootdevice/by-name/carrier            /mnt/product/carrier     ext4   noatime,nosuid,nodev,noauto_da_alloc,discard                                                               wait,check
+/dev/block/platform/bootdevice/by-name/OP                 /product/OP              ext4   ro,noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,discard,defcontext=u:object_r:op_file:s0    wait,slotselect
+/dev/block/platform/bootdevice/by-name/eri                /mnt/product/eri         ext4   noatime,nosuid,nodev,noauto_da_alloc,nodelalloc                                                            wait,check
+/dev/block/platform/bootdevice/by-name/operatorlogging    /mnt/product/quality     ext4   noatime,nosuid,nodev,noauto_da_alloc,nodelalloc                                                            wait,check
+/dev/block/platform/bootdevice/by-name/scp1               /scp1                    emmc   defaults                                                                                                   defaults
+/dev/block/platform/bootdevice/by-name/scp2               /scp2                    emmc   defaults                                                                                                   defaults
+/dev/block/platform/bootdevice/by-name/sspm_1             /sspm_1                  emmc   defaults                                                                                                   defaults
+/dev/block/platform/bootdevice/by-name/sspm_2             /sspm_2                  emmc   defaults                                                                                                   defaults
+/dev/block/platform/bootdevice/by-name/spmfw              /spmfw                   emmc   defaults                                                                                                   defaults

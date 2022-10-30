@@ -1,0 +1,24 @@
+on post-fs
+    mkdir /mnt/product/persist-lg/.sreadahead 0700 root root
+    chown root system /mnt/product/persist-lg/.sreadahead
+    chmod 0770 /mnt/product/persist-lg/.sreadahead
+
+    chown root system /mnt/product/persist-lg/.sreadahead/.sreadahead_done
+    chmod 0660 /mnt/product/persist-lg/.sreadahead/.sreadahead_done
+
+    chown root system /mnt/product/persist-lg/.sreadahead/.readahead_list.txt
+    chmod 0660 /mnt/product/persist-lg/.sreadahead/.readahead_list.txt
+    start sreadahead
+
+service sreadahead /product/bin/treadahead
+    oneshot
+    disabled
+    seclabel u:r:sreadahead:s0
+
+# make a diecision whether sreadahead would be performed or not.
+service sreadahead-check /product/bin/sreadahead_check
+    class main
+    user root
+    group root system
+    oneshot
+    seclabel u:r:sreadahead-check:s0

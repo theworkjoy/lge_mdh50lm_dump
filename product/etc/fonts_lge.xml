@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Added System Default Fonts Family.
+-->
+<!-- Android Q familyset version update -->
+<fonts-modification version='1'>
+    <family customizationType='new-named-family' name="lgkindgothic">
+        <font weight="300" style="normal">HYKindGothic_Light.ttf</font>
+        <font weight="400" style="normal">HYKindGothic_Regular.ttf</font>
+        <font weight="700" style="normal">HYKindGothic_Bold.ttf</font>
+    </family>
+    <family customizationType='new-named-family' name="lgfriend">
+        <font weight="300" style="normal">HYFriend_Light.ttf</font>
+        <font weight="400" style="normal">HYFriend_Regular.ttf</font>
+        <font weight="700" style="normal">HYFriend_Bold.ttf</font>
+    </family>
+    <family customizationType='new-named-family' name="lgtravel">
+        <font weight="300" style="normal">HYTravel_Light.ttf</font>
+        <font weight="400" style="normal">HYTravel_Regular.ttf</font>
+        <font weight="700" style="normal">HYTravel_Bold.ttf</font>
+    </family>
+    <family customizationType='new-named-family' name="lgyoyo">
+        <font weight="300" style="normal">HYYoyo_Light.ttf</font>
+        <font weight="400" style="normal">HYYoyo_Regular.ttf</font>
+        <font weight="700" style="normal">HYYoyo_Bold.ttf</font>
+    </family>
+
+    <alias name="lgkindgothic-light" to="lgkindgothic" weight="300" />
+    <alias name="lgfriend-light" to="lgfriend" weight="300" />
+    <alias name="lgtravel-light" to="lgtravel" weight="300" />
+    <alias name="lgyoyo-light" to="lgyoyo" weight="300" />
+</fonts-modification>
